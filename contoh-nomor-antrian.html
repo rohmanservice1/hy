@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Contoh Nomor Antrian
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Contoh Nomor Antrian",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/736x/30/3a/a0/303aa0c7f83ab489c52a1b3dd52f86be.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=contoh+nomor+antrian",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Contoh Nomor Antrian
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Contoh Nomor Antrian</strong>. Mesin Antrian Murah Type 1 Products. Antrian adalah orang-orang atau barang dalam barisan yang sedang menunggu untuk dilayani dan kemudian meninggalkan barisan setelah dilayani.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/92/b8/7f/92b87f9403e3e0709bbc4baadba344e6.jpg" alt="Pin Oleh Ahalona Di Perpanjang Sim C Pendidikan Sarjana Tanggal" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5mE_J2A6EjtT-ucBOTMrd5EJO_GlrRHMb53CXzHHkEva-AMptc2jxx9LgGULBoNiu1yc';">
+        <figcaption>Pin Oleh Ahalona Di Perpanjang Sim C Pendidikan Sarjana Tanggal from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Berikut adalah contoh implementasi aplikasi nomor antrian yang pernah digunakan disalah satu perusahaan swasta. Sebagai contoh pada saat satu buah nomor antrian nasabah akan ditampilkan melalui layar LCDLED Televisi dimana biasanya untuk beberapa waktu lalu tampilan tersebut disertai bidang untuk penayangan video edukasi atau promosi produk dari bank atau tayangan siaran televisi sebagai suguhan bagi nasabah berupa informasi dari tayangan televisi satelit atau siaran umum agar. Contoh nomor antrian bri.
+    </p>
+    <h3>SCHEMA APLIKASI NOMOR ANTRIAN CS.</h3>
+    <p>Contoh Aplikasi Teori Antrian Model Single-channel Queuing. Lines atau masalah antrian. Mesin Antrian Murah Type 1 Products. Antrian merupakan sebuah bagian penting dalam manajemen operasi.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Mesin Antrian Medan Terbaik Dan Terpercaya Aplikasi Salon Kecantikan Teknologi" src="https://i.pinimg.com/originals/33/c4/f3/33c4f3e4df1f62bf626b7f4de491670a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-PLrxktNT0VTZN6nHTOd2FFWuuysVjNn6dof2SguNzUObpkccflSWhHj8ztgBpI9P5Rs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nomor antrian yang dipanggil atau sedang dalam pelayanan akan tampil melalui LCDLED Televisi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Antrian Di Kantor Pos Kantor Pos Pelayanan Publik Kota" src="https://i.pinimg.com/736x/30/3a/a0/303aa0c7f83ab489c52a1b3dd52f86be.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzLbhyuauDg43rAFCF_zHVxdBxFFQE8M-j_ZG1MG1Z8XsKU2MJwgKU6sgu2NjkGKFBPbM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Antrian adalah suatu kejadian yang biasa dalam kehidupan seharihari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Mesin Antrian Mesin Antrian Android Mesin Antrian C2000 Alat Antrian Ikm Kunci Sukses Marketing Mesin Antrian Alat Antrian Marketing Mesin Alat" src="https://i.pinimg.com/originals/df/1d/d1/df1dd185e2bcda4117b290fcd59e204c.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRjjM_Uc1sPlSKdTrghUQ1twhAV08iyad8iPN9kVSHAqVRRvdxhsvW7trsnxLB4-1eN5E';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Antrian merupakan sebuah bagian penting dalam manajemen operasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Ahalona Di Perpanjang Sim C Pendidikan Sarjana Tanggal" src="https://i.pinimg.com/originals/92/b8/7f/92b87f9403e3e0709bbc4baadba344e6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5mE_J2A6EjtT-ucBOTMrd5EJO_GlrRHMb53CXzHHkEva-AMptc2jxx9LgGULBoNiu1yc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>7810202001539202 dan pilih benar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Banner Cek Kesehatan Berat Badan" src="https://i.pinimg.com/originals/31/36/dc/3136dc80aaa46041cf914bbfd6950cb7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAAMMCmSDGSxcYaloGSS8p7J6YMPgC25iSBct_bF_8iPuhWtCH-ylAC9iAP-npIY1lEGQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Posting Lebih Baru Posting Lama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cetak Kartu Ujian Dan Nomor Antrian Jpg 608 376 Kartu Sma Dokter" src="https://i.pinimg.com/originals/d2/23/e3/d223e39db77ef433caed8d45ac6a3997.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhzqf1yFI2NmtNjXNfuim2EFCHrntk2F508gyhBFpQX8coMZgezs7WyXfKGrJd_aOcWuU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Poisson distributed Arrivals and exponentially distributed service time Sebuah perusahaan yang menyewakan furniture mempunyai satu gudang dengan satu mesin pengangkut yang dioperasikan oleh satu kelompok yang terdiri dari tiga orang tenaga kerja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Harga Mesin Antrian Alat Antrian Murah Kiosk Indek Kepuasan Masyarakat Ikm Mesin Cetak Ticket Antrian C2000 Mesin Cetak Mesin Printer" src="https://i.pinimg.com/474x/2c/c6/d3/2cc6d305186e4c5fd329433d86277a0a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFcFH9bQq2btzO3AKRO71ugetU2rYQbrg3vFIgEF4bADtfzTBmjkCpkdf5YYOKtv8X9dw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mengakomodasi hingga 9 jenis pelayanan untuk satu buah server sistem antrian rumah sakit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Mesin Antrian Sim Satpas Polres Malang Malang Mesin Satuan" src="https://i.pinimg.com/originals/a8/d5/10/a8d5105d6f2530e655072540de74b8fd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCjOwtVse_P7stikYS3rn4MnOm6lfldN38OqAWzgGAqfyWjsLSc090vcyjsW4TqtkQcAo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nomor antri dipanggil petugas melalui Internet Browser seperti Google Chrome Mozilla melalui komputer petugas yang terhubung dengan sistem antri melalui Local Area Network.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Client Display Sistem Antrian Vorsea Client Display Wireless P10 Teknologi Papan Toilet" src="https://i.pinimg.com/originals/fc/78/27/fc7827bd899f64f400e15b683ab83833.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa7_ALgClHLVRaCkQrI8Ee80_l_gpsOXR5kGzfZ7I38FxuvKcvZ58wQzsQ5EOu1Mc0j-w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pemanfaatan QR-Code sebagai media pembatalan nomor antrian yang sudah terambil.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/tes-kubus.html"><i>&larr; tes kubus</i></a>
+                                                                    
+                                        <a href="/tes-cinta-sejati.html"><i>tes cinta sejati &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

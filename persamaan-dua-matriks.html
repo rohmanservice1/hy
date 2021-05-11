@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Persamaan Dua Matriks
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Persamaan Dua Matriks",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/originals/39/c2/d8/39c2d8d5586cb48686929940cab0a4a3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=persamaan+dua+matriks",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Persamaan Dua Matriks
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Persamaan Dua Matriks</strong>. Agar lebih jelasnya lagi perhatikan contoh soal di bawah ini. Dalam materi persamaan dua matriks tentunya sering mendengar adanya ordo matriks.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/eb/f5/55/ebf555d654eda3a0fcf57cd95faace14.jpg" alt="Matriks Matriks Sama Matrices Equal Matrices Susunan Matriks Order Of Matrix Penambahan Dan Penolakan Matriks Addition A Guru Teknik Sajak" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJI4lzCd3xNzISTxtMQ4E09G_tkKh_crMtJVTUC7YsufNrq7scUvEFvQ6YlAS2ILMn7TE';">
+        <figcaption>Matriks Matriks Sama Matrices Equal Matrices Susunan Matriks Order Of Matrix Penambahan Dan Penolakan Matriks Addition A Guru Teknik Sajak from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Kegunaan lain dari invers matriks adalah untuk menentukan. Perhatikan Contoh berikut. Perhatikan Contoh berikut.
+    </p>
+    <h3>Kesamaan Dua matriks Dua matriks dikatakan sama apabila mempunyai ordo sama dan elemen - elemen yang seletaknya bersesuaian dari kedua matriks tersebut sama.</h3>
+    <p>Pemanfaatannya misalnya dalam menjelaskan persamaan linier transformasi koordinat dan lainnya. Contoh pertama Diketahui Jika AB tentukan abcd. Sedangkan untuk PLTV menggunakan matriks berordo 3 x 3. Perhatikan Contoh berikut.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="26 Matriks Matrices Buku Buku Pelajaran Pendidikan" src="https://i.pinimg.com/originals/c6/87/d5/c687d5ea293b2cd5fc4a7f8c2ef9b597.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAqbIlO792dLGiGQaBlGTlrIyByeTk4uT_1LtLefjbZN9uOKnkBSNDf45Xis5MN9C5tjA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sedangkan untuk PLTV menggunakan matriks berordo 3 x 3.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="No 10 Pembahasan Utul Ugm 2019 Kode 633 Matematika Dasar Matriks Latihan Utul Ugm 2020 Youtube Matematika Dasar Matematika Latihan" src="https://i.pinimg.com/564x/db/45/c3/db45c32f62160a6ea65e676d53a4709f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAxBHMrZA5mJxbkZ1FzH5cLh8HDm77LvRkx2oQAi7LgUm3WBRoKkjhonDCHhy1vdpsdlA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>1 Jika A x B C maka B A -1 x C.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="26 Matriks Matrices Matematika Kelas 5 Buku Catatan Matematika Buku Pelajaran" src="https://i.pinimg.com/originals/54/47/50/5447503b3df2bf8847f3386696ee0aa5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXpokkJTAwob_unh0wEs5pApn4eoHgKLGXX3cMawOT5DRr8YzmvmR7vEZllFwjzKOzJfQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Langkah ke-3 mengalikan kedua ruas pada persamaan dengan invers matriks.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Soal Asli Utbk 2019 Matematika Saintek Sukubanyak Youtube Matematika Asli" src="https://i.pinimg.com/564x/a2/1f/e5/a21fe5bbaee43197252d38d2efc0eda3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyFEYGPWZ6YYXBA-UF6oE8sDLh98-qOhC_L89HT8scxBqKg-wqsvKNpoSGHyJJuZ_Tj6k';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika diketahui matriks A dan B seperti di bawah ini maka tentukanlah hubungan antara B A dan A B.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="" src="https://i.pinimg.com/originals/a7/ea/a4/a7eaa4358a2114124eb0f2b79018a4bc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLAdvu3RwUH_ircdH_8LU6GpjNHEC89ByYWHCfrkUBcVejxm_T2imZwLeObQ4Hc9T4xbs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Karena elemen yang letaknya sama bernilai sama juga maka matriks p dan q tersebut bisa dikatakan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumus Rumus Matematika Matematika Pelajaran Matematika Buku Pelajaran" src="https://i.pinimg.com/originals/45/04/58/450458cd63672fd7caccaf594ce37ac4.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUD7Eh8bmyG2DOcC0crq_kQvI1C-uKwuX3rHWToDOlHmvn7JXJffk-C2YyxEMKXwurVZI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tentukan matriks X berordo 21 pada persamaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Soal Asli Utbk 2019 Matematika Saintek Determinan Matriks Youtube Matematika Pengetahuan Asli" src="https://i.pinimg.com/564x/3b/4c/66/3b4c66e26c1a43b56f0447eb5c7adddc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaaxepxPCkvw0mJKBgYaYVRzO9iU9weROZ-86INpyLsIiBQOwD6jTztcRugR3egAQUyH0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dimana matriks yang kiri setelah dioperasikan menjadi sama dengan matriks yang kanan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Matemantika Belajar Matematika Online Instagram Kumpulan Soal Pembahasan Sma Sistem Persamaan Linear Tiga Variabel Kelas Sistem Persamaan Matematika Persamaan" src="https://i.pinimg.com/originals/72/ce/42/72ce42e496d81f449484887b72dd365e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVAG--j53WcGWCuRWuW_xNzxqvWSUsXVYD--V4BGQIZH0goQ0n0bv55hgP5BgPn1fhe10';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Misalkan A X dan B Bentuk di atas dapat kita tuliskan sebagai AX B.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="" src="https://i.pinimg.com/originals/39/c2/d8/39c2d8d5586cb48686929940cab0a4a3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2e6mLCXJmu26c-ShO8e4RBRqn4Wvnk2tLw2yEUYQNfw8WU497N7gjXwDrWWUxptOgXrU';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Dua matriks dikatakan sama jika dua matriks tersebut memiliki ordo yang sama dan elemen-elemen matriks yang bersesuaian sama.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/burung-prenjak-bawah.html"><i>&larr; burung prenjak bawah</i></a>
+                                                                    
+                                        <a href="/canon-easy-photo-print-free-download-ip2770.html"><i>canon easy photo print free download ip2770 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

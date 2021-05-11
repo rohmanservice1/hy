@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Cara Membuat Smps
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Cara Membuat Smps",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/736x/46/e2/37/46e2378076fc8aaff66e52eef33a1db4.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=cara+membuat+smps",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Cara Membuat Smps
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Cara Membuat Smps</strong>. Tapi sering kali ada yang gacunnya meledak saat pertama kali membuat smps gacun. Umum Agustus 16 2017 0450.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/f3/a7/66/f3a766c2aaf11e193a4c730888dcfb41.jpg" alt="Switching Mode Power Supply 10a 20 50v Dc Ct Rangkaian Elektronik Arduino Elektronik" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSeuEuEKHA4egaiVoG-AlSHox48gQRQa8I77DnJH4aEs9UWNHIwopTZJ6DyaJlj_1KLGg';">
+        <figcaption>Switching Mode Power Supply 10a 20 50v Dc Ct Rangkaian Elektronik Arduino Elektronik from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Cara Membuat SMPS Halfbridge PFC Part 01. Cara Membuat Power Supply SMPS Power Amplifier Watt Besar Trafo Ringan Kali ini saya akan membuat power supply tanpa menggunakan trafo konvensional untuk menghemat biaya power supply simetris ini berdaya 350W. Dalam pembuatan kartu ujian ini ada beberapa hal yang perlu diperhatikan diantaranya dalam pengisian data siswa sebaiknya sudah mengacu pada database sekolah.
+    </p>
+    <h3>Jika keuangannya baik maka organisasi itu bisa dikatakan baik.</h3>
+    <p>Dalam merakit SMPS gacun sebenarnya sangatlah mudah asalkan layout sudah fix semua komponen sudah lengkap berfungsi normal pasti 90 akan jadi SMPS nya kunci akhir keberhasilan terdapat pada lilitan trafo utama karna trafo utama lah yang menentukan besar kecil nya keluaran Volt Amper dari SMPS gacun. Sebuah tugas yang diberikan guru sebagai tugas akhir dari kelas 9 tingkat smpmts. Info PTK Penyusunan proposal atau usulan penelitian merupakan langkah awal yang harus dilakukanpeneliti sebelum memulai kegiatan penelitian tindakan kelas. Umum Agustus 16 2017 0450.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Smps Dari Gacun Sirkuit Teknologi Tata Letak" src="https://i.pinimg.com/736x/82/26/8c/82268c9d9e89c85d81424362674c04d7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyVcvt-VOn-CcMXWkdRxMCqAgckJCBxuWq7uG7Ycanba7k91TyccnSjIBFJAFIa1Gpbt4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sheet data yang digunakan untuk membuat database peserta ujian.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Smps Dari Gacun Rangkaian Elektronik Sirkuit Teknologi" src="https://i.pinimg.com/736x/98/85/27/98852761ab8c7c639f94bf9a608a79ab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG-KehuxkmQ5oXNbAVai_ejBLWghyWYtUu_L9DaCaeoAPCvb6gid51dpN-fRrSH5rSSdY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Cara Membuat Laporan Keuangan Otomatis dengan Microsoft Excel.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Smps Dari Gacun Rangkaian Elektronik Sirkuit Elektronik" src="https://i.pinimg.com/736x/46/e2/37/46e2378076fc8aaff66e52eef33a1db4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0RQElkwpP14Yb1z2i0xnIzwohzdMLkk7w3hWWMcVc7Q4K6cTAjJenHq2tzLRe6W8pOk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Cara Membuat Gadis SMP Terkesan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Smps Dari Gacun Sirkuit Rangkaian Elektronik Teknologi" src="https://i.pinimg.com/736x/7a/4d/fd/7a4dfd45541366b5cc5b1fc31cc63bf0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwSuftL2bRRzFAJs4FoE1b0u8ZaIW1iilpiBhXmdnNvJ_S324FdNhWlZ_sM5qiTE3PZg8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebuah tugas yang diberikan guru sebagai tugas akhir dari kelas 9 tingkat smpmts.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Smps Dari Gacun Rangkaian Elektronik Sirkuit Elektronik" src="https://i.pinimg.com/736x/a8/57/5f/a8575f5cd1a5de26ea04dec27ca37aec.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYikRxnwmThVRkdPlsoEsWtYDeeU74rUZMoSWhw7TmzcETOicK6oVWigzYxCB4_Hf-TIk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dalam pembuatan kartu ujian ini ada beberapa hal yang perlu diperhatikan diantaranya dalam pengisian data siswa sebaiknya sudah mengacu pada database sekolah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Merakit Smps Gacun Untuk Power Amplifier Youtube" src="https://i.pinimg.com/564x/e3/b0/66/e3b066cdf6150ba175ad48558e115f0f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0fNPRca6cQE-NHuqRM7jREUoSxY6IaA_b9mAUaqm2f626q-fDQ_3IkA4wlsxI2jn-oTw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebuah tugas yang diberikan guru sebagai tugas akhir dari kelas 9 tingkat smpmts.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Smps Dari Gacun" src="https://i.pinimg.com/originals/56/0a/0f/560a0fc51aecdd4b4dd56a11891e33a2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKEmZJU6gTl4NL82NZme4LsCBkF2oza9f8uo7P_yLXLuhhTXkuqBjiwxl7nNYK7RHLKCc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>SMPS secara garis besar meliputi kerja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Smps Dari Gacun Rangkaian Elektronik Sirkuit Elektronik" src="https://i.pinimg.com/736x/0a/c0/ac/0ac0ac5a7a35057eade5f2f5ecb3a834.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4nZhUhJCI3kd2dIiZS3g981puBUsbPAEJlVacoxYt0D51WPrznlC934mrKQUqSKwC_JQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Membuat subdomain contoh website sekolah smaialazhar7schid kita buat sklsmaialazhar7schid.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Switching Mode Power Supply 10a 20 50v Dc Ct Rangkaian Elektronik Arduino Elektronik" src="https://i.pinimg.com/originals/f3/a7/66/f3a766c2aaf11e193a4c730888dcfb41.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSeuEuEKHA4egaiVoG-AlSHox48gQRQa8I77DnJH4aEs9UWNHIwopTZJ6DyaJlj_1KLGg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika kamu membuat proyek yang mendalam di universitas kamu akan membutuhkan lebih banyak sumber daripada saat kamu membuat proyek di SMP.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/download-belajar-membaca-tanpa-mengeja-buku-2.html"><i>&larr; download belajar membaca tanpa mengeja buku 2</i></a>
+                                                                    
+                                        <a href="/download-buku-agama-islam-kelas-5-sd-kurikulum-2013.html"><i>download buku agama islam kelas 5 sd kurikulum 2013 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

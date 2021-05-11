@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumus Semaphore
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Rumus Semaphore",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/564x/0e/14/60/0e1460744d5685bef7df4f1584129a61.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumus+semaphore",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumus Semaphore
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumus Semaphore</strong>. Semaphore adalah suatu cara untuk mengirim dan menerima berita dengan menggunakan 2 bendera dimana masing-masing bendera tersebut berukuran 45 cm x 45 cm. Kode morse bersama dengan semaphore diujikan sebagai salah satu point dalam SKU Pramuka Penggalang mulai dari SKU Penggalang Ramu SKU Penggalang Rakit dan SKU Penggalang Terap semuanya terdapat di point 25.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/236x/28/c6/1b/28c61b6361647c2453e328bdabdd4867.jpg" alt="Rumus Cara Mencari Luas Selimut Kerucut Dan Contoh Soalnya Selimut Cari" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgceAaWxB5e0Gxcs_ePjXxpn1zhOQrWciLL0pdG4rR9i25_AsFpeM87ZNyKCyg_GEgvvI';">
+        <figcaption>Rumus Cara Mencari Luas Selimut Kerucut Dan Contoh Soalnya Selimut Cari from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Cara cepat menghafal rumus rumus adalah tatacara dalam menyelesaikan berbagai persoalan dalam matematik fisika bahkan dalam kimia. Untuk lebih jelasnya bisa dilihat seperti ini. Semaphore adalah suatu cara untuk mengirim dan menerima pesan dengan menggunakan bendera dayung batang tangan kosong atau dengan sarung tangan.
+    </p>
+    <h3>Cara cepat menghafal rumus rumus adalah tatacara dalam menyelesaikan berbagai persoalan dalam matematik fisika bahkan dalam kimia.</h3>
+    <p>Belajar semaphore cara mudah dan cepat ini adalah cara mempelajari isyarat semaphore dengan mudah dan cepat. Save my name email and website in this browser for the next time I comment. Cara dan metode cepat belajar semaphore oleh kak heri. Mulai dari rumus contoh kalimat sejarah.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumus Hongkong Ai 3 Dijit Seumur Hidup Joss Hidup" src="https://i.pinimg.com/564x/0e/14/60/0e1460744d5685bef7df4f1584129a61.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnc6vqdvssn1yIz2bnF-QwORm0H5uhovKw_jYFakZKJ7BnOBENJNR7mIXLJQWIs8oBW8U';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mulai dari rumus contoh kalimat sejarah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Mencari Rumus Shio Main Togel Terbaru 2020 Sgp Dan Hk Matematika Buku Gambar Buku" src="https://i.pinimg.com/originals/a6/da/49/a6da492a3229c3934303420763829d33.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXV-7iws5Xm-4dWnjvRESgexZMfViBP0pRM_QyL0ysdenAftqP-Qiq0rgRUEKDibrUD7Y';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sandi semaphore merupakan sandi yang dalam mengaplikasikannya menggunakan alat peraga yakni bendera ranting pohon atau bisa juga menggunakan tangan kosong untuk membuat sebuah kalimat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumus Cara Mencari Luas Selimut Kerucut Dan Contoh Soalnya Selimut Cari" src="https://i.pinimg.com/236x/28/c6/1b/28c61b6361647c2453e328bdabdd4867.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgceAaWxB5e0Gxcs_ePjXxpn1zhOQrWciLL0pdG4rR9i25_AsFpeM87ZNyKCyg_GEgvvI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kunci rumus semaphore Anda fobia takut jika disuruh menghafalkan pembinamu tentang Semaphore.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumus Cara Mencari Luas Selimut Kerucut Dan Contoh Soalnya Selimut Cari" src="https://i.pinimg.com/474x/df/b6/41/dfb6417b0575dafab2b67358c68c4018.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc49kP3niKc0qERrxmFIOnPSACYv2bM1v6Q0ErBGQpCxukYPQgPNIVBJghucGlY6trWd0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Namun kini yang umumnya digunakan adalah bendera yang dinamakan bendera semaphore.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Image Result For Sandi Kotak 2 Abc" src="https://i.pinimg.com/originals/73/fb/e0/73fbe02c8961bab75448b77c9ca33a93.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ-J6VZR5JBq9MC6YPP-yUH5CeDKOg8IwDrvMsEfMJ0h6bVk02y2e8DNenw5FTNU32N5Y';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Save my name email and website in this browser for the next time I comment.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Semua Macam Sandi Yang Ada Dalam Pramuka Terlengkap Pramuka Solid Belajar Pramuka" src="https://i.pinimg.com/474x/6d/de/79/6dde796e95b7b35fc14bcd4c3f4b407e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9-j0CAWxSVuUYohk6ZQj2YDJENuzLWj6PwUA_kwGNnd84UCFnH4nN6zjZA2O7g-WjWEo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>CARA CEPAT MENGHAFAL SEMAPHORE.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Sains" src="https://i.pinimg.com/originals/7f/72/27/7f72275c21be5c73849404455f161790.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAcQpzx9Yq8aa4qhcKyd4dk0XUNDoh296cMHv34jJhTT2hm9rGRk8ltynSdWLaXSS-_9w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Save my name email and website in this browser for the next time I comment.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sandi Kotak Pertama Pramuka Persandian Sekolah" src="https://i.pinimg.com/originals/1d/24/23/1d2423c990cf8ddc80c43b536983f21e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQIRN8lI6QI6zNmGMvR6EHBQ3JWa3lgBw0gus4HhtNG3oXc5KgJTbGu47CGczVzDcGaW4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pengirim berita mengirim kode huruf U-R berulang-ulang untuk menandai bahwa apesan akan segera dikirim.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Untuk Artikel Pertama Yang Membahas Dunia Per Sandi An Ini Saya Akan Sedikit Menjabarkan Mengenai Sebuah Sandi Yang Bernama Sandi An Persandian Nama" src="https://i.pinimg.com/564x/39/1c/06/391c06af87834ea59bab1c803d1b1d01.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSVrcrTkMkdyNAX6c_yYO_RKSEH6QXknmv7BVIwBXqkayz8plFnpUQcmGEy6-Ewou-zp8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Namun memang sulit sekali untuk menghafalkan Semaphore ini namun sebenarnya ada cara yang lebih mudah untuk menghafalkannya.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/aplikasi-analisis-soal-pilihan-ganda-dan-uraian.html"><i>&larr; aplikasi analisis soal pilihan ganda dan uraian</i></a>
+                                                                    
+                                        <a href="/apa-saja-benda-yang-digunakan-dalam-bermain-perahu-kertas.html"><i>apa saja benda yang digunakan dalam bermain perahu kertas &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

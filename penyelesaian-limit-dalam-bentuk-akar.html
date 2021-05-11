@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Penyelesaian Limit Dalam Bentuk Akar
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Penyelesaian Limit Dalam Bentuk Akar",
+  "datePublished": "2021-05-11",
+  "image": "https://i0.wp.com/quipperhome.wpcomstaging.com/wp-content/uploads/2019/09/Limit-Fungsi-Aljabar-5.png?resize=289%2C255&amp;ssl=1",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=penyelesaian+limit+dalam+bentuk+akar",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Penyelesaian Limit Dalam Bentuk Akar
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Penyelesaian Limit Dalam Bentuk Akar</strong>. Berikut adalah 3 buah soal limit tak hingga yang jika disubtitusi langsung menghasilkan bentuk tak tentu -. Lim x 3 x x 37.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i0.wp.com/quipperhome.wpcomstaging.com/wp-content/uploads/2019/09/Limit-Fungsi-Aljabar-5.png?resize=289%2C255&amp;ssl=1" alt="Limit Fungsi Aljabar Matematika Kelas 11 Quipper Blog" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5DMr1-j5F-iijzXC3-FGcd8NX2qAz8DP52Kw84dzs23wgJ8tjIFAIagMyseiZcXghD-Y';">
+        <figcaption>Limit Fungsi Aljabar Matematika Kelas 11 Quipper Blog from www.quipper.com</figcaption>
+    </figure>
+        <p>
+        Dalam penyelesaian bentuk limit yang mengandung akar seperti di bawah ini. Nah pada artikel ini metode penyelesaian limit yang akan kita pelajari adalah cara menghitung limit tak tentu dengan pemfaktoran dan kali akar sekawan. Bentuk 00 kemungkinan timbul dalam.
+    </p>
+    <h3>Apabila diperhatikan pada fx terdapat bentuk akar yaitu sehingga metode perkalian dengan akar sekawaran dapat dilakukan pada kasus seperti ini.</h3>
+    <p>Artikel ini merupakan materi terakhir dari limit fungsi aljabar pada subab limit tak hingga fungsi aljabar dimana materi sebelumnya pada subab tersebut sudah kita bahas yaitu limit tak hingga bentuk. Namun agar mengerti penjalasan selanjutnya harus mengerti terlebih dahulu konsep dari trigonometri. Mulai dari limit tak hingga bentuk akar 2 suku sampai limit tak hingga bentuk akar 3 suku. Sebelum saya berikan soal limit fungsi pemfaktoran kamu harus tau dulu bentuk hasil limit.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Limit Fungsi Aljabar Matematika Kelas 11 Quipper Blog" src="https://i0.wp.com/quipperhome.wpcomstaging.com/wp-content/uploads/2019/09/Limit-Fungsi-Aljabar-28.png?resize=420%2C554&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToaf0pzm4b9VNtAL1SgP9IETocQPYDRq5gjO8_o4bYnZGC64-c-cWxP9njFP9IbXaZ0Do';" />
+        <small>Source: www.quipper.com</small>
+                    <p>Karena x 5 artinya x mendekati 5 dari kanan sehingga nilai x 5 positif.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Limit Fungsi Aljabar Matematika Kelas 11 Quipper Blog" src="https://i0.wp.com/quipperhome.wpcomstaging.com/wp-content/uploads/2019/09/Limit-Fungsi-Aljabar-5.png?resize=289%2C255&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5DMr1-j5F-iijzXC3-FGcd8NX2qAz8DP52Kw84dzs23wgJ8tjIFAIagMyseiZcXghD-Y';" />
+        <small>Source: www.quipper.com</small>
+                    <p>Un ipa sma 2013 pembahasan modifikasikan hingga jika disubstitusikan tidak menjadi bentuk tak tentu 2x jika diubah bentuk akar akan menjadi 4x 2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Limit Fungsi Aljabar Matematika Kelas 11 Quipper Blog" src="https://i0.wp.com/quipperhome.wpcomstaging.com/wp-content/uploads/2019/09/Limit-Fungsi-Aljabar-20.png?resize=332%2C449&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_EXS5yjkdtKiTZJNbG1EQBpaM_shieFoxi9UHbVjifIo955w1Vx4RM4XVd1RMJlqsMXw';" />
+        <small>Source: www.quipper.com</small>
+                    <p>Lihat pula soal limit yang lain di.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Limit Fungsi Aljabar Matematika Kelas 11 Quipper Blog" src="https://i0.wp.com/quipperhome.wpcomstaging.com/wp-content/uploads/2019/09/Limit-Fungsi-Aljabar-29.png?resize=489%2C574&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5tz5C2YA5rDFJWtB0kRjNpV8JXpWqxTgzDI62usduVxdOttoTHQhgEtnZarfvgUzJkpA';" />
+        <small>Source: www.quipper.com</small>
+                    <p>Setelah anda memahami konsep penyelesaian ketiga soal diatas maka dapat ditarik kesimpulan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Unbk Sma 2019 Pembahasan Matematika Ipa No 14 Limit Fungsi Aljabar Latihan Unbk 2020 Youtube Matematika Ipa Sma" src="https://i.pinimg.com/564x/c0/2e/ed/c02eeddee8fd5eeec8752219079597cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl7NLeThlNr3imwZAraEHoRCFhhlTbGZhyUZPiWxEQzrjsCMx22IFdBD73TKE9L1CoWfU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Maka penyelesaian tepatnya adalah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Limit Fungsi Aljabar Matematika Kelas 11 Quipper Blog" src="https://i2.wp.com/quipperhome.wpcomstaging.com/wp-content/uploads/2019/09/Limit-Fungsi-Aljabar-6.png?resize=711%2C505&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdFB59VafWR_t6oiWh3Uf5GC3bbJf2hGi_l-XDwhoECgFbyDiQ418YeawpMFa4oB0_N8c';" />
+        <small>Source: www.quipper.com</small>
+                    <p>Rumus cepat limit tak hingga bentuk akar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Limit Fungsi Aljabar Matematika Kelas 11 Quipper Blog" src="https://i1.wp.com/quipperhome.wpcomstaging.com/wp-content/uploads/2019/09/Limit-Fungsi-Aljabar-9.png?resize=494%2C378&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3yNJgeb3oZOaXb7EOtmIV2fT7Qhp7o5udeDTZsr8wqzAmKhfE5JsHK9-jp-chmuQkGg0';" />
+        <small>Source: www.quipper.com</small>
+                    <p>Misalnya bentuk limit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Limit Fungsi Aljabar Matematika Kelas 11 Quipper Blog" src="https://i2.wp.com/quipperhome.wpcomstaging.com/wp-content/uploads/2019/09/Limit-Fungsi-Aljabar-25.png?resize=408%2C488&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ227KWgZaAUhOUD5M_SZGBzdTOHromDAjaK1T6oTPyqcNXbSaPAfd2NwfhbmAWEEPSzE';" />
+        <small>Source: www.quipper.com</small>
+                    <p>Bentuk-bentuk tak tentu seperti yang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Limit Fungsi Aljabar Matematika Kelas 11 Quipper Blog" src="https://i1.wp.com/quipperhome.wpcomstaging.com/wp-content/uploads/2019/09/Limit-Fungsi-Aljabar-4.png?resize=225%2C286&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStxlcOE_BXTOVl9uZZxraXJQNZAnhskCqPfhiAn1ELpynZZLOdR_iXhgkS-Cjp-04XPkA';" />
+        <small>Source: www.quipper.com</small>
+                    <p>Soal ditanyakan pada tanggal 3 agustus 2012.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/isi-buku-udah-putusin-aja.html"><i>&larr; isi buku udah putusin aja</i></a>
+                                                                    
+                                        <a href="/interview-hrd-bca.html"><i>interview hrd bca &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

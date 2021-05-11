@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Membuat Crossbow
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Membuat Crossbow",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/originals/38/43/ef/3843ef2b84f636719d7bf467e62c50e1.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=membuat+crossbow",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Membuat Crossbow
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Membuat Crossbow</strong>. Pada video ini saya jelaskan te. BALESTRAS BESTAS CROSSBOW 2.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/564x/e8/4c/3e/e84c3eb6944e5b76dcb6bce1d6ab057b.jpg" alt="Luchshee Domashnee Izgotovlenie Smertonosnogo Vesennego Arbaleta Rybolovnyj Arbalet Youtube Berburu Youtube Busur" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlK46va81r7nJuAe8O7CzVl7vif5kYVwaxKW8QfeXogsBhdRv1xyhKmzMiXiyIdKicQUs';">
+        <figcaption>Luchshee Domashnee Izgotovlenie Smertonosnogo Vesennego Arbaleta Rybolovnyj Arbalet Youtube Berburu Youtube Busur from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        3 string benang String bisa Anda peroleh dengan membunuh spider laba-laba. Biasanya spider menjatuhkan 0-2 string dalam satu waktu jadi Anda perlu membunuh lebih dari seekor spider untuk memperoleh string. It can fire up to and including dragon bolts.
+    </p>
+    <h3>BALESTRAS BESTAS CROSSBOW 2.</h3>
+    <p>Silsilah Keturunan Nabi Adam Sampai Kepada Wali So. Pada video ini saya jelaskan te. Crossbow is an incredibly old weapon using much of the same technology that has been utilized for hundreds of years. Ketika Crossbow diaktifkan dan Wanwan behasil mengeliminasi Hero lawan ia akan mengganti target lainnya mendapatkan tambahan waktu 1 detik untuk mengaktifkan kembali Crossbow-nya serta meningkatkan Attack Speed-nya sebesar 30 maksimal 3 kali.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Diy Rubber Band Plane How To Make A Rubber Band Plane Youtube Crossbow Homemade Crossbow Crossbow Hunting" src="https://i.pinimg.com/originals/0f/aa/70/0faa70f9dba43d08d2b8b23cf1a479ef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzNfbkg5TPz70NPxQC2IDx06Z2FdTz7AnKKT7GAz1tja613l5lGZ5dPGHrFU7t6v-7Dos';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Part 23 Cara membuat compound crossbow bahan sederhana Compound crossbow DIY - YouTube.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membuat How To Make Panahan Crossbow Youtube Crossbow Diy Crossbow How To Make" src="https://i.pinimg.com/originals/53/ad/80/53ad800886d61ba440ed02a3e3ff99f9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREZ9zbTIXUGqoyH-2CiMR_W9yr0yoOMzxeOe9thbGK_jj7-adqD_7uvsDDVD6d1Ii8S8g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selalu buat potongan yang berlawanan dengan serat kayu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Carpinteria" src="https://i.pinimg.com/originals/a4/08/10/a408105bb8da0e610cd2dd5bba595a8a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH3g0TXBrwLflrsOJBAX0NHE9O0ICZizn-SQUmitKdB_YrQdA_EA5qWyazwPfKJ6-_x9I';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>3 string benang String bisa Anda peroleh dengan membunuh spider laba-laba.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="How To Make Arrow Bows From Bamboo Creative Buat Pita Busur Panahan Panah" src="https://i.pinimg.com/originals/76/ac/59/76ac5965980c9c31b7cd47fa91727367.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv9Ams7ynXKCYGIzD8oZVmgX9VimkDSY8d4BVcj5_QjB93egd0ZYyGoSuV2h1TAjY7miw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Biasanya spider menjatuhkan 0-2 string dalam satu waktu jadi Anda perlu membunuh lebih dari seekor spider untuk memperoleh string.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On 1" src="https://i.pinimg.com/originals/38/43/ef/3843ef2b84f636719d7bf467e62c50e1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGplivWvL8O7h6PRdtn5oRTzyYGqztQg1GoheUIe8o6-75f2XqplwF0pVNigSsPEMp2Zw';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Dalam Vidio ini saya berbagi cara membuat pistol mainan CROSSBOWsemoga Vidio cara membuat pistol mainan CROSSBOW ini bisa bermanfaat bagi kita semua.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Projects" src="https://i.pinimg.com/originals/3f/74/f6/3f74f6a0160ba753c33d4d5a80b3ef2c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQicUxqzsUmCN9m8eLOGOmUL3upKgSuAaZFeRzanSZo0Tr9VmiVCWoh5Et7JCd01i03tpE';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Carbon Express Crossbow Bolts 3.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hasil Carian Imej Untuk Speargun Trigger Diy Crossbow Crossbows Diagram" src="https://i.pinimg.com/originals/ad/12/85/ad128538daf41409db94655b25cf6815.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7NrEMBqPuDhQz_4ilFYDVNX_BKLgyxPKaTMmoRf0zSYesMqzKnBGkSXbKCqCqTYf1Kc0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Crossbow is an incredibly old weapon using much of the same technology that has been utilized for hundreds of years.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Homemade Crossbow Youtube Homemade Crossbow Diy Crossbow Crossbow" src="https://i.pinimg.com/564x/68/15/d2/6815d220d60750447c908194d1de67bb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAlpgLP15CGVs3rtYbsHk1nvRS-PQ1LE_Fj2SxsA6CKQXJ0kSZYY-20bSqImZaClfY1FU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Buatlah jarak antargaritan serata mungkin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Luchshee Domashnee Izgotovlenie Smertonosnogo Vesennego Arbaleta Rybolovnyj Arbalet Youtube Berburu Youtube Busur" src="https://i.pinimg.com/564x/e8/4c/3e/e84c3eb6944e5b76dcb6bce1d6ab057b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlK46va81r7nJuAe8O7CzVl7vif5kYVwaxKW8QfeXogsBhdRv1xyhKmzMiXiyIdKicQUs';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kunci dalam garitan adalah jarak yang seragam.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/penjual-bibit-belut-di-jawa-barat.html"><i>&larr; penjual bibit belut di jawa barat</i></a>
+                                                                    
+                                        <a href="/pepak-basa-jawa-pdf.html"><i>pepak basa jawa pdf &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

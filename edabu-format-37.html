@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Edabu Format 37
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Edabu Format 37",
+  "datePublished": "2021-05-11",
+  "image": "https://0.academia-photos.com/attachment_thumbnails/53098216/mini_magick20190122-12078-1ihyh91.png?1548151983",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=edabu+format+37",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Edabu Format 37
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Edabu Format 37</strong>. Tutorial Edabu Bpjs Kesehatan Pages 1 50 Text Version Fliphtml5. TATA CARA PENGGUNAAN EDABU Klik disini.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://imgv2-2-f.scribdassets.com/img/document/358953283/original/e825cc2d27/1618338085?v=1" alt="Kode Dan Jenis Mutasi" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRos4xPA6_iFeOvJgDCW32DJNOmFy6KkzP3fDE0lHxJO7uijaO3NlQpqjDld8VmCo2WMU8';">
+        <figcaption>Kode Dan Jenis Mutasi from id.scribd.com</figcaption>
+    </figure>
+        <p>
+        Tutorial Edabu Bpjs Kesehatan Pages 1 50 Text Version Fliphtml5. FORMAT MIGRASI MUTASI 37 KOLOM-NEW Klik disini. Badan Usaha agar mengakses Aplikasi Edabu versi 42 pada alamat berikut httpsedabubpjs-kesehatangoidEdabu.
+    </p>
+    <h3>FORMAT 37 KOLOM xlsx.</h3>
+    <p>1 Nama PIC. Tujuannya tentu saja agar anggota atau pemakai layanan BPJS tahu betul dan paham tentang Format 37 BPJS tanpa perlu bertanya langsung ke kantor terdekat. 11 Tombol batal Digunakan apabila user batal untuk melengkapi data user Dalam menginput data pada form ini terdapat beberapa validasi yang diterapkan yaitu. Xls Format Excel Migrasi 37 Kolom éby Lavista Academiaedu.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jenis Mutasi Form 37 Bpjs Kesehatan" src="https://1.bp.blogspot.com/-6xMhxfvprao/VQj8L0fiwZI/AAAAAAAAAEg/CPuCO-FzEEw/s1600/5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ81Y1OO8QRk3x-RgpayH3tKgyjzFhLklpc6jlzthmD_56VuvodhoTwbOtIaIRLdEjWrRs';" />
+        <small>Source: kumpulanberbagaijenis.blogspot.com</small>
+                    <p>Badan Usaha agar mengakses Aplikasi Edabu versi 42 pada alamat berikut httpsedabubpjs-kesehatangoidEdabu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Xls Format Excel Migrasi 37 Kolom Eby Lavista Academia Edu" src="https://0.academia-photos.com/attachment_thumbnails/53098216/mini_magick20190122-12078-1ihyh91.png?1548151983" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvHnku7Dko7mm3jS203FK5ClcX-byJhVmnoPi1b17G20axQ2DVx0o4AcWJXaIQU2JVGO4';" />
+        <small>Source: www.academia.edu</small>
+                    <p>User Manual New Edabu BPJS KESEHATAN H a l a m a n 37 Disamping ketiga tombol tersebut terdapat form upload excel format 34 kolom yang terdapat pada bagian bawah halaman yang berfungsi untuk mengupload file excel 34 kolom dengan ketentuan sebagai berikut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Pengisian Form 37 Kolom" src="https://imgv2-1-f.scribdassets.com/img/document/298956800/149x198/75b4dc1ee3/1593761114?v=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDTpeRJz45gaJX33OusU-moKLKRs79H6uWoVE-8b1GeAjfhbL4D7ZjQGtxxeH0Rdb901Q';" />
+        <small>Source: id.scribd.com</small>
+                    <p>Untuk memperlancar pelayanan sebaiknya segera diubah dengan cara datang langsung ke kantor bpjs membawa KK KTP dan kartu bpjs ybs.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Xls Format 34 Kolom Muhammad Suhardi Academia Edu" src="https://0.academia-photos.com/attachment_thumbnails/52029260/mini_magick20190123-11115-1fd3qt7.png?1548301232" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc56uK3jG9Ub-bE13gT859D5RkxFAHg_y-Ryr8P1oxkUxPwRyK8fP4XtRv2ic1Zo-AHpY';" />
+        <small>Source: www.academia.edu</small>
+                    <p>Untuk memperlancar pelayanan sebaiknya segera diubah dengan cara datang langsung ke kantor bpjs membawa KK KTP dan kartu bpjs ybs.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Xls Format Migrasi Mutasi Peserta 37 Kolom Ricky Ronald Academia Edu" src="https://0.academia-photos.com/attachment_thumbnails/35881193/mini_magick20180815-27273-1tvm1ez.png?1534398206" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8QUbu8H5yGI5ABORaWsIGAfWXYsMFfY0Z2L0T16yaW5lG7UZi8ojGqAT-U-rGqFRDg1Q';" />
+        <small>Source: www.academia.edu</small>
+                    <p>Melengkapi data mutasi dengan mengisikan secara lengkap formulir BPJS Kesehatan 37 Kolom.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Pengisian Form 37 Kolom" src="https://imgv2-2-f.scribdassets.com/img/document/311116499/original/64ac18dd27/1618578055?v=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-wE4sVQd-XyXJ-H15yQX8qGjY1sLxYhfurPsnRyoGLxTwLKXv7BOYw0hCCTarRm49R0g';" />
+        <small>Source: id.scribd.com</small>
+                    <p>KODE FASKES JULI 2016 Klik disini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download Formulir Bpjs Kesehatan Terupdate 2021 Bpjs Online" src="https://i2.wp.com/www.bpjs-online.com/wp-content/uploads/2015/11/contoh-formulir-bpjs-kesehatan.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNw11JS96K-FlvzvYRF3-kSXxqSyF6pNLgSGlLwOtUEAWb6lWf9Vh088KC6BoxDeV-qUs';" />
+        <small>Source: www.bpjs-online.com</small>
+                    <p>Tujuannya tentu saja agar anggota atau pemakai layanan BPJS tahu betul dan paham tentang Format 37 BPJS tanpa perlu bertanya langsung ke kantor terdekat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Pengisian Form 37 Kolom" src="https://imgv2-1-f.scribdassets.com/img/document/311116499/149x198/239839e558/1608082406?v=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFKXvS4XDrdHSZhovv6ehzYHWhmUUv-i4H3NlIwunnmKZFGrt0GBJvyj-8w3ECVgEszaQ';" />
+        <small>Source: id.scribd.com</small>
+                    <p>Untuk memperlancar pelayanan sebaiknya segera diubah dengan cara datang langsung ke kantor bpjs membawa KK KTP dan kartu bpjs ybs.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kode Dan Jenis Mutasi" src="https://imgv2-2-f.scribdassets.com/img/document/358953283/original/e825cc2d27/1618338085?v=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRos4xPA6_iFeOvJgDCW32DJNOmFy6KkzP3fDE0lHxJO7uijaO3NlQpqjDld8VmCo2WMU8';" />
+        <small>Source: id.scribd.com</small>
+                    <p>Kartu Asuransi Asuransi 4Penerima 3Kelas III Pensiun 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/silabus-bahasa-inggris-kelas-10-kurikulum-2013.html"><i>&larr; silabus bahasa inggris kelas 10 kurikulum 2013</i></a>
+                                                                    
+                                        <a href="/sifat-berdasarkan-tanggal-lahir-menurut-islam.html"><i>sifat berdasarkan tanggal lahir menurut islam &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rumus Variasi
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Rumus Variasi",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/originals/3d/95/8f/3d958fe19de49bdb2fba41b0adbcbd0a.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rumus+variasi",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Rumus Variasi
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Rumus Variasi</strong>. Rumus Cepat Variansi Guru Ilmu Sosial. Perbedaan Rumus Varian Sampel Dan Rumus Varian Populasi Youtube.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/3d/95/8f/3d958fe19de49bdb2fba41b0adbcbd0a.png" alt="Medan Magnet Rumus Beserta Contoh Soal Dan Jawaban Magnet Matematika Fisika" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD8O-XA6OhQat6SvCAJWhrd20HDRpq1iPPe898r8f4jbsozUrK6Cv5ZBu1oPd-5GFQggo';">
+        <figcaption>Medan Magnet Rumus Beserta Contoh Soal Dan Jawaban Magnet Matematika Fisika from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        σ - deviasi standar. Artikel ini menyajikan cara mencari standar deviasi secara manual dengan menggunakan rumus varian dan standar deviasi di bawah ini. Ssqrts2 Oleh karena itu jika salah satu nilai dari kedua ukuran tersebut diketahui maka akan diketahui juga nilai ukuran yang lain.
+    </p>
+    <h3>PENGUKURAN VARIASI KELOMPOK Untuk menjelaskan keadaan kelompok dapat juga didasarkan pada tingkat variasi data yang terjadi pada kelompok tersebut.</h3>
+    <p>Perbedaan Rumus Varian Sampel Dan Rumus Varian Populasi Youtube. Praktis Dan Taktis Cara Mudah Menentukan Variansi Data Tunggal. Hitunglah nilai standard deviation dari data tersebut. Rumus Cepat Variansi Guru Ilmu Sosial.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Medan Listrik Rumus Dan Cara Menghitung Contoh Soal Dan Jawaban Medan Listrik Listrik Muatan Listrik" src="https://i.pinimg.com/564x/73/e1/62/73e1622d5c9f17475cdb5f3b715ed051.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnsjuo_K3Cf2bSTGT70DRGFwkSbUWnnkR8JAPkx4x3OArD_to5dt5Xh3UxXCay_bXn6eE';" />
+        <small>Source: hu.pinterest.com</small>
+                    <p>Sistem ini digunakan untuk mencari Nilai Rata-Rata yang terdapat pada suatu Data Kelompok.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3 Cara Pembulatan Bilangan Ke Satuan Terdekat Pelajaran Matematika Satuan Matematika" src="https://i.pinimg.com/originals/97/46/ac/9746ac4d49cdd73b96480a1e0040a870.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDlihKSaG933JYffHwIcwIsY1saDatmAKh2svrINdCukFxM2SSLPSXPwQQhU_rElD479Y';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumus yang dapat kalian gunakan untuk menghitung standard deviation di Excel yakni STDEV.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumus Keliling Lingkaran Dan Rumus Luas Lingkaran Luas Lingkaran Pelajaran Matematika Lingkaran" src="https://i.pinimg.com/originals/df/3b/f0/df3bf008c0906e65dd16718176d1e477.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1vHGJ_T3VdMJCUSBFbqQAH9v3onhu6L4o0KhMVNrZqrUkBd9aQcS61oR64ovctYEPf9M';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumus kerja ini mempunyai kelebihan dibandingkan rumus teoritis yaitu hasilnya lebih akurat dan lebih mudah mengerjakannya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Medan Magnet Rumus Beserta Contoh Soal Dan Jawaban Magnet Matematika Fisika" src="https://i.pinimg.com/originals/3d/95/8f/3d958fe19de49bdb2fba41b0adbcbd0a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD8O-XA6OhQat6SvCAJWhrd20HDRpq1iPPe898r8f4jbsozUrK6Cv5ZBu1oPd-5GFQggo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Praktis Dan Taktis Cara Mudah Menentukan Variansi Data Tunggal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Deret Geometri Tak Hingga Pelajaran Matematika Geometri Matematika" src="https://i.pinimg.com/originals/38/60/a3/3860a3ee183b3c332056b668780edc9a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPB2MG2CTs85-JJgrNyjocQKPmsni5u7SirhNv2Wpts8c-4BMQcdpB0JlpBvWBU4CQsDE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumus Koefisien Variasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumus Panjang Gelombang Pengertian Cara Menghitung Gelombang Kristal" src="https://i.pinimg.com/originals/d4/81/0e/d4810e925e915cf0e43db4aefee31d17.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6MMy5s7-HfrQEefqNLvI5PqZ1wf-leJLprCe4kmJzVJFAncEjZelbjs4FaxHjWumcF-w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Rumus standar deviasi 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumus Dasar Kelistrikan Electric Basic Formula Daya Listrik Induksi Elektromagnetik Listrik Statis" src="https://i.pinimg.com/736x/e5/c6/08/e5c608035e9f073d7248c5489990de19.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-4aLpyjAJsrGqVWX-k88USBy8ReJMotEKxbu1kqhQkyCDwNUCM5i5iFEnxibnxK3aAgE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Sebuah data dalam kelompok dapat dihitung nilainya menggunakan sistem perhitungan tertentu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Pola Celana Hd Full Rumus Logis Semua Usia Youtube Petunjuk Pola Celana Celana" src="https://i.pinimg.com/originals/97/45/c5/9745c594ef5c872dd0049bf9c857c643.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOsnT7MU2IKhi9uspDVvz_138w5wgl_JOog8a2kAP6fZarsMSOi1vYkSW33Dd-rtWTlQA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>PENGUKURAN VARIASI KELOMPOK Untuk menjelaskan keadaan kelompok dapat juga didasarkan pada tingkat variasi data yang terjadi pada kelompok tersebut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ana Arisanti Pola Lengan Lonceng Dan Pola Lengan Pof Pola Lengan Lengan Baju Lengan" src="https://i.pinimg.com/originals/bc/e3/55/bce35534dbbd65717f0fabf9b086d3a7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMagOevMhBBMhKrOwf0TRx8AmCCHDB_nGgNB9Os-GK5DGHj_3CZ6ozkO4SkY90LFBf9vo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Walaupun rumus ini berbeda namun hasil akhir nya tetap lah sama.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/contoh-identitas-buku.html"><i>&larr; contoh identitas buku</i></a>
+                                                                    
+                                        <a href="/contoh-invoice-traveloka.html"><i>contoh invoice traveloka &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

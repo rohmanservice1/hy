@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Source Code Inventory Php
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Source Code Inventory Php",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/originals/98/81/3e/98813ed558474db9bf0f8654ecb63683.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=source+code+inventory+php",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Source Code Inventory Php
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Source Code Inventory Php</strong>. Eg httplocalhostinventory Default Admin Access. Inventory system php mysql free download this inventory system in php and mysql full free or inventory system in php and open source mysql includes source code php inventory system php inventory control system php stock control mysql.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/61/fc/a8/61fca8cfa165a29ab5ae45810ec6a0f1.jpg" alt="Pin Di Source Code Aplikasi" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS-dVJWnV91zGESEQluA53mSdWoAqgl_jsKxG3vI5sSez_hAn7fDCVPyiytCDCFXdH5V0';">
+        <figcaption>Pin Di Source Code Aplikasi from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        In this source code files you can find all module like Login Module Profile Module User Management Module Category Management Module Brand Management Module Inventory Management Module and Order Management Module. The progressive style of these tutorials also helps the reader to ultimately become more familar and comfortable with phpGrid by introducing a limited number of new phpGrid features in each one. Open your XAMPPWAMPs Control Panel and start the Apache and MySQL.
+    </p>
+    <h3>Source Code Inventory Management System using PHP Native 70 jQuery Ajax Bootstrap berga tech 808 AM This Inventory Management System is an Open Source Project developed using PHP PDO Mysql Database Bootstrap Library Ajax and Jquery Datatables plugins.</h3>
+    <p>The admin has the main role in the management of this system. Inventory Management System PHP MYSQL Source Code is a self-discipline mainly about specifying the shape and position of stocked products. It is required at different places within a service or within many places of a supply system to come before the frequent and organized course of manufacturing and stock of components. Import the SQL file located in the database folder of the source code.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gst Inventory Management With Php Script Source Code Coding Source Code Inventory Management" src="https://i.pinimg.com/originals/e6/68/91/e668918d655165adcd07a3f12111b001.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4z73WkjGViDDFxO90_pRp7eh2IL8iNK3O0a6BwVFtwaund0c0G5Yx4uVdWL-i5i4dn-Y';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Open a browser and go to URL httplocalhostinventory.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Source Code Aplikasi Inventory Barang Berbasis Php Mysql Dan Ajax Php Aplikasi" src="https://i.pinimg.com/originals/a3/6c/58/a36c586fd33123e4b921d8df93895eca.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTml24lOSpOKYIQWJtwU-ecIkTRu_lUqPWidi7qUxFYpjxGgWC5Gb5nfh3UIs9BwXO5TWQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>The admin side manages all the management like editing site contents managing orders products brands categories and also view sales.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Source Code Aplikasi" src="https://i.pinimg.com/originals/61/fc/a8/61fca8cfa165a29ab5ae45810ec6a0f1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS-dVJWnV91zGESEQluA53mSdWoAqgl_jsKxG3vI5sSez_hAn7fDCVPyiytCDCFXdH5V0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Example for XAMPPCxampphtdocs Open a web browser and browse the project.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download Source Code Apalikasi Inventory Berbasis Php Php Aplikasi Tanggal" src="https://i.pinimg.com/736x/7c/ff/d9/7cffd9dbc7e6a78134ddf20edc619f51.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmn7X86iGu1Gjwwmyhrfgn7qW4XdU4NHuhhhEYD-VXUBYm1w2UaHTqikQBpkhaYXgKYZY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>It is required at different places within a service or within many places of a supply system to come before the frequent and organized course of manufacturing and stock of components.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download Source Code Aplikasi Inventory Barang Sederhana Sederhana Aplikasi Pemrograman" src="https://i.pinimg.com/originals/b7/47/11/b7471194212534773c70ac4e3d8f6e5c.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEiQCBJioihCfNbcG_fbQ6BJuGRHhXFAVMy1JmX8ZyI-gSKlUJ5mj-kWGtM9w7DqJXJ64';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>If you are using XAMPP copy the extracted source code folder and paste it into the XAMPPs htdocs directory.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Source Code Aplikasi Inventory Manajemen Stok Berbasis Codeigniter Aplikasi Blog Pemrograman" src="https://i.pinimg.com/originals/cd/b1/e8/cdb1e874cf5b23bca9ab5f35a14a7881.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlo7Af5OJXAqhOFUEBLqsMOCTJ-_7aS59PAOd4WX3EEP-Lx4flVpDvAaoKkxhuuf1aV1Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Click on browse file and select inventorysql file which is inside the Inventory folder.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Source Code Aplikasi Penjualan Inventory Berbasis Web Aplikasi Penjualan Php" src="https://i.pinimg.com/originals/ac/11/a9/ac11a918e4222300c009155c78c93ad8.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX94rdP6KoQmd4cBcilb2t67Gp0sIyg7KgkNygIsP8_YYBJCCvXup23Mqxb990q867azk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>The progressive style of these tutorials also helps the reader to ultimately become more familar and comfortable with phpGrid by introducing a limited number of new phpGrid features in each one.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Source Code Aplikasi Inventory Menggunakan Php Persandian Aplikasi Php" src="https://i.pinimg.com/originals/b5/ab/1e/b5ab1e8cb4604753c7bfafbfa6e22d7e.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtNFZiY4cNN3vWxWRyByvAwgcFYS_TYO-zyUqSLFcbDffoO-XReLd1_N7Lw3tUEQmxxww';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Click on browse file and select inventorysql file which is inside the Inventory folder.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Source Code Aplikasi Inventory Stok Barang Berbasis Web Aplikasi Sistem Pakar Php" src="https://i.pinimg.com/originals/98/81/3e/98813ed558474db9bf0f8654ecb63683.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSaaZrJIEBCPgpHGIjvNhsQKul2cA-F99ukjwGZZ4Ro_E0yM1PkJfCG5DcY0p9zzdb8QU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Import the SQL file located in the database folder of the source code.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/brosur-service-ac.html"><i>&larr; brosur service ac</i></a>
+                                                                    
+                                        <a href="/brosur-penerimaan-siswa-baru-doc.html"><i>brosur penerimaan siswa baru doc &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

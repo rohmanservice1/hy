@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Cara Cepat Mengerjakan Integral
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Cara Cepat Mengerjakan Integral",
+  "datePublished": "2021-05-11",
+  "image": "https://i.ytimg.com/vi/iVgZAdeqTAk/maxresdefault.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=cara+cepat+mengerjakan+integral",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Cara Cepat Mengerjakan Integral
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Cara Cepat Mengerjakan Integral</strong>. Cara Cepat Mengerjakan Integral Trigonometri Tanpa Subsitusi Pengertian Rumus Integral Substitusi Integral Parsial Rumus Cepat I Menghitung Luas Daerah Kurva Dengan Integral. Step 1 Aturan sederhana untuk integral ini berfungsi untuk sebagian besar polinomial dasar.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://asset.kompas.com/crops/esPL5h2_jT5lKQFM5zbQW5knwA4=/222x217:852x637/780x390/data/photo/2020/12/29/5feb321815c0c.png" alt="Soal Integral Tak Tentu Menentukan Anti Turunan Sederhana Halaman All Kompas Com" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToH1QaB5VkyvBdJ-DhN4XQ9m-f3PSKRj-m3glgtqBDjYLEs7zuGpNuuec03NIw_XVBCQU';">
+        <figcaption>Soal Integral Tak Tentu Menentukan Anti Turunan Sederhana Halaman All Kompas Com from www.kompas.com</figcaption>
+    </figure>
+        <p>
+        Cara cepat belajar integral dari soal biasa sampai subsitusi dan parsial. Tips menghitung integral dan diferensial dengan cepat. Integral dan diferensial merupakan topik matematika yang rumit bagi sebagian besar orang.
+    </p>
+    <h3>Tapi di sini kita akan menyelesaikan contoh integral dengan langkah demi langkah yang membantu Anda menangani cara.</h3>
+    <p>Pairbet SMS. Cara Mengerjakan Soal Integral dengan Cepat. Cara mengerjakan soal integral pecahan. Dengan kata lain integral y axn adalah y an1xn1Step 3 Tambahkan konstanta integral C untuk integral.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Cepat Integral Substitusi Aljabar Contoh 1 Youtube" src="https://i.ytimg.com/vi/iVgZAdeqTAk/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIFbhuamc6LdsFM90bhbw38IftHVMQxVl1Fwy7IsKaLW9OU9Z6_UlBgi3ZVkPcxQKlJ64';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Nah kali ini saya akan membagikan beberapa langkah langkah yang dapat dilakukan agar dapat mengerjakan soal integral dengan cepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumus Integral Matematika" src="https://i1.wp.com/rumushitung.com/wp-content/uploads/2015/04/sifat-sifat-integral.png?resize=467%2C277&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTYS8ilgbnoqSGkuWrFDc6LZxFvk7aNzSHWb0ut_fLKuR7DxAjxyuPuf3jfFtBpR5RmkE';" />
+        <small>Source: rumushitung.com</small>
+                    <p>Hitungan berikut menggunakan integral parsial dengan cara reduksi 13.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Cepat Integral Substitusi 2 Anti Mainstream Youtube" src="https://i.ytimg.com/vi/rg48KsTZvZo/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_1A5XB0ClEJnwd3InU0Iw3yIfZDJy5ns8UvriKGn9VusJUpJAvBfKZSsUTTmW0KFbnMc';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Fungsi rasional adalah fungsi yang berbentuk pecahan dimana pembilang dan penyebutnya masing masing merupakan fungsi polinomial.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Cepat Integral Substitusi Contoh 2 Bentuk Akar Youtube" src="https://i.ytimg.com/vi/AJ1iyf-39iU/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT8zFir49xV_EKMvm5KZNRCjR4N-xz2yX9iQ5bwXzbzbnhNxgGxpw_Y9kok93WP3KOqMs';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Proses Depo dan WD super cepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumus Turunan Diferensial Tabel Turunan Kalkulus Soal Dan Jawaban Kalkulus Matematika" src="https://i.pinimg.com/originals/61/ca/3c/61ca3c7905f970d301fb6c5c272d4838.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8I9WcAswfS6bgIU1JCUNjtbEFqi06kVoEfe8MgoYrbi01kDuYxu1OBgMypdGW4t2e88s';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Menyelesaikan masalah berikut menggunakan integral parsial dengan rumus reduksi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tabel Kebenaran Operasi Biner Beserta Contoh Soal Dan Jawaban Matematika Kebenaran Operasi" src="https://i.pinimg.com/originals/76/c4/11/76c41122ab316e8927012049435c4e79.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPuCyQ85m2z1D4UjOMpSzBZATGzvYFkH8iiHHdjysZRAASSCKYd0PS2H4MdnQKudcYzNc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk megintegralkan fungsi trigonometri ada beberapa rumus rumus dasar yang perlu diketahui.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Soal Integral Tentu Tak Tentu Substitusi Parsial Trigonometri" src="https://rumusrumus.com/wp-content/uploads/2018/11/d9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpEvi7QEggwj3KqmBfSyYaZnXPSWYVOfgvNsFE_hFUH_WUbr4QB6-0Q4AH3eobGLzokms';" />
+        <small>Source: rumusrumus.com</small>
+                    <p>Berikut ini akan di jelaskan cara cepat untuk menentukan hasil integral parsial.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Cepat Integral Substitusi Recomended Youtube" src="https://i.ytimg.com/vi/qpYCAMdlaBI/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6dGQ9q0-Dlb5Syxz6ggOIA4OADNDowZj3vXsZWfE2mSrujdgX6PV5OymYoxgJViEhU5Y';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Proses pengerjaan integral parsial dengan cara cepat akan menggunakan soal yang sama seperti yang di atas sehingga kawan kawan dapat membandingkan hasilnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Matematika Dasar Sma Cara Menghitung Nilai Integral Fungsi Nilai Mutlak Defantri Com" src="https://cdn.statically.io/img/1.bp.blogspot.com/-88IVi0_WGbY/XuNSnV9VnHI/AAAAAAAAfDM/NFgPtp0NFv8wMjS5wYT7uKepYuvcSmGbQCK4BGAsYHg/s1283/Cara%2Bmenghitung%2BIntegral%2BNIlai%2BMutlak.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI4tq1IcL0ApUXFcblFMTHuzfVTdtIZpeZtF1X1bVrnb4TM9Fa-yHHKSMqMoEkh_Yf-q4';" />
+        <small>Source: www.defantri.com</small>
+                    <p>Cara cepat Belajar Integral-Part 1.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/contoh-soal-konversi-suhu-kelas-7.html"><i>&larr; contoh soal konversi suhu kelas 7</i></a>
+                                                                    
+                                        <a href="/contoh-soal-kumon-matematika-sd.html"><i>contoh soal kumon matematika sd &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

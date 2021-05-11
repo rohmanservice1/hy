@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Stok Barang Php
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Stok Barang Php",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/originals/38/2c/28/382c28aa9bb8abca19f13d9933fa7eda.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=stok+barang+php",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Stok Barang Php
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Stok Barang Php</strong>. Aplikasi manajemen stok barang dengan PHP dan MySQL merupakan salah satu jenis aplikasi pencatatan stok barang yang relatif mencukupi untuk kebutuhan pencatatan stok barang yang Anda miliki. Bisa diakses dari mana saja Kantor Rumah Gudang atau di perjalanan.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/08/bd/24/08bd2403d5aa2e0f60da02f334766d89.png" alt="Download Source Code Aplikasi Penjualan Stok Barang Berbasis Web Aplikasi Penjualan" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZHmJLpbT2RTYXG1tLmSWUZnhFzUW29lQc25qMdEa-zdvVM4K_Ni-TNd0NNE4-L-FRIpY';">
+        <figcaption>Download Source Code Aplikasi Penjualan Stok Barang Berbasis Web Aplikasi Penjualan from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Saya udah buat kyakx gini. Memperbarui stok secara otomatis ketika ada pembelian atau penjualan. Mengupdate Stok Barang dengan PHP Pada sistem pembelian atau penjualan barang yang paling berpengaruh adalah stok barang dimana stok barang akan berkurang jika terjadi transaksi penjualan barang namun sebaliknya stok barang akan bertambah jika terjadi transaksi pembelian.
+    </p>
+    <h3>Anda hanya perlu koneksi internet untuk menggunakannya.</h3>
+    <p>Masih sangat dasar dan banyak kekurangan mohon saran dan masukan agar bisa lebih baik untuk file saya upload di. Aplikasi Manajemen Stok Barang Dengan PHP Dan MYSQL Bagi pelaku industri dan UMKM memiliki aplikasi atau sistem manajemen stok barang merupakan salah satu hal yang sangat penting. Memperbarui stok secara otomatis ketika ada pembelian atau penjualan. Laporan Stok Barang Halaman untuk melihat stok barang dan mencetak laporan stok barang.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download Source Code Aplikasi Inventory Barang Berbasis Codeigniter Aplikasi Template Php" src="https://i.pinimg.com/originals/65/52/06/655206a7f28c51eb8da6d5cc61b5b11d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Zl8YdBbkyR5VIU0ECuTS3MFS7j21HQMkswrmkMZHhOd6xNBB7dB0zOKNa8CbPy8sCWg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Contoh script php cara mengurangi stok barang ini sering kita jumpai pada aplikasi inventory gudang dan retail dimana setelah barang diinput ke database melalui form pengeluaran atau form penjualan barang maka secara otomatis stok barang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download Source Code Aplikasi Penjualan Stok Barang Berbasis Web Aplikasi Penjualan" src="https://i.pinimg.com/originals/08/bd/24/08bd2403d5aa2e0f60da02f334766d89.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZHmJLpbT2RTYXG1tLmSWUZnhFzUW29lQc25qMdEa-zdvVM4K_Ni-TNd0NNE4-L-FRIpY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi ini dibangun dan dirancang menggunakan bahasa pemrograman PHP dan menggunakan database MySQL dengan fitur program input master data.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Inventory Barang Dengan Php Dan Mysql Php Aplikasi Penghapus" src="https://i.pinimg.com/originals/84/62/ad/8462ad93d31e4bf2873e1ea3bb79e7ea.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVNg1viZHk3MQvaKuPPChNyvaZXV3vikvSRmzxiFWS1EQ0uqdmJosYNXsYCPiF_K_v3CY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi ini dirancang demi memudahkan pengguna dalam melalukan pengecekan suatu barang masuk dan barang keluar dengan sistem online.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download Source Code Aplikasi Inventory Barang Berbasis Codeigniter Aplikasi Template Php" src="https://i.pinimg.com/564x/65/52/06/655206a7f28c51eb8da6d5cc61b5b11d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ztVpj03GlcvpbCaB47sjSmyjkFP-hrwWzh1vs3rsAofjwu15r6iX4ZUcP54Xqg2vdec';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>A plikasi Manajemen Stok Barang dengan PHP dan MySQL Aplikasi manajemen stok barang merupakan sebuah aplikasi berbasis web yang digunakan untuk memfasilitasi dan memanajemen data stok barang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Source Code Aplikasi Absensi Siswa Berbasis Web Php Mysqli Php Aplikasi" src="https://i.pinimg.com/originals/f6/c5/81/f6c5813df848a1f7192c8f34debc56f5.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3JlPCrHjnTYTmA-lKZF9uvcgwj66pLjkbwpTI8bvU-KVCEgsT1Jm2NkpApG64rJW8PBI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi sederhana berbasis web untuk manajemen arus inventory barang di sebuah perusahaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Source Code Program Inventory Persediaan Barang Di Visual Basic 6 0 Persandian Coding Panduan Belajar" src="https://i.pinimg.com/474x/de/a6/23/dea623997147d7f06156ea93d86db2b3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOAfvXcqVeskWWZq-SWrm58xKGfKwzAkELTUb9AXHpQ_hTBaEVk_fe4-vSUs-Z_WpLzJ4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tutorial Membuat Aplikasi Pengelolaan Stok Barang Dengan PHP OOP MySQL ini merupakan DVD Tutorial yang membahas tentang tutorial pemrograman dari HTML CSS PHP Bootstrap dan OOP pada PHP.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Source Code Aplikasi Inventory Manajemen Stok Berbasis Codeigniter Aplikasi Blog Pemrograman" src="https://i.pinimg.com/originals/cd/b1/e8/cdb1e874cf5b23bca9ab5f35a14a7881.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlo7Af5OJXAqhOFUEBLqsMOCTJ-_7aS59PAOd4WX3EEP-Lx4flVpDvAaoKkxhuuf1aV1Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi stok barang menggunakan PHP MySQLi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Source Code Aplikasi Inventory Stok Barang Berbasis Web Aplikasi Sistem Pakar Php" src="https://i.pinimg.com/originals/98/81/3e/98813ed558474db9bf0f8654ecb63683.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSaaZrJIEBCPgpHGIjvNhsQKul2cA-F99ukjwGZZ4Ro_E0yM1PkJfCG5DcY0p9zzdb8QU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>For x1x.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Source Code Aplikasi Penjualan Dan Pembelian Barang Berbasis Web Aplikasi Penjualan Php" src="https://i.pinimg.com/564x/93/ea/aa/93eaaa12d78e6f4c73087fb8f32c6358.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9WgSaFfL8WQkTO2MjuphmdMgzBeDvLpuAQYtw2dPrnK5G6aqST29El--dDZtC_4m3VxY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Aplikasi ini dirancang demi memudahkan pengguna dalam melalukan pengecekan suatu barang masuk dan barang keluar dengan sistem online.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/kunci-gitar-di-ujung-jalan-chordtela.html"><i>&larr; kunci gitar di ujung jalan chordtela</i></a>
+                                                                    
+                                        <a href="/kunci-gitar-imanez-anak-pantai.html"><i>kunci gitar imanez anak pantai &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

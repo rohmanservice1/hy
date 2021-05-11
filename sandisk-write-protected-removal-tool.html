@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Sandisk Write Protected Removal Tool
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Sandisk Write Protected Removal Tool",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/originals/f6/99/22/f69922e272df4443b79819702bed8683.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=sandisk+write+protected+removal+tool",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Sandisk Write Protected Removal Tool
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Sandisk Write Protected Removal Tool</strong>. This will fully clean the write protection of the Pendrive. In the CMD type diskpart and press enter.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/23/57/12/2357126505ae2e6fe3682af7eb4e30d3.png" alt="Pin On Disk Partition Manager" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk2rdDM8ToKFs0T_xOf6zGMk_Cv8Atua4Ws8elpIZXoTqEyiRXYdIXAbglvJ4zzKQ_WMg';">
+        <figcaption>Pin On Disk Partition Manager from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Remove write protection from SanDisk storage devices using CMD alternative one-click write-protection removal tool. This is because you will need administrative rights to open the disk partition tool and this is only possible with your administrators account. Make sure the lock switch is moved to the unlocking status.
+    </p>
+    <h3>CMD command and SanDisk write protected removal tool.</h3>
+    <p>Type Diskpart and press enter. As the first step you need to open a command prompt. Open Command Prompt as Administrator. If the micro SD card is write protected but not locked continue to try other solutions below.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Remove Disk Write Protection" src="https://i.pinimg.com/originals/0f/8a/39/0f8a39dd157504bac5c7c9fb232ec11b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2jt9xIPoekyetWzVqbRRytEsPG0UzQYjztJvlaKHJ5-7MVhv5c72cL2euP3A7s-8pYL0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>In this method we will remove write protection from Pendrivesd using commands in Cmd.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="How To Format Usb Drive With Three Free Usb Formatters Windows 10 Usb Drive Usb Data Backup" src="https://i.pinimg.com/originals/68/8c/37/688c37f5dec491f0c775c44044a3a4bb.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFcFC2FVAyWHx4hYAcdJZpEXKOq5SYLvq7En6Plw9JtmhPmIJ_5-VTyBqUar2m10LKea8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>This Video will help in resolving USB Write Protection issue in Windows OS.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Computer Info" src="https://i.pinimg.com/originals/01/64/84/016484c4f988faf551ee15819a0dc486.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfSkkS06I0WwcyEQLMrXtOHpupb0OyydLMzVJPNW9TREVi_j7_wqEQTiMQJtsXy3TMKI4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Remove write protection from SanDisk storage devices using CMD alternative one-click write-protection removal tool.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Disk Partition Manager" src="https://i.pinimg.com/originals/23/57/12/2357126505ae2e6fe3682af7eb4e30d3.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk2rdDM8ToKFs0T_xOf6zGMk_Cv8Atua4Ws8elpIZXoTqEyiRXYdIXAbglvJ4zzKQ_WMg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Type diskpart and hit Enter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download Sandisk Ixpand Firmware Update Tool V4 4 9 And Format Corrupted Sandisk Ixpand Usb Flash Drive Ixpand Flash Drive So Sandisk Ixpand Sandisk Firmware" src="https://i.pinimg.com/originals/00/69/bf/0069bf1ebed2a2818f76a1052b6a8fb4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGF3dqTYjb33Lr_FAJVPRH4LmZXvBlq67OmDpD0Xlmd60N95pKYXUmJXSVgKW7ttdrq90';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Now type diskpart to begin the utility.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Windows 10" src="https://i.pinimg.com/originals/0b/4d/fb/0b4dfbf9f35119629db44c57981ace7c.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHF9xwDQJCXayIoL_H4E7FObGv3WKYB2EkTfGqs6d9nRap32JkExeHqCksyK2As0pVsTg';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Being similar to CMD disk attribute clear command EaseUS Tools M is an all-in-one SanDisk write-protection removal tool to unlock your SanDisk storage devices.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Windows 10" src="https://i.pinimg.com/originals/cc/4c/68/cc4c6880291eb0253caf96021bdaad8c.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6zSj_cPhK62BFPdCSRF4DoAMo55BfhJCob3licl2e35wTNP1rKktC1-9cVWmpJz-4mxM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>In Security you should have Permission choices of Allow or Deny for a range of different functions.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Instruction For Sandisk Write Protection Removal And Formatting Tool Sandisk Sandisk Memory Card Sandisk Usb" src="https://i.pinimg.com/originals/43/d6/99/43d699bcd4a6e4ab6eee9214f34a7235.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9tkRvBEasyy-PtIf19XehMwoc7DnRT_DgIZL1QZ5HcUsUxaD5cPWhc1ZU_LyX5KIdHO0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Right click or hold your finger on it select Properties.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Remove Disk Write Protection" src="https://i.pinimg.com/originals/f6/99/22/f69922e272df4443b79819702bed8683.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFY87VEnn5P7Huq36bwwVX4hgl6wB9XjowmqxCjSoRk-kfr7ppXBtQ8imjbLHksIy8ieE';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>This will fully clean the write protection of the Pendrive.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rpp-penjas-smp-kurikulum-2013-lengkap.html"><i>&larr; rpp penjas smp kurikulum 2013 lengkap</i></a>
+                                                                    
+                                        <a href="/rpp-pjok-kelas-4.html"><i>rpp pjok kelas 4 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Kode Keras Cewek Game
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Kode Keras Cewek Game",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/originals/2e/64/dd/2e64dd50c973cd427e1344941b96926d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=kode+keras+cewek+game",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Kode Keras Cewek Game
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Kode Keras Cewek Game</strong>. The game also can be played both offline and online which make it. 1Download and Install Android Emulator on PCLaptopTabletClick Download Emulator to download.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/e6/43/00/e643006385cd7a2dd1df774d7b138622.png" alt="Kode Keras Cowok 2 Back To School 2 79 Apk Mod Unlimited Money Latest Version Di 2021 Kembali Ke Sekolah Trivia Sekolah" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6rLJD1gHjySXdFfXOqlwt_LgOnyr109jWnR0Vez_0RP47iJ0tagUa0YBGlQ2oYCRmkRg';">
+        <figcaption>Kode Keras Cowok 2 Back To School 2 79 Apk Mod Unlimited Money Latest Version Di 2021 Kembali Ke Sekolah Trivia Sekolah from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        1Download and Install Android Emulator on PCLaptopTabletClick Download Emulator to download. Game Kode Keras Cewek ini nampaknya cukup populer juga nih. Cowok dilarang menyalahkan cewek Pasal 2.
+    </p>
+    <h3>Kode Keras Cewek namanya game ini menceritakan bagaimana repotnya sebuah hubungan.</h3>
+    <p>Saya udah pernah memainkan ini dan mencapai level kepekaan 35. Daripada kamu nggak peka-peka sama cewek kamu cobain aja. This game is a viral game that have been played by millions user and made it as a top rated and top free games. Game ini bertajuk Kode Keras Cewek.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kunci Jawaban Kode Keras Cowok Untuk Senja Fotografi Remaja Kunci Fotografi" src="https://i.pinimg.com/originals/a1/4f/d7/a14fd7abc0bb89ea88024803b7e216cb.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIhLkX6TA3lcFls2gtGgoNSKpdfof-y-aanfP_1szbWoqk33efIeeXwQAy3VGecgEMqOA';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>This application requests access using a microphone and location to process data so we can improve the game for the better.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kode Keras Cowok Untuk Senja Visual Novel Games 1 67 Apk Mod Latest Download Game For Android Unlimited Hacks Download Free App Novel Games Novels" src="https://i.pinimg.com/originals/1a/2d/ca/1a2dcabd6c178103318ac13c9672fede.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4bE4mDtgi5Bq6DtMvlD6D6tyGnX75xKmPjdgX3h7Zn_5SmbD_R-Jyt_Vl1-81RR4cApc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Untuk bisa mendapatkan respon yang baik dari si cewek kamu harus bisa menentukan pilihan dengan tepat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lagi Cari Item Gratis Pengen Jadi Kopral Jono Prank Global Langsung Top In 2021 Pranks Cari Comic Book Cover" src="https://i.pinimg.com/originals/2e/64/dd/2e64dd50c973cd427e1344941b96926d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMWAeWRrrOlQVLSTZesiwd62UZnXp664SHtnqBfHWHP4ringWtYAafZVOE1yzA_Q94Q0g';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Game ini bertajuk Kode Keras Cewek.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kode Keras Cowok 2 Back To School 2 79 Apk Mod Unlimited Money Latest Version Di 2021 Kembali Ke Sekolah Trivia Sekolah" src="https://i.pinimg.com/originals/e6/43/00/e643006385cd7a2dd1df774d7b138622.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6rLJD1gHjySXdFfXOqlwt_LgOnyr109jWnR0Vez_0RP47iJ0tagUa0YBGlQ2oYCRmkRg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>NI CEWEK MAUNYA APA YA LORD - Kode Keras Cewek.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hardest Girl To Get Kode Keras Cowok Dari Cewek" src="https://i.pinimg.com/originals/dd/66/3e/dd663e87e2682ef951a05afdccb01f55.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgtKZBAl5wjFQWKhLD4s86jaXZtxH0oZ9qQO6P9R9PRtGWuFScjHJllgITAr5K4xENmfs';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Berbagi cerita yang pernah lu alamin 3.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kode Keras Cewek Apk V1 0 0 For Android Terbaru Game Cara Peka Terhadap Cewek Game Trivia Android" src="https://i.pinimg.com/236x/5a/7c/85/5a7c85c186427c4dcd8a760b3c8d3d52.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTiHHntER1lQ4xs8voh8bnAwo3uTnCvWTGIqAcYpHimuOz9sRHvo5GqQdggLJk4b7AvaE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kali ini saya akan memainkan salah satu game nyebelin yaitu kode keras cewekk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kunci Jawaban Kode Keras Cowok Untuk Senja Sukaon Com Kunci Remaja" src="https://i.pinimg.com/originals/3b/02/e2/3b02e29cc23764def80e4596aaba258d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Vr7qs0rHH4Eigw7IWPClJFRFVrW7QWmwwEi1iYGN5ORjKr8i2ADG97wVSyteLrJ_hDs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Pasal 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kunci Jawaban Kode Keras Buat Cowok Dari Cewek Season 2 Kunci Perception" src="https://i.pinimg.com/736x/c1/fa/18/c1fa180336ebe357bc869dc9b057eabf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSh6WnGuqSl0dWEWV_07WWgLF54SnCjgHQHn3f7L0N7k5m0odG5jk-szCKumoncVB6H9g';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Game ini bertajuk Kode Keras Cewek.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kode Keras Buat Cowok Dari Cewek Adit Lala Pdkt1 Youtube Memes Episodes" src="https://i.pinimg.com/originals/32/3d/5e/323d5ecc29df7c6dba38d74623bb1e79.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLsXjxnTaca61hTepxQGnFKutCWYOET93-6y6t2NZUti1-1wbT7QVjd9RyJr5c9IhHjpQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Pusing ngadepin cewek lu yang selalu minta dipekain.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/cover-perangkat-pembelajaran-k13.html"><i>&larr; cover perangkat pembelajaran k13</i></a>
+                                                                    
+                                        <a href="/cord-lagu-lungset.html"><i>cord lagu lungset &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

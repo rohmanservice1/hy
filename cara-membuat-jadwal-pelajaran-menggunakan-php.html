@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Cara Membuat Jadwal Pelajaran Menggunakan Php
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Cara Membuat Jadwal Pelajaran Menggunakan Php",
+  "datePublished": "2021-05-11",
+  "image": "https://i.ytimg.com/vi/fDZA0kUxTbY/maxresdefault.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=cara+membuat+jadwal+pelajaran+menggunakan+php",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Cara Membuat Jadwal Pelajaran Menggunakan Php
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Cara Membuat Jadwal Pelajaran Menggunakan Php</strong>. Pasti teman-teman sekalian ingin membuat jadwal mata kuliahnya lebih menarik nah pada postingan kali ini saya akan berbagi bagaimana cara membuat jadwal mata kuliah lebih bagus dan mudah dilihat. Meskipun sekolah anda memiliki rombel yang banyak maka anda akan mudah dalam membuat jadwal pelajaran jika anda mengikuti cara yang akan admin jelaskan pada.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://1.bp.blogspot.com/-96nCFFP7fcA/XEGgLxbKMGI/AAAAAAAAEGM/aRczPpYEwmgrgR71Q8ARUcMztOV604wPACLcBGAs/w640-h360-p-k-no-nu/42.png" alt="Cara Membuat Jadwal Pelajaran Yang Lucu Dan Unik" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNvcsZQvz7DKdfZV4dMuD8uOTvhE5Z3NbBCJi-wHIKA7CEvZTmIuxyqEkwlJwGdrMZoq0';">
+        <figcaption>Cara Membuat Jadwal Pelajaran Yang Lucu Dan Unik from caramembuatsaja.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Sistem Informasi Akademik Sekolah atau yang sering disebut SIAKAD adalah Suatu sistem Informasi Akademik yang dibangun untuk memberikan kemudahan kepada pengguna dalam kegiatan. JSON singkatan dari JavaScript Object Notation merupakan sebuah format data yang digunakan untuk pertukaran dan penyimpanan data. Dalam tulisan ini penulis mau membahas cara input data aSc yang lebih cepat dan menyenangkan dengan aplikasi XML Creator for aSc TimeTables.
+    </p>
+    <h3>Source code php mysql sistem informasi akademik sekolah smk dengan ci berbasis web fitur fitur di dalamnya seperti mengelola data siswa nilai siswa absensi siswa dan guru pengguna jadwal pelajaran dan informasi nilai.</h3>
+    <p>Download Jadwal Pelajaran Jadwal-pelajaran-terbarupptx Downloaded 1322 times 139 KB. Cara Membuat Website Jadwal Sholat dengan HTML dan PHP. Penelitian tersebut menghasilkan sistem penyusunan jadwal pelajaran sekolah dalam bentuk aplikasi web dimana pengajar dan siswa dapat melihat laporan jadwal melalui website. Meskipun sekolah anda memiliki rombel yang banyak maka anda akan mudah dalam membuat jadwal pelajaran jika anda mengikuti cara yang akan admin jelaskan pada.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="1 Cara Membuat Crud Jadwal Kegiatan Dengan Library Fullcalendar Php Mysqli Youtube" src="https://i.ytimg.com/vi/fDZA0kUxTbY/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuM3Umdjceh2-S_zuIukvasQczjAT9lbK1sJIxmj0XePoIWt4yUcVCLgrVDYkyB6DPrRs';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Pada kesempatan kali ini saya akan membahas tentang cara Membuat Schedule di Kalender Menggunakan Jquery dan PHP.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bismillahirrahmanirrahiim Saya Kan Dulu Pernah Share Tutorial Membuat Jadwal Pelajaran Lucu Unik Dengan Tema Rilakku Bullet Journal Perencanaan Papan Jadwal" src="https://i.pinimg.com/564x/1d/33/32/1d3332de08fb221487513cca2a60dc80.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREQv4HR-hJZ3opEOAoxSGdua9JWtn-gEy_IKlN9T0GhR5eD5NGuxH-x3RQXO-OhoIX0g0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Class ini merupakan class utama dalam pembuatan jadwal pelajaran yang diawali dengan menginisialisasikan interval waktu dan waktu awal dari jadwal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Lockscreen Jadwal Pelajaran Di Picsart Youtube" src="https://i.ytimg.com/vi/6nojh_x5HBg/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHnm6LniUMuogqQgsqG-0qmJLQJExUVVOdh8fC4Wm8yGe9eTiAizLGM8F7TcXfFAccG7I';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Setelah itu ketikkan script seperti dibawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Penjadwalan Mata Pelajaran Berbasis Web Sarjana Komedi" src="https://www.sarjanakomedi.com/wp-content/uploads/2019/04/Aplikasi-penjadwalan-mata-pelajaran-berbasis-web.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP6LcZbC6NH-0QeHAbnZ2FMyLNuNf8cTJR6nmGZ_rL9YP85vCjnP1LkfV2gWLiQzFFk08';" />
+        <small>Source: www.sarjanakomedi.com</small>
+                    <p>Mungkin butuh waktu seminggu untuk membuat jadwal pelajaran di sekolah yang benar-benar anti bentrok namun dengan adanya aplikasi ini dapat dikerjakan dalam hitungan menit saja.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Lookscreen Jadwal Pelajaran Aesthetic Mudah Tanpa Ribet Pak Pengeditan Foto Kutipan Terbaik Ipa" src="https://i.pinimg.com/originals/f6/14/23/f614236b7ce6231161825eecd8ac3a2a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9jL2GfPuCgPHkN6F_8eADBTGj_pZdyf-ooOJThhT-ieO8Eu8HbsoITQt0UJHxdgqnzLc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kita buat terlebih dulu sebuah class yang bernama scheduleincphp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Mudah Upload Project Ke Github Pemrograman Perangkat Lunak" src="https://i.pinimg.com/originals/c7/37/4b/c7374bb497eedc7b0f67b50f84a060ae.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeKsgZ32XHOdCT5tMueiWsbzn4KeEyNTS5NADQeJZotPBjQmTRNLMiqNEd6AQB9MTwZAQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kamu kunjungi situs MuslimSalat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Fungsi Global Atau Custom Helper Di Laravel Coding Website" src="https://i.pinimg.com/originals/c2/19/52/c2195250acdf9c879d7db812e5c2f364.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqF7gAEgP8yNeo__TwRmq-aLHWIMNKVC5J5IfOx7AngenbYqWkNlIqHlVKcnFu9fJF2L0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut fitur yang ada pada sistem informasi penjadwalan berbasis web ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membuat Kalender Jadwal Dengan Php Mysql Dan Fullcalendar Js Jagocoding Com" src="http://jagocoding.com/files/userdata/dimasagnovian/f_14358907974076.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTws1oCUhmZ9xHnNV11Jr1jMiRllM4U-cO7Kij5iIUiXnSmK8TIuc6rfzr8BsMphBCsjI4';" />
+        <small>Source: jagocoding.com</small>
+                    <p>Kali ini saya akan sharing mengenai cara membuat program Jadwal Waktu Sholat dari data JSON dengan PHP.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Jadwal Pelajaran Yang Lucu Dan Unik" src="https://1.bp.blogspot.com/-96nCFFP7fcA/XEGgLxbKMGI/AAAAAAAAEGM/aRczPpYEwmgrgR71Q8ARUcMztOV604wPACLcBGAs/w640-h360-p-k-no-nu/42.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNvcsZQvz7DKdfZV4dMuD8uOTvhE5Z3NbBCJi-wHIKA7CEvZTmIuxyqEkwlJwGdrMZoq0';" />
+        <small>Source: caramembuatsaja.blogspot.com</small>
+                    <p>School Planner memiliki fitur seperti catatan agenda untuk mengerjakan PR atau ujian sekolah kalender yang dapat mencatat jadwal pelajaran sekolah dapat dihubungkan ke Google Drive dan lain-lain.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/soal-bahasa-indonesia-kelas-6-un.html"><i>&larr; soal bahasa indonesia kelas 6 un</i></a>
+                                                                    
+                                        <a href="/soal-bahasa-indonesia-kelas-12-smk-dan-kunci-jawaban-2020.html"><i>soal bahasa indonesia kelas 12 smk dan kunci jawaban 2020 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

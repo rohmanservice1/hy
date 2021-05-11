@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Calculator Weton
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Calculator Weton",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/originals/5e/2d/b1/5e2db16a6817a8cb2f6d48e16cc980a2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=calculator+weton",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Calculator Weton
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Calculator Weton</strong>. If you specify your date of birth it can calculate your weton and a list of your javanese birthdays. Selain menggunakan calculator weton anda bisa menghitung weton manual yang tentunya membutuhkan ilmu hitungan weton yang termasuk sulit.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/5d/ef/b5/5defb50423120a403703de7e101f29b6.png" alt="Cara Menghitung Matematika Dengan Cepat Matematika Belajar" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYC5UZrzLcIF2z9c5icfiTa-LJmh0ioze1zqFz2_vngOb9HEGcKq_BYpH5YsM-SwM7Lt0';">
+        <figcaption>Cara Menghitung Matematika Dengan Cepat Matematika Belajar from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Deadline for employers to mail out W-2 Forms to their employees and for businesses to furnish 1099 Forms reporting non-employee. Simple and Easy Calculator for calculating tip amount and splitting the bill. How 2021 Sales taxes are calculated in Weston.
+    </p>
+    <h3>Selain menggunakan calculator weton anda bisa menghitung weton manual yang tentunya membutuhkan ilmu hitungan weton yang termasuk sulit.</h3>
+    <p>Calculate potential car payments before you apply for auto loans and financing. Annual Percentage Rate Calculator. The dividend is expected to grow 12 a year for the next 3 years and then at 5 a year thereafter. How 2021 Sales taxes are calculated in Weston.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Wilton 1983 He Man Masters Of The Universe Hero Birthday Cake Pan Mold Cake Pans Molds Wilton Cake Pans" src="https://i.pinimg.com/originals/15/c2/ee/15c2eeeb78ec03d53e506d0a4fc3bed8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRL5IMsqiGWuHQLsTHg8t9YKCbA6r9a7PwAz-xZcbWiJb63J5YJQtNKSvD3MHBJtbQ_3Y';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Selasa KliwonAsih Julungwangi 12 Pasa 1900 Ehé Adi Arbangiyah 3 Desember 1968.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Wohnzimmer Farbe Wand Und Laminat Weisser Laminatboden Grauer Boden Wohnzimmer Ideen Modern" src="https://i.pinimg.com/originals/5e/2d/b1/5e2db16a6817a8cb2f6d48e16cc980a2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP-HduRK1j1JetPxV4Hu5Ila6merEBHDS2qBJATepvAS2QJ39D8DXv6Ol3R97OQZc2Q_k';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Calculation of the general sales taxes of 02493 Weston Massachusetts for 2021.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Smart Wifi Essential Oil Aromathery Diffuser Alexa And Google Home Compatible 400ml Ash Wood Grain Ultrasonic Aromatherapy D Smart Wifi Smart Home Home Phone" src="https://i.pinimg.com/originals/51/7f/3d/517f3db8b461a33f4fb44ec43d01d9bb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBH84OkcapeiQIQQ6ckUE3ouI3Rr13xT41x0RGHptWsaXFcUx_r9JYqPWtwtQmLQHQJ4Y';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Annual Percentage Rate Calculator.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Menghitung Matematika Dengan Cepat Matematika Belajar" src="https://i.pinimg.com/originals/5d/ef/b5/5defb50423120a403703de7e101f29b6.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYC5UZrzLcIF2z9c5icfiTa-LJmh0ioze1zqFz2_vngOb9HEGcKq_BYpH5YsM-SwM7Lt0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>If you miss your due date the Town of Weston charges a penalty of 1 12 interest per month calculated on the first of each month.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Colorful Call Id Answer System Telephone Digital Cordless Phone For Home Office Business Wireless Phone Telefone Sem Fio Cordless Phone Phone Telephone" src="https://i.pinimg.com/originals/32/c8/cc/32c8cc7a115d645dca3638c0c2afb001.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrIwENSgLGgcFn8zYPP0S5PoHChYdKAQGzK34imZPcVTCbeFlUS2FhebSr7TVD80jprT0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Simply press one rate and then press and maintain ALT select the other rates.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Plotter Printer Tech" src="https://i.pinimg.com/474x/d5/35/29/d535292b2dcf49677719a4a2032bb1c5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe0KJJdPlmzK4s9BjZaauNJnC29DNN2s6G1EyCuWSH4sw6ROqSbufHg5fUlFSaeJfdLmY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>You can compare the results to see the effect on the total duration of your trip.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/contoh-soal-psikotes-bahasa-inggris.html"><i>&larr; contoh soal psikotes bahasa inggris</i></a>
+                                                                    
+                                        <a href="/contoh-soal-reservasi-pilihan-ganda-beserta-jawabannya.html"><i>contoh soal reservasi pilihan ganda beserta jawabannya &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Contoh Soal Lagrange
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Contoh Soal Lagrange",
+  "datePublished": "2021-05-11",
+  "image": "https://image.slidesharecdn.com/metodenumerikpertemuan7interpolasilagrange-180412083545/95/metode-numerik-pertemuan-7-interpolasi-lagrange-3-638.jpg?cb=1523522285",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=contoh+soal+lagrange",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Contoh Soal Lagrange
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Contoh Soal Lagrange</strong>. N 667T d-05 0. 1.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://slideplayer.info/slide/12687508/76/images/22/Contoh+1+F%E2%80%99x+%3D+0+%E2%86%92+10y+%E2%80%93+5x+%E2%80%93+%CE%BB+%3D+0+%E2%86%92+%CE%BB+%3D+10y+-+5x.jpg" alt="Matematika Ekonomi Pertemuan 14 15 Diferensial Fungsi Majemuk Ppt Download" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV3DJPJNCcAfxwY4be-M-aDxOsw9D7IDaawjag1pdQpKbhWlLpyzkScwTre76iZW3Bkxs';">
+        <figcaption>Matematika Ekonomi Pertemuan 14 15 Diferensial Fungsi Majemuk Ppt Download from slideplayer.info</figcaption>
+    </figure>
+        <p>
+        Jika ada masukan atau pertanyaan silahkan hubungi email. Fungsi tujuan minimalisasi F NTd4250 10500N. 1.
+    </p>
+    <h3>Jika ada masukan atau pertanyaan silahkan hubungi email.</h3>
+    <p>N 6667T d-05. L 2M 4T l 884-5M12 T12 M 250. Tentukan kecepatan roket pada t 16 detik dengan menggunakan Metode Lagrange. Metode Numerik Pertemuan 7 Interpolasi Lagrange.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Persamaan Lagrange Dan Hamilton" src="https://image.slidesharecdn.com/persamaanlagrangedanhamilton-121030014730-phpapp01/95/persamaan-lagrange-dan-hamilton-54-638.jpg?cb=1351561761" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsOy8sSSqQeeH4MAAKvZPYX7nRHAcwG25yJrPCPxMDV9hioAl8jVufWxn4Bp7bkVIaVt4';" />
+        <small>Source: www.slideshare.net</small>
+                    <p>PENERAPAN FUNGSI LAGRANGE DALAM EONOMI SOAL 1 FUNGSI PRODUKSI Produksi adalah kegiatan untuk menghasilkan produk barang atau jasa untuk menghasilkan produk diperlukan faktor faktor produksi masukan atau input yang meliputi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Soal Lagrange 2 Maksimalisasi Utilitas Youtube" src="https://i.ytimg.com/vi/gcSbKzxVScg/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjtJ8U2ifnXUIqijxqLJ0TSyIwoUt1kzojLQ_RMEzcvFq7GJRNspKktcTusZcevASZTFE';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Contoh Soal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Metode Pengali Lagrange Pdf" src="https://imgv2-2-f.scribdassets.com/img/document/360552709/original/eb35921960/1615025047?v=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpBy4OrvemaAaNU-QC8v0obgBNt4WCW9Zqs8cwWtDic8rSgIp3Ix3wX2Q7KhF6blDLrWw';" />
+        <small>Source: id.scribd.com</small>
+                    <p>5 M 12 T 12 884 0.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Metode Lagrange Ppt Download" src="https://slideplayer.info/slide/16424231/96/images/3/Berikut+diberikan+langkah-langkah+optimasi+fungsi+dengan+menggunakan+metode+Lagrange%3A.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVv4H6vRi6ylcv0qUjvCjTF7uqFR_w4Y1QIXsQ4M1xls4HpJD2jI-kMNUYu8YDl6m_EsQ';" />
+        <small>Source: slideplayer.info</small>
+                    <p>Inti dari metode pengali Lagrange adalah mengubah persoalan titik ekstrem terkendala menjadi persoalan ekstrem bebas kendala.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Metode Lagrange Kuhn Tucker" src="https://imgv2-2-f.scribdassets.com/img/document/95041993/original/badcf89dec/1614916533?v=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNS9jDk3MxhoobSH1e6Y9PRMHpApBpHQZLMIHEC0Wf_akkf5Yn-RKF5XHOGmt4zA0NX3c';" />
+        <small>Source: id.scribd.com</small>
+                    <p>Persamaan Lagrange Dan Hamilton.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Soal Metode Lagrange" src="https://imgv2-1-f.scribdassets.com/img/document/243284895/original/78b96deb0b/1617112330?v=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Tk_GMBpVA8FunvG_EJ1XGGE42pKe0gvgPbKSMC_q6fMExjr7nsxIm4paHtsJ75Umvcg';" />
+        <small>Source: id.scribd.com</small>
+                    <p>Persamaan Lagrange Dan Hamilton.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Teknik Optimasi Multivariabel Dengan Kendala Ppt Download" src="https://slideplayer.info/slide/3261153/11/images/11/METODE+PENGALI+LAGRANGE.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVQYdGTJBZzErr6hCw2JGKUSXtbRqZqL6HV1eOpinVlLx_stZrbLY64KSPUd-6xAJVL2k';" />
+        <small>Source: slideplayer.info</small>
+                    <p>M r 2ϕ QBo r 2 kons tan 2 Kemudian.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Teknik Optimasi Multivariabel Dengan Kendala Ppt Download" src="https://slideplayer.info/slide/3261153/11/images/10/METODE+PENGALI+LAGRANGE.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBJaS9hIYWIJVKvT16Li0N-YnHtg5Obs3T_H2g3GHJ-Cx_0w6DPTwygB2_7ncHACJ3ffk';" />
+        <small>Source: slideplayer.info</small>
+                    <p>Tentukan nilai-nilai ekstrim dari fungsi f xy xy dengan syarat.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Metode Numerik Pertemuan 7 Interpolasi Lagrange" src="https://image.slidesharecdn.com/metodenumerikpertemuan7interpolasilagrange-180412083545/95/metode-numerik-pertemuan-7-interpolasi-lagrange-3-638.jpg?cb=1523522285" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4b8efKesrjQmXh-Eq_Vqne8y30jfeZD14enP4mEIRmIn0QKlcSiJLsQ713IyTqWtL0fk';" />
+        <small>Source: www.slideshare.net</small>
+                    <p>Seperti yang diilustrasikan gambar di atas problemnya adalah sbb.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/novel-my-psychopath-boyfriend-pdf.html"><i>&larr; novel my psychopath boyfriend pdf</i></a>
+                                                                    
+                                        <a href="/novel-pdf-terjemahan.html"><i>novel pdf terjemahan &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

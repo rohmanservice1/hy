@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Perhitungan Orang Meninggal
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Perhitungan Orang Meninggal",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/originals/f6/e8/c1/f6e8c10f5a7b14f90c7e5a02c6acb0ae.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=perhitungan+orang+meninggal",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Perhitungan Orang Meninggal
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Perhitungan Orang Meninggal</strong>. Perhitungan pesangon pensiun sama dengan dengan kasus nomor 2 pesangon karyawan meninggal dunia. Jatuhnya selamatan ke 100 hari orang meninggal adalah di hitung dari meninggalnya orang tersebut hingga 3 bulan ditambah beberapa hari.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/7a/4a/91/7a4a91f46e366589af9de7f5cc33b2fd.jpg" alt="Bagaimana Jika Peserta Bpjs Meninggal Dunia Pasien Sehat Dunia" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUtH5xOkrq_bSI5ifTNDW9LKX9rClAO5Qs3y0VWL2ay4I2oYvRsHNksxBwIPeJyoH8LUw';">
+        <figcaption>Bagaimana Jika Peserta Bpjs Meninggal Dunia Pasien Sehat Dunia from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Dalam budaya dan adat Jawa terdapat sebuah kebiasaan bagi sebuah keluarga untuk memperingati hari kematian salah seorang dalam keluarganya yang telah meninggal. Salah satunya dengan menghitung 30 hari lebih kesekian hari setelah hari kematian. Ajal atau yang namanya orang meninggal ini bisa menimpa siapa saja dan umur berapa saja bisa karena sakit kecelakaan bencana dan banyak hal lain terkait yang menyebabkan orang meninggal.
+    </p>
+    <h3>Perhitungan pembagian harta waris tersebut sebagai berikut.</h3>
+    <p>Ada banyak cara yang dilakukan anggota keluarga untuk menghitung peringatan kematian 40 hari. Tentu saja jika dikemudian hari yang meninggal adalah mereka yang sebagai kepala keluarga dan satu-satunya sumber penghasilan untuk menghidupi kebutuhannya. Perhitungan pesangon pensiun sama dengan dengan kasus nomor 2 pesangon karyawan meninggal dunia. Pada perhitungan penanggalan ini juga terdapat konversi ke penanggalan lain yang juga berlaku di daerah Indonesia.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Hendy Di The Beautiful Blessing Agama Ayah Bahasa" src="https://i.pinimg.com/originals/05/1f/3e/051f3e73bacbe1317498317232b6a3d6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ1E5V2DkVoYH72-rKCh1M5qC-xab3JN_hAbOu_CXi1S-8hErTjXZutoWhl7ovD9tpa3Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Perhitungan nya yaitu 2 kali Uang Pesangon 1 kali Uang Penghargaan Masa Kerja Uang Penggantian Hak.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Farah Atika Di Fyi Dzikr Du A Ayat Hadits Kata Kata Motivasi Kutipan Pelajaran Hidup Kata Kata Indah" src="https://i.pinimg.com/600x315/21/39/05/2139055196ff4bfbea9a9c093be7d180.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsjDEHhXCNwO3FJJ9YwcNQulvQ7t4KchEcvjw6d8i89AwqBSTsezwlZhMfNHWGiOfWh6s';" />
+        <small>Source: cz.pinterest.com</small>
+                    <p>Maksudnya kalau orang meninggal dunia pada hari Jum at Kliwon karenanya selamatan mitung dina jatuh pada hari Kemis Legi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Http Caraharian Com Cara Menghitung Akar Html" src="https://i.pinimg.com/originals/f6/e8/c1/f6e8c10f5a7b14f90c7e5a02c6acb0ae.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeZbUih2IlGziaK_x7hqFuLYdb42bWYsITozpYg4h-NBbl_RU_qgZfvqAI2YPdGYUUU7I';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk mempermudah penerapan perhitungan selamatan orang meninggal dunia dibawah ini penulis kemukakan table perhitungan selamatan mulai selamatan satu hari nyurtanah Jawa sampai dengan seribu harinya nyewu dino Jawa sebanyak 35 hari lengkap nama.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kiriman Instagram Oleh A L F A Q I R 5 Peb 2019 Jam 1 14 Utc Nasihat Ayah Kutipan Agama Tanda Lucu" src="https://i.pinimg.com/originals/e2/21/e5/e221e543dac9e3161bde5dd66c170153.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgZwGnHDvE7UDwf7h8qzhMbt4i7V6BFHFT0zAtxNfTAWrnIBq8rh7Msbw9yCXesZE2Tg4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Nominal harta warisan sebesar Rp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bagaimana Jika Peserta Bpjs Meninggal Dunia Pasien Sehat Dunia" src="https://i.pinimg.com/originals/7a/4a/91/7a4a91f46e366589af9de7f5cc33b2fd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUtH5xOkrq_bSI5ifTNDW9LKX9rClAO5Qs3y0VWL2ay4I2oYvRsHNksxBwIPeJyoH8LUw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tentu saja jika dikemudian hari yang meninggal adalah mereka yang sebagai kepala keluarga dan satu-satunya sumber penghasilan untuk menghidupi kebutuhannya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Nasib Berdasarkan Weton Cara Mengetahui Weton Berdasar Tanggal Lahir Kelahiran Tanggal Legian" src="https://i.pinimg.com/originals/e3/5f/ae/e35faee705d152157e7133b46c9d805b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6J2iBA1WQNBEq_RlKvTbbvxetKE0GqBtRW1Y8RY7M51eIS3vkXKdvbcgYSBbK5VtyIQk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Untuk menghitung jatuhnya selamatan orang meninggal 40 hari adalah dari mulai dinyatakan meninggal dihitung satu bulan lebih beberapa hari.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di 1000 Hari" src="https://i.pinimg.com/originals/80/8a/8e/808a8e9565ea27fb7ea540ec61ff30a8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5I7MYdpUonp4onFBanFtLYXYL6gHd8Zml6YAH82mDcZ9eRMnxSsQS8Mw2zM4nTTyqxK8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kalau hari geblagnya Jumat Kliwon karenanya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Kapernews Com" src="https://i.pinimg.com/736x/de/94/f9/de94f9178cafdb5438685e4a0decfbff.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqhAMKQ4DayncAAUMlWSB-dPQ5tyBrxHbHYyoC8VBQYXGr-m3T6IJ30GF3vYFwJlMw9IE';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Nasi gurih lauk pauknya garingan artinya tidak boleh memakai sayur-sayuran.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Martha Aryati Di Hidayah Kata Kata Indah Motivasi Kutipan Agama" src="https://i.pinimg.com/originals/01/31/47/013147c91ce91b837049e74efb3728b4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcgZrIRx5_Ck7tg-2RQaIPcK7UA-dk0AWmI6LvoH6vkswuT6M8kGWmdOnUhuNlRwOZZl0';" />
+        <small>Source: br.pinterest.com</small>
+                    <p>Menghitung Tanggal SelamatanPeringatanTahlilan Orang Meninggal Met siang readers saya ini orang jawa jadi tidak heran tradisi jawa lama kelamaan menjadi pusat perhatian saya di tempat saya tinggal terutama mengenai hal yang satu ini yaitu mendoakan orang meninggal.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/nilai-uan-adalah.html"><i>&larr; nilai uan adalah</i></a>
+                                                                    
+                                        <a href="/neraca-lajur-8-kolom.html"><i>neraca lajur 8 kolom &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

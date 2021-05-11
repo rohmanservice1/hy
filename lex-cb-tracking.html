@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Lex Cb Tracking
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Lex Cb Tracking",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/736x/50/68/85/5068858b3f092766fa742c4538d9496b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=lex+cb+tracking",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Lex Cb Tracking
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Lex Cb Tracking</strong>. Google has many special features to help you find exactly what youre looking for. In addition special services for air cargo containers and post.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/e3/66/e8/e366e871c19e0ea3c9c1842b314d2779.jpg" alt="Honda Gl 200 Chrome Series Macannnn Repost Bryanataa Scramblerstrackers Flattracker Caf Honda Gl Pro Honda Cafe Racer Bikes" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOqQS2bMzsBLG6maWMkSW_eCYmADIIGmIU0CiYuhiVLnd0b0OGqnLr2Ybk2iuz4OhMLiE';">
+        <figcaption>Honda Gl 200 Chrome Series Macannnn Repost Bryanataa Scramblerstrackers Flattracker Caf Honda Gl Pro Honda Cafe Racer Bikes from fi.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Shopee Express Customer Service Phone. Malaysias Largest Shipment Tracking Platform. Search the worlds information including webpages images videos and more.
+    </p>
+    <h3>Lazada e-Logistics uses partners with multitude local couriers such as LGS PosLaju CB LEX MY LEX TH ดำเนนการโดยชอ LEX TH LBC tracking number from Lazada.</h3>
+    <p>You can enter a tracking number to track a single PosLaju package use CSV upload or restful PosLaju parcel tracking API to track. The TSI shall not apply to freight wagons operating mainly on the 1 520 mm track gauge which may occasionally be operated on 1 524 mm track gauge. E-Tracking You may also call our Customer Service at 03-6419 5003 for more information. Pos Laju Track and Trace Details.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Done Big Tracker Honda Tiger Revo Pesanan Dari Pemilik Salah Satu Perusahaan Properti Di Honda Motor Instagram" src="https://i.pinimg.com/originals/fc/cf/41/fccf41343b2bb39f2921c6da6d5b736e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSX7XvkfcvHf4vdO8G_e2H_9HIoCZN0OWu8igowRqCnMuvpqatwvNbqewMXxYTE38ELDQ';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Track parcelsshipments with companies like UPS DHL TNT and FedEx.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Honda Gl 200 Chrome Series Macannnn Repost Bryanataa Scramblerstrackers Flattracker Caf Honda Gl Pro Honda Cafe Racer Bikes" src="https://i.pinimg.com/originals/e3/66/e8/e366e871c19e0ea3c9c1842b314d2779.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOqQS2bMzsBLG6maWMkSW_eCYmADIIGmIU0CiYuhiVLnd0b0OGqnLr2Ybk2iuz4OhMLiE';" />
+        <small>Source: fi.pinterest.com</small>
+                    <p>Shopee Express Customer Service Phone.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Suzuki Gs 750 Cafe Racer Unique Schwarz Custom Cafe Racer Cafe Racer Suzuki Gsxr" src="https://i.pinimg.com/736x/50/68/85/5068858b3f092766fa742c4538d9496b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJCTgh28v-aell9pQ_TwH_cY3t4M1AIZ4vnVX_Giv6NTADihpv_-efpk9if7QTrUxnAxY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Lazada e-Logistics uses partners with multitude local couriers such as LGS PosLaju CB LEX MY LEX TH ดำเนนการโดยชอ LEX TH LBC tracking number from Lazada.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Scrambler Tracker Dirt" src="https://i.pinimg.com/originals/3c/14/86/3c1486c6fe1caa197be37ae10d0a7631.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPuhZq2kkWfVWweuvbjIZ8K82ZPom8qhpnwPeGY20OAtEBbfobSx4veo9ryCV0glNqE_0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Lazada e-Logistics uses partners with multitude local couriers such as LGS PosLaju CB LEX MY LEX TH ดำเนนการโดยชอ LEX TH Giao hàng bởi LEX MY LEX SG Ship60 LEX PH oleh Seller Own Fleet MY Seller Own Fleet MYx no use MBE LEX ID DHL JRMT SOFP_VN Giao hàng bởi LEX PH.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Honda Cb750 Scrambler By Left Hand Cycles Honda Cb750 Cb750 Honda Cb" src="https://i.pinimg.com/originals/06/75/8d/06758d306786e33021f01b2395573158.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNXyFfiyJHjfnSs5-VRvPufZd0NPMMyTEt8WVU6DumzP1x15CETNxcmbqtxB-bBVug8w8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lazada e-Logistics uses partners with multitude local couriers such as LGS PosLaju CB LEX MY LEX TH ดำเนนการโดยชอ LEX TH LBC tracking number from Lazada.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Garage Project Motorcycles Ft 500 Retro Scooter Honda Honda Motorcycles" src="https://i.pinimg.com/originals/9c/3a/c0/9c3ac05b25f3dac607be257bda695ab4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOdTKN3ySI2VENWWqNlFchHD7PwSi0i_KdjRIDY-BRWj9ikBEFfThGqPkb2PAH7kxeXgA';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Search the worlds information including webpages images videos and more.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Miiskin The Free App That Tracks Your Moles And Skin Health Health Tech Is Set To Be One Of The Biggest Trend Skin Health Health Tech Best Skin Care Regimen" src="https://i.pinimg.com/originals/9d/cb/97/9dcb977a861ae4b9157239c1c6c8ce71.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn0euIqi4ta0wz-ZgOSjirtHSf4dgoTuriBSPP8cSInvmY5eEMGcptpNIGHLZv5Xt5pMc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Lazada Philippines the top online shopping site in the country has made several shifts in the e-commerce business in the Philippines creating an avenue for sellers to promote their items online and to give Filipinos new ways to discover and buy the best options for themselves.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="J Reas Cb 4x Jpg Image Jpeg 1400 928 Pixels Bike Shed Cafe Racer Motorcycle Brat Bike" src="https://i.pinimg.com/originals/e2/75/b3/e275b30d94633eecf588709ab242f3a8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx5IaaE1wXik4fWLHma7b3FHhigrb6ig1Y8KzG5M7E5dTyJ6s9k3Agq3n6TTI4oltOcDI';" />
+        <small>Source: fi.pinterest.com</small>
+                    <p>Google has many special features to help you find exactly what youre looking for.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lakukan Ini Jika Pesanan Lazada Belum Datang Dengan Cara Cek Pengiriman Lazada Sudah Sampai Mana Sekarang Cek Nomor Resi Tiki Jne Jnt Express Lex Pos Dll" src="https://i.pinimg.com/originals/cc/cb/e5/cccbe54eeb7cb48ab8be4c2fad80fa55.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ZX70cDWhAQ5Z4rZSpCEM22SGJLkxXI36yb3yOsiu3Q0cPjluZ0FPNOpxaPJfnzX4csg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>LEX tracking - Track Lazada Express eLog LEL Express is Lazadas internal B2C last mile delivery capabilities from pick-up to sort to delivery.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/gratisindo-mp3-barat.html"><i>&larr; gratisindo mp3 barat</i></a>
+                                                                    
+                                        <a href="/grafik-tinggi-badan-berbanding-usia.html"><i>grafik tinggi badan berbanding usia &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

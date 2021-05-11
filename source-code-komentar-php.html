@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Source Code Komentar Php
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Source Code Komentar Php",
+  "datePublished": "2021-05-11",
+  "image": "https://1.bp.blogspot.com/-BSs-wIwWG-A/XmYVxkQT4sI/AAAAAAAAA5o/N-svNCdeYLsdVfPrJD5FzGktGfN4mP-dACLcBGAsYHQ/s1600/20200309_170543_0000.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=source+code+komentar+php",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Source Code Komentar Php
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Source Code Komentar Php</strong>. Membuat Komentar Bertingkat dengan PHP dan AJAX. .</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://www.wikihow.com/images_en/thumb/e/e1/2165137-2.jpg/v4-460px-2165137-2.jpg.webp" alt="Cara Menulis Komentar Dalam Php 3 Langkah Dengan Gambar" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPlyX-XdwK5ft-unIsFs7l34KVuVS8sxfawr4a-zd8WCXqPBqRhW37GBNPh-0Nt36gDW4';">
+        <figcaption>Cara Menulis Komentar Dalam Php 3 Langkah Dengan Gambar from id.wikihow.com</figcaption>
+    </figure>
+        <p>
+        Download Contoh Source Code Aplikasi Pengelolaan Kas Keuangan Berbasis Php Download Contoh Source Code Aplikasi Managemen Usaha Laundry Berbasis Web Download Contoh Source Code Sistem Informasi Inventaris Penelitian Berbasis Php MySQLi Download Contoh Source Code Aplikasi Managemen Puskesmas Berbasis Codeigniter Download Contoh Source Code Sistem Pakar Diagnosa Penyakit Gigi Mulut Berbasis Web Download Contoh Source Code Aplikasi Kasir Berbasis Web Download Contoh Source Code. This project was develop using PHP. Query SELECT FROM tbl_comment WHERE parent_comment_id 0 ORDER BY comment_id DESC.
+    </p>
+    <h3>This project was develop using PHP.</h3>
+    <p>Kali ini saya akan mendemokan kembali aplikasi yang lain yaitu aplikasi Sistem Informasi Geografis GIS untuk Pemetaan Lokasi SMK di Kabupaten Pati dengan menggunakan Bootstrap PHP ekstensi PDO PHP 7 database MariaDB versi baru MySQL dan. Studi untuk mendiagnosa kerusakan komputer memanfaatkan source code php dan mysql. Komentar HTML dan PHP tidaklah sama sehingga jika Anda menggunakan skrip campuran dari HTML dan PHP pastikan bahwa Anda tidak mencampurkan komentar. Misalnya saja sistem monitoring di jalan raya.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Menulis Komentar Dalam Php 3 Langkah Dengan Gambar" src="https://www.wikihow.com/images_en/thumb/6/62/2165137-5.jpg/v4-460px-2165137-5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs_rpbMORynqa5DkHF8Axygke7R0t1RgjMKhs21sm19njlEDqUE3tEHMLCEMw5AjCkqTY';" />
+        <small>Source: id.wikihow.com</small>
+                    <p>Kali ini saya akan mendemokan kembali aplikasi yang lain yaitu aplikasi Sistem Informasi Geografis GIS untuk Pemetaan Lokasi SMK di Kabupaten Pati dengan menggunakan Bootstrap PHP ekstensi PDO PHP 7 database MariaDB versi baru MySQL dan Pagination12345NextSee more 2021 Microsoft Privacy and CookiesLegalAdvertiseHelpFeedbackAllPast 24 hoursPast weekPast monthPast year.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membuat Komentar Bertingkat Dengan Php Dan Ajax" src="https://1.bp.blogspot.com/-BSs-wIwWG-A/XmYVxkQT4sI/AAAAAAAAA5o/N-svNCdeYLsdVfPrJD5FzGktGfN4mP-dACLcBGAsYHQ/s1600/20200309_170543_0000.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5om80jxviQk8QbI0wC_43WYETH6H0MWQ7f2tuEWeydCaqbdyPZ_GU4t4PjVYNQegzaYA';" />
+        <small>Source: www.plajarikode.com</small>
+                    <p>Source Code Aplikasi Penjualan Barang Kasir dengan PHP MYSQL Gratis 20-08-2019 1812 11803x 20-05-2020 1932 4952x.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Menulis Komentar Dalam Php 3 Langkah Dengan Gambar" src="https://www.wikihow.com/images_en/thumb/c/c5/2165137-8.jpg/v4-1200px-2165137-8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX_PTB327yvSqjSgmXTcuzdz6unO6pEv1b5TdasTZymJDwrPuMlLEQ_LfTYOrDbIU7Z58';" />
+        <small>Source: id.wikihow.com</small>
+                    <p>Kode program PHP disini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Belajar Html 05 Cara Membuat Komentar Di Html" src="https://www.petanikode.com/img/html/komentar/view-source.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNcPLATaPT8md0Zc7Lgc9q8uPL5RjVY3zpwbhudx96Z37Q9Vs48QqG363Vb2p07kRUk0k';" />
+        <small>Source: www.petanikode.com</small>
+                    <p>File Size 61517 KB.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Menulis Komentar Dalam Php 3 Langkah Dengan Gambar" src="https://www.wikihow.com/images_en/thumb/f/f1/2165137-6.jpg/v4-460px-2165137-6.jpg.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSbjkld0kNbY5LQLicijYaUTpX9HNhyIKUT9XVhZPygjKik0_V2qxBu4L3XfIm863WR1g';" />
+        <small>Source: id.wikihow.com</small>
+                    <p>Bahasa pemrograman PHP berfungsi sebagai media komunikasi programming sehingga dapat memahami dan mengeksekusi perintah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membuat Aplikasi Komentar Dengan Validasinya Komentar Baru Bisa Ditampilkan Setelah Disetujui Web Admin Blog Java Web Media" src="http://javawebmedia.com/blog/wp-content/uploads/2011/06/capture_15062011_140912.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_D_TnfBRTRaidDLOMSfg5g5pMQW5D-QZEbmgB8XdSTV0kk5JCSer-KOFb_TExRB1GYgE';" />
+        <small>Source: javawebmedia.com</small>
+                    <p>Beranda Web Source Code Aplikasi Pembayaran SPP Berbasis Web dengan PHP dan MySQL 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Menulis Komentar Dalam Php 3 Langkah Dengan Gambar" src="https://www.wikihow.com/images_en/thumb/e/e1/2165137-2.jpg/v4-460px-2165137-2.jpg.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPlyX-XdwK5ft-unIsFs7l34KVuVS8sxfawr4a-zd8WCXqPBqRhW37GBNPh-0Nt36gDW4';" />
+        <small>Source: id.wikihow.com</small>
+                    <p>9 hours ago By oretnom23.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download Source Code Aplikasi Pasar Online Persandian Logic Linux" src="https://i.pinimg.com/originals/cc/18/e3/cc18e3888a5b0ac8bc18e630b5ee0e81.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqKtGDZzl_KvXUum4sfObpXlsX2BLUO144LVO2UW6YK5JpFi8b2B7fD8HbecMPP8dHDpY';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Bahasa pemrograman PHP berfungsi sebagai media komunikasi programming sehingga dapat memahami dan mengeksekusi perintah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Komentar Pada Html Cara Kode" src="https://i2.wp.com/carakode.com/wp-content/uploads/2017/11/Cara-Membuat-Komentar-Pada-HTML-2.jpg?resize=800%2C451&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBOosW_HqAtxz4E1NYCsHZmORNxDeS0o-klRSMFA1iyUoCZYE0FoeX3_M3K33ahm7RZmQ';" />
+        <small>Source: carakode.com</small>
+                    <p>Bahasa pemrograman PHP berfungsi sebagai media komunikasi programming sehingga dapat memahami dan mengeksekusi perintah.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rpp-procedure-text-kurikulum-2013.html"><i>&larr; rpp procedure text kurikulum 2013</i></a>
+                                                                    
+                                        <a href="/rpp-prakarya-kelas-7-kurikulum-2013-revisi-2017.html"><i>rpp prakarya kelas 7 kurikulum 2013 revisi 2017 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

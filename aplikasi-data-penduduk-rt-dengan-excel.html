@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Aplikasi Data Penduduk Rt Dengan Excel
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Aplikasi Data Penduduk Rt Dengan Excel",
+  "datePublished": "2021-05-11",
+  "image": "https://3.bp.blogspot.com/-wmNeXjnUEwY/VGUaeoFlO3I/AAAAAAAACEw/wz5RIZFQUKo/s1600/aplikasi-rt-rw-bekasi.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=aplikasi+data+penduduk+rt+dengan+excel",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Aplikasi Data Penduduk Rt Dengan Excel
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Aplikasi Data Penduduk Rt Dengan Excel</strong>. Software Administrasi Desa Full - Aplikasi Administrasi Desa Excel Gratis. Dengan menggunakan program ini masing2 Ketua RT tidak perlu input manual dengan menggunakan Excel yang memang terkadang memakan waktu yg cukup lama.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://2.bp.blogspot.com/-XeSIRQpjkYE/XKjKccgxTWI/AAAAAAAADqI/Bc3tahQRHDIObL159VSyOv6Pmt8DztZqACLcBGAs/s1600/10.PNG" alt="Aplikasi Buku Administrasi Ketua Rt Excelmaniacs" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBVmV9CsdOyvFBHxYdxoCDclXATZUc_pvUf_VTFvFCcPi31aYKJoRjrnONj-wuqpXbRdk';">
+        <figcaption>Aplikasi Buku Administrasi Ketua Rt Excelmaniacs from www.excelmaniacs.id</figcaption>
+    </figure>
+        <p>
+        Jika ada yang masih kurang kemungkinan anda belum membuat tabel sesuai contoh diatas atau ada cara yang anda lewatkan. Selanjutnya mahasiswa peserta Kuliah Kerja Nyata KKN ITS akan mendampingi mereka dalam menyusun aplikasi excel dashboard. Aplikasi Data Penduduk Rt Dengan Excel Gratis.
+    </p>
+    <h3>Dalam hal penyajian informasi aplikasi rt online menyediakan banyak sekali informasi yang berguna baik bagi warga pengurus rt.</h3>
+    <p>Kali ini saya kembali mendapat kesempatan untuk mengulas Aplikasi Kependudukan RT Gratis dengan excel xls yang dapat didownload secara mudah. Role User Admin RW RT Bendahara RT Sekretaris RT Warga 2. 11 Sep 2020 Posting Komentar. Akhirnya Aplikasi Excel Buku Induk Penduduk versi ExcelManiacs dengan referensi data dan formulir-formulir administrasi kependudukan berasal dari Kementerian Dalam Negeri dengan basis aplikasi spesialis maniaknya excel yaitu Microsoft Office Excel.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Data Penduduk Rt Excel Ops Sekolah Kita" src="https://lh5.googleusercontent.com/proxy/pfEVGwVgrw0uICaZBWq183K_CGeQaGAZEx2U_zFHceIgqKvgjTdo-PpGN40ba1f3Dv656tHv-8fuMJp3TA5CmGFqBTe7XMFcoM-kezwdpLJaUw=w1200-h630-p-k-no-nu" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKauU2c2FQ7Ikt2l7MDgH12WIX3yrivbe2zwVGmue-nx2X62gjpeZZD4U28SLFoQ6sy5w';" />
+        <small>Source: www.opssekolahkita.com</small>
+                    <p>Data dari akte kelahiran.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Berita Pilihan 3 Aplikasi Untuk Pendataan Dan Administrasi Rt Rw" src="https://3.bp.blogspot.com/-wmNeXjnUEwY/VGUaeoFlO3I/AAAAAAAACEw/wz5RIZFQUKo/s1600/aplikasi-rt-rw-bekasi.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5_wY5QJC91Hs5XkAxR-oLW83C-avRqniLNJexJt21wiH17f4nM3yUKQhuZ0FFyTDp_KQ';" />
+        <small>Source: seadanyadeh.blogspot.com</small>
+                    <p>Selanjutnya silakan anda lihat Form Data Utama pada aplikasi Population.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download Gratis Aplikasi Pelayanan Kependudukan Rt Lasopajapanese" src="http://lasopajapanese584.weebly.com/uploads/1/2/3/9/123900539/794125883.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwyiEICZAic_jkyZO4BZtT8B84ui8KMZfRIERyk5u84ZuEMB0aD0a1EoP9TY_Honsk-18';" />
+        <small>Source: lasopajapanese584.weebly.com</small>
+                    <p>Kali ini saya kembali mendapat kesempatan untuk mengulas Aplikasi Kependudukan RT Gratis dengan excel xls yang dapat didownload secara mudah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Tabel Excel Data Penduduk Yang Rapi Youtube" src="https://i.ytimg.com/vi/JIjrIoECOwo/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTFP4nZ3KTBP2r5stW6r8Vdo60gDxUC6TAGJuEAM7cEq3Xw7TmfPYSxiPwV1RixFsCnzA';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Aplikasi data penduduk rt dengan excel.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Data Penduduk Rt Dengan Excel Guru Paud" src="https://ik.imagekit.io/carro/jualo/original/2405284/image_20160224-24999-tmdpq8.jpg?v=1456290193" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1MVR0hyIOzdONt4QCK10PQMZd5cRZB0pdCAIQc-JOb_oJbuQCmP6KswgcDToPUjD5rwM';" />
+        <small>Source: www.gurupaud.my.id</small>
+                    <p>Berikut Fitur Aplikasi Sistem.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Administrasi Kampung Sederhana Dengan Excel Kampung Warga Makmur Jaya" src="http://wargamakmurjaya.desa.id/wp-content/uploads/sites/177/2018/01/SKB-678x381.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3oBHDjpQpCdJKbVdne41-xpYvwyjND6di6m7M9EVzXBJGrSuKoCW0YsDq_jqe_B6TE_c';" />
+        <small>Source: wargamakmurjaya.desa.id</small>
+                    <p>Aplikasi buku administrasi ketua rt versi excelmaniacs ini dibuat dengan harapan dapat mempermudah tugas dari aparatur desa yang sangat penting fungsinya bagi keakuratan data administasi kependudukan dalam pemerintahan desa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jual Aplikasi Data Penduduk Rt Atau Rw Di Lapak Unisoft Bukalapak" src="https://s3.bukalapak.com/img/8043467902/large/Aplikasi_Data_Penduduk_RT__RW_.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRulX4BkEAmb2g4gGmNtl9p45XYLW4M5NMPUFordfOAGFIoNxFnb_z2rnjr8bwOk1L5E0A';" />
+        <small>Source: www.bukalapak.com</small>
+                    <p>Untuk import data pilih menu kependudukan import data dari aplikasi lain atau download conventer dari excel pada link kami isikan data pada contoh format baru konvert.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Data Induk Administrasi Ketua Rt Berbasis Excel Youtube" src="https://i.ytimg.com/vi/MfS2IyrIhpQ/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI3FOMSZzgcz-7NII1tD7wxV7iGDKynlqr39fPUmCxhp9vLCA9ua6Ocfydsp1RAss9ItI';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Tak semua orang bersedia ditambahi urusannya dengan pernak pernik urusan warga.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Sistem Kependudukan Tingkat Rt Dubai Khalifa" src="https://i0.wp.com/lh5.googleusercontent.com/proxy/Wq7REi-pMK79slQDMZnQHDTV8hDhXMV_4FqWmmSSmUJAw3_CULv3iXo3LnoCwwUXdEslUGAULM8fvr5is3K1iqrtzjllh2LH_ySJUNwybsOFetPqQ1Lkaz_JQ8nacRDXLQtLnjUs1i6nYJbaJMAbJ-a2RQ7MdFX3dJPUacN5d4kYFngnqG7ZLA=s0-d?resize=650,400" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpCNE1nfYOmX4JZq2Jmado9MmC_GKtDgLf6_Fr1Oy7zILmRl7HufN8VEEI13GJCSCvmDM';" />
+        <small>Source: dubaikhalifas.com</small>
+                    <p>Download aplikasi data penduduk gratis software kependudukan rt rw desa excel full kamis 01 februari 2018 1 komentar edit format administrasi desa blogspot com.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/chord-semua-tentang-kita-chordtela.html"><i>&larr; chord semua tentang kita chordtela</i></a>
+                                                                    
+                                        <a href="/chord-ungu-shalawat.html"><i>chord ungu shalawat &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

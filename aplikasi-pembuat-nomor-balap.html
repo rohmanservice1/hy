@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Aplikasi Pembuat Nomor Balap
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Aplikasi Pembuat Nomor Balap",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/originals/6b/e4/a0/6be4a0e49a06d65979815cbbfff1a40b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=aplikasi+pembuat+nomor+balap",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Aplikasi Pembuat Nomor Balap
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Aplikasi Pembuat Nomor Balap</strong>. Anda juga bisa menggunakan situs atau aplikasi berbayar yang tentunya fitur atau menunya lebih banyak dan bisa digunakan dengan lebih leluasa. Vector Drawing dan Pixellab.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://image.winudf.com/v2/image/Y29tLnRleHRtYWtlci5wZW1idWF0X3NjcmVlbl8yXzE1MjYxOTMxOThfMDM3/screen-2.jpg?fakeurl=1&amp;type=.jpg" alt="Pembuat Nomor Racing Terbaru 2018 For Android Apk Download" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzZ31OdMiBjdZ4qZmpT-4Edwc3ZOu3IAip2ofzCcq_nd2vSvJZN1YccKcDvQYxs1MN2AM';">
+        <figcaption>Pembuat Nomor Racing Terbaru 2018 For Android Apk Download from apkpure.com</figcaption>
+    </figure>
+        <p>
+        Pada waktu lalu teknik ini sempat viral di kalangan editor android dan ada pula yang kebingungan dengan cara pembuatannya. Ada banyak sekali aplikasi untuk membuat nomor balap racing seperti Picsay Pro Picsart Ivy draw. Aplikasi ini merupakan aplikasi edit gambar yang snagat cocok untuk pemula yang masih belajar ngedit.
+    </p>
+    <h3>Maka dari itu saya berikan rekomendasi font racing untuk nomor start balap anda.</h3>
+    <p>Kali ini saya memosting tuttorial cara membuat angka balap atau nomor star tentunya untuk pembalap dengan menggunakan ADOBE PHOTOSHOP CS4. Free Texting Calling App. Dan kali ini saya akan memberikan cara membuat nomor balap racing dengan aplikasi pixellab. Jika ada yang punya koleksi font racing menarik bisa di sharing yah supaya saling berbagi sama teman lainnya.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Mudah Membuat Nomor Balap Di Android Tak Kalah Bagus Dari Pc Youtube" src="https://i.ytimg.com/vi/qboZyN46I2k/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3fgWC5dYTaTvV9MKWtvuG1dFBqmmsvz9jHUkog34Ve7TRx7PPnvHc_Pr7kmzF7waOywE';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Contohnya nomor 46 yang identik dengan motor Valentino Rossi begitu juga nomor 7 pada pembalap F1 Kimi Räikkönen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Nomor Balap Di Android Picsay Pro" src="https://4.bp.blogspot.com/-wkx0C1o8weQ/WPZeo4xjd5I/AAAAAAAABYw/i6l3p4IMOnUXzGMAxKsntHIfnakqPtVPgCLcB/s1600/Blog2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ0LupTeIFxWP8zcIFwBL9gvLTQUnabIfU5eoQSAYLlyv9f1UBjUz4DWwhs7fe2c7PZ3g';" />
+        <small>Source: www.gaweart.com</small>
+                    <p>Menariknya kamu juga bisa membuat desain stiker racing untuk motor atau mobil kamu seperti mereka lho.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Nomor Balap Racing Star Terbaru Pembalap" src="https://i.pinimg.com/originals/37/94/e7/3794e797fb0a47726ca7a27abe80b147.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlqTr3JCi_c1ipsjHViOtt5y68ykwmxMiVSFYTn0IyDiAeOoOf4Gob_lqbFOFEeDDSJcg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Namun jangan salah walaupun ukurannya kecil faktanya aplikasi ini mampu membuat berbagai jenis editan yang keren pada gambar salahsatunya membuat nomor balap.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pembuat Nomor Racing Terbaru 2018 For Android Apk Download" src="https://image.winudf.com/v2/image/Y29tLnRleHRtYWtlci5wZW1idWF0X3NjcmVlbl8yXzE1MjYxOTMxOThfMDM3/screen-2.jpg?fakeurl=1&amp;type=.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzZ31OdMiBjdZ4qZmpT-4Edwc3ZOu3IAip2ofzCcq_nd2vSvJZN1YccKcDvQYxs1MN2AM';" />
+        <small>Source: apkpure.com</small>
+                    <p>Dan kali ini saya akan memberikan cara membuat nomor balap racing dengan aplikasi pixellab.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Stiker Racing Untuk Nomor Start Balap Decodeko Drag Racing Stiker Desain Stiker" src="https://i.pinimg.com/originals/6b/e4/a0/6be4a0e49a06d65979815cbbfff1a40b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReQ-9pv9bu3GB-42VMBapB-OY7dJvZ2ka3zyneCfii4kGV87FQmrz5ZcxXTUnA9rTG4P0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Aplikasi pembuat nomor palsu yang bernama Nextplus ini telah TERBUKTI dapat menjadi cara membuat nomor handphone palsu untuk verifikasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Nomor Balap Di Android Picsay Pro" src="https://2.bp.blogspot.com/-ke2Tw7wKWoQ/WPZeonGhgMI/AAAAAAAABYs/uZboOY-lKBghjrfp2q11by_QJt6S-4fFQCLcB/s1600/Blog1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3t-gTkgjoNadpkr3NKRrm4nURC8z3XA0wxQiw7E-WrrcoLFDj3Hj0QYEcT_a4gLChWNQ';" />
+        <small>Source: www.gaweart.com</small>
+                    <p>Semoga bisa menambah koleksi font nomor start balap kalian semua.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Nomor Balap Di Android Picsay Pro" src="https://1.bp.blogspot.com/-bOO61YfUWa8/WPZeoWggRFI/AAAAAAAABYo/4TdogaegU4o7Oa7pYwm-PduPvI4b6J4YwCLcB/s1600/Blog3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpn5adn1HyKt9Jd1qO8n5Vb_v41fCpYLcOW_FSgNr0mbrQvIUTpY2CwpWjnxqWpOxvJ1M';" />
+        <small>Source: www.gaweart.com</small>
+                    <p>If playback doesnt begin shortly try restarting your device.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Mudah Membuat Nomor Start Balap Di Photoshop Grafis" src="https://i.pinimg.com/originals/a2/f8/64/a2f8644bfaa9d83e523923c73027ce8b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwW79z9eN3XTXcLFjdJquALwx1i515wXJAXNA9L2esk6zHApeAKYdtBswiJLv-kG5rTQ';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Cara Membuat Nomor Balap Di Android Picsay Pro Whats up guys pada kesempatan kali ini saya akan membahas tutorial yang sudah banyak diminta orang kepada saya yaitu cara membuat nomor balap.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desain Stiker Racing Untuk Nomor Start Balap Decodeko Kartun Desain Stiker Stiker" src="https://i.pinimg.com/originals/79/31/9a/79319ae81192dfceb9bb86ada94bec15.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Vxp9PPG7sxDPga5MaisiLYnk2hI0p0NNBnSueH7uyiikWQl_AyIzXYsdY8E2iBBiw2w';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Berikut daftar nomor pembalap pada Moto GP.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/buku-siswa-akhlak-kelas-12-kurikulum-2013-pdf.html"><i>&larr; buku siswa akhlak kelas 12 kurikulum 2013 pdf</i></a>
+                                                                    
+                                        <a href="/buku-siswa-kelas-7-kurikulum-2013-revisi-2017-semester-2.html"><i>buku siswa kelas 7 kurikulum 2013 revisi 2017 semester 2 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Contoh Sk Inpassing
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Contoh Sk Inpassing",
+  "datePublished": "2021-05-11",
+  "image": "https://1.bp.blogspot.com/-sMgdaBNuiSM/WP3-zU0QEvI/AAAAAAAAJZM/wf70kK73LgMJJt4ONLTVvE8QaqP7bWJsACLcB/s640/cek%2BSK%2BInpassing%2Bdan%2BPenyetaraan%2Bguru%2Bnon%2BPNS%2Bok.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=contoh+sk+inpassing",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Contoh Sk Inpassing
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Contoh Sk Inpassing</strong>. Rekan guru semua terkait informasi proses inpassing guru non pns volimaniak akan memberikan sedikit gambaran mudah untuk mengetahui status inpassing guru non pns tahun 2015 ini. Cara Cek SK Inpassing atau SK Penyetaraan Guru Bukan PNS di mutasisdmkemdikbudgoid Calon Guru Assalamualaikum Bapak dan Ibu Guru Non PNS pada video Cara Cek SK Inpassing atau SK Penyetaraan Guru Bukan PNS di.</p>
+            <figure>
+        <img class="v-cover ads-img" src="http://sdm.mercubuana.ac.id/download/sk_inpassing_dosen_serdos/sugianto.jpg" alt="Sk Inpassing Serdos Biro Sumber Daya Manusia" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNKmZgO9J8-s-2uw3lbx5DkcQCJ1Z6uiDEuO5Ra87k95-vXMpHgrt7poQDUt8i1SiktZ8';">
+        <figcaption>Sk Inpassing Serdos Biro Sumber Daya Manusia from sdm.mercubuana.ac.id</figcaption>
+    </figure>
+        <p>
+        Jabatan fungsional guru yang sebelumnya diatur dalam keputusan menteri. Contoh Sk Inpassing Pns - Guru Paud Contoh Sk Inpassing Non Pns Guru Ilmu Sosial Contoh Sk Inpassing 2019 Penyesuaian Gaji Pokok Pns Terbaru Sesuai Pp No 15 Tahun 2019 Info Pendidikan Terbaru Contoh Sk Inpassing Guru Non Pns Guru Ilmu Sosial Sk Inpassing Dosen Serdos Biro Sumber Daya Manusia Cara Cek Sk Inpassing Dan Penyetaraan Guru Non Pns Materi Pelajaran 3 Contoh Sk Inpassing. Rekan guru semua terkait informasi proses inpassing guru non pns volimaniak akan memberikan sedikit gambaran mudah untuk mengetahui status inpassing guru non pns tahun 2015 ini.
+    </p>
+    <h3>Contoh sk inpassing guru non pns.</h3>
+    <p>Jabatan fungsional guru yang sebelumnya diatur dalam keputusan menteri. SK pencairan sertifikasi dari th2009 ada nominal tertulis jumlah nominal sebesar inpassing. Download Contoh Sk Inpassing Guru Non Pns PDF 600 MB - SamPDF SamPDF SK. Penetapan jumlah angka kredit kumulatif dalam penyesuaian jabatan guru.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sk Inpassing Serdos Biro Sumber Daya Manusia" src="http://sdm.mercubuana.ac.id/download/sk_inpassing_dosen_serdos/sugianto.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNKmZgO9J8-s-2uw3lbx5DkcQCJ1Z6uiDEuO5Ra87k95-vXMpHgrt7poQDUt8i1SiktZ8';" />
+        <small>Source: sdm.mercubuana.ac.id</small>
+                    <p>Berdasarkan menu yang ditampilan selain Cek SK Inpassing dan Penyetaraan Guru Bukan PNS pada laman ini bisa pula dicek Klarifikasi PAK dan Informasi Penilaian Jabfung Widiaiswara.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Klarifikasi Sk Pak Guru Golongan Iv B Gol Iv C Gol Iv D Dan Gol Iv E Cara Dan Juknis Cara Dan Juknis" src="https://1.bp.blogspot.com/-sMgdaBNuiSM/WP3-zU0QEvI/AAAAAAAAJZM/wf70kK73LgMJJt4ONLTVvE8QaqP7bWJsACLcB/s640/cek%2BSK%2BInpassing%2Bdan%2BPenyetaraan%2Bguru%2Bnon%2BPNS%2Bok.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx-zhI04qa7pQA9-jl_A2wAQSHYcRHbkpxY6MVc5zUKAT2mGuIqEy8qweCmu_NaDXfSTw';" />
+        <small>Source: carahiba.blogspot.com</small>
+                    <p>Cek Sk Inpassing Guru Non Pns Info Pendidikan Keagamaan Dan Madrasah Info Pendidikan Islam.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Sk Inpassing Guru Non Pns Seputaran Guru" src="https://3.bp.blogspot.com/-wDSkTUe9ivg/WPQpwB9eAZI/AAAAAAAAJiU/3d76fPcPviQ79fdRj46A6MFagQXLRz81wCLcB/s1600/Info%2BPengiriman%2BBerkas%2BInpasing%2BGPNS%2Bjenjang%2BDikdas%2B2017_001.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFK9SMTEsbDi3t4bh9SphKaw3irLlLibDM0Dape4jJXaf5IXRY_hbepCjD6dKiJ9ixy5c';" />
+        <small>Source: seputargurumu.blogspot.com</small>
+                    <p>Tata Cara Pendaftaran PenyesuaianInpassing JF PPBJ melalui Sistem Informasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Index Of Kepegawaian Mutasi Sk Inpassing" src="http://storage.kopertis6.or.id/kepegawaian/Mutasi/SK%20Inpassing/AKABA%2017-Riyana%20Dewi.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg0i1CA96pjqk_nt6nhM4puYNTmhJiM4QdVLXaGl_IpcSt2CDaxmKwU7xVueM-zQrCljE';" />
+        <small>Source: storage.kopertis6.or.id</small>
+                    <p>Contoh Dokumen dan Formulir PenyesuaianInpassing JF PPBJ Tahun 2019-2021.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Edaran Inpassing Pak" src="https://image.slidesharecdn.com/edaraninpassingpak-141209224632-conversion-gate02/95/edaran-inpassing-pak-1-638.jpg?cb=1418165241" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHm7wK5-sj1YrzfsH7-7w2Rp0exduGes2j9eI-m-yJhCZsycvEev9KXPlT4LN6DK4dBXQ';" />
+        <small>Source: www.slideshare.net</small>
+                    <p>Contoh sk inpassing jabatan fungsional guru.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Sk Inpassing Guru Pns Guru Paud" src="https://lh5.googleusercontent.com/proxy/xvjVvlsucbh4xs1xflll5QsJLTHyIG0Oa0QFEAl08h5D8KLnxL526oe8bpskL5uLGc9p7UC1c8t6wOKO3FIDeiJReCn5ZHs2CuzLO5jCKSirY_XLy-P9Q55cjyGxuj6hYQyPYQFu--NT6XrF-RRiBg=s0-d" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXK4wuMHd-Jg2WRj3swRBbYYQyS36NVMAhV24RQHQlfE3QUeTw_TT_FgiLSzDwL-KhDck';" />
+        <small>Source: www.gurupaud.my.id</small>
+                    <p>Contoh SK Admin PPK.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Sk Inpassing 2019 Penyesuaian Gaji Pokok Pns Terbaru Sesuai Pp No 15 Tahun 2019 Info Pendidikan Terbaru" src="https://4.bp.blogspot.com/-aSJLpGlvOIs/XKLhTS5YXkI/AAAAAAAARyE/H0G2K7zbl3Mw4bYW-0XjOEYYoDyjVxSzgCLcBGAs/s1600/kop%2Bsk%2Binpassing%2Bguru%2B2019.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnbf0tMbQ6WegPBH6tPoHfN-8EhCxDplHy-nbwmgLeJLwNE6w_jBzkJ6DRyhtjw9cs8lA';" />
+        <small>Source: www.guru-id.com</small>
+                    <p>Seorang dosen tetap yayasan memiliki sk inpassing bertanggal 01 Juni 2010 dengan masa kerja 20 tahun 3 bulan dihitung mulai dari sk pengankatan jabatan fungsional pertama maka total masa kerja pada saat mengikuti serdos 2011 adalah 20 tahun 3 bulan ditambah masa kerja dari 01 Juni 2010 sd 01 April 2011 setiap perhitungan masa kerja pada tahun berjalan adalah sd 01 April 20 tahun 3 bulan ditambah 9 bulan 21 tahun.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Sk Inpassing Dunia Sosial" src="https://lh6.googleusercontent.com/proxy/Tcond7Ju7VlQyehA-LqKpyXWbEm0iArNEVONwX7STHSCkSISU6XIJuO0tllw8Xp_jIHBBSaScdna-Y1DCfGIZf8R1UZWhOflABWFYS_Ai6pr6sVorzm3E16EilGX-27rwruau-6uijL2wcCrZVKnv4ocJ8YBC1E=s0-d" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwQHLcRb_G58lGbcFVbixuhGyLMU5YYhv-TNnwrQ1i7KnvAE3SL4rZCuPXjAryhBWkfEk';" />
+        <small>Source: www.duniasosial.id</small>
+                    <p>Kumpulan Dokumen File Guru Modul Guru Pembelajar SLBTKSDSMPSMASMK Lengkap 2016.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Surat Keputusan Inpassing" src="https://lh3.googleusercontent.com/proxy/SYSZyuCIxqdusW-6K1EyUFwICcMbXvMNHU_bFV8UfD7Rygq-yx-Rh5ylWxi_HzpxK85DwRWYdzup8ulmsU96bbiNlHXDqH7NBZ2lje5Zaw6Gci65R2aNRn4FFhsSq3ItUsbqTfb52CWHCjnJei0s0xJFIMjYgg=s0-d" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXHBvMjKDW81N81JrEbEWJVpWePeisJK0unPkYGSOhcCBO18gvKGY0zCtQxqvt5QaFnxQ';" />
+        <small>Source: contohsuratmenyuratku.blogspot.com</small>
+                    <p>Bahkn 2010 dan 2011 mengalami kenaikan sesuai golongan sayamemang sk inpassing sendiri secara terpisah saya belum pernah menerimahanya pda sk pencairan sudah tercantum sebesar inpassingpada th.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/sikap-adil-terhadap-ayah.html"><i>&larr; sikap adil terhadap ayah</i></a>
+                                                                    
+                                        <a href="/sifat-20-pdf.html"><i>sifat 20 pdf &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

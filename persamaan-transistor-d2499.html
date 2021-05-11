@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Persamaan Transistor D2499
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Persamaan Transistor D2499",
+  "datePublished": "2021-05-11",
+  "image": "https://3.bp.blogspot.com/-I_NUidEWc2c/Wef809z7mqI/AAAAAAAAFh0/gNZXiyAUp8UjnEJp6juHen_LfP9D8PdpwCLcBGAs/s1600/Tr%2BHorisontal%2Btv%2BD2499.JPG",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=persamaan+transistor+d2499",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Persamaan Transistor D2499
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Persamaan Transistor D2499</strong>. C6092 spt TT2138. Perbedaan data seri transistor dengan dioda damper dengan arus sama atau lebih namun kurang sesuai untuk mengganti transistor D2498 atau tidak cocok untuk persamaan pengganti transistor horizontal terlebih untuk mengganti transistor regulator smps.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://1.bp.blogspot.com/-1mepzrwd7WY/XtjBtGpZTcI/AAAAAAAAGho/tyDJH1WlLHACLt7N-DgT9W0ML1YJ_cI6gCLcBGAsYHQ/s1600/Persamaan%2BTransistor%2BHorisontal%2BD2499.jpg" alt="Persamaan Transistor Horisontal D2499 Aflah Sentosa" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP5OHn-NU9Uug06ZZLc8ykCuz41DAXlJQbtjEf9suEgBIsRwYglVct1Ti1PWXquLrhQCw';">
+        <figcaption>Persamaan Transistor Horisontal D2499 Aflah Sentosa from www.aflahsentosa.com</figcaption>
+    </figure>
+        <p>
+        2SD869 2SD2599 35A 50W. DATA TRANSISTOR D1551 Vcb Volt 1500 Vce Volt 600 Ic Amper 5 DATA TRANSISTOR D1556 Vcb Volt 1500 Vce Volt 600 Ic Amper 6 DATA TRANSISTOR D2499 Vcb Volt 1500 Vce Volt 600 Ic Amper 6 DATA TRANSISTOR D1651 Vcb Volt 1500 Vce Volt 800 Ic Amper 5 DATA TRANSISTOR D1652 Vcb Volt 1500 Vce Volt 800 Ic Amper 6. D1554 D1555 D1878 D1911.
+    </p>
+    <h3>C4429 C4460 C4458 BU2520.</h3>
+    <p>TT2140 c5296 j6810 c5296 c5149 J6810 C 5885. Fungsi persamaan transistor pada pesawat tv adalah untuk membantu mencari datasheet pada berbagai jenis transistor yang banyak dipakai pada pesawat tv. Tv thosiba 29 in kasih D2498. 2SD1426 2SD2599 35A 80W.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Persamaan Transistor D2499" src="https://1.bp.blogspot.com/-9_99BBIaVOk/X39Bd0PkvnI/AAAAAAAABOI/r4UPXFf-xUA3Pd_Gkz3gVnXzRckQ4aH-gCLcBGAsYHQ/w768-h432-p-k-no-nu/persamaan%2Btransistor%2Bd2499.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8527PMrlRNmwZkPVFd0I5xQoEiBm9VX7U2vVwxDUeJ1ORy6idNEfiI2NFfQ9TO4z_yOU';" />
+        <small>Source: www.fanselektronic.com</small>
+                    <p>TT2140 c5296 j6810 c5296 c5149 J6810 C 5885.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Persamaan Transistor Horisontal C6090 Soldiradem Blog" src="https://1.bp.blogspot.com/-GIWUS1pCqXU/X2XDkI4LIUI/AAAAAAAAC-M/SVzpXxiON8okK6KWoc_JULW2lofQ5FySgCLcBGAsYHQ/s699/PERSAMAAN-C6090.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS2EkholL_OK_jbSALMFe6yfGf3FMPDeyIAEMeJdfxuyPLC_w3YNuTzVudZL_4n9w-UK8';" />
+        <small>Source: www.soldiradem.com</small>
+                    <p>V 5 V Max CE sat High Speed.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Mengecek Transistor Horisontal Tv Yang Benar Bahar Electronic" src="https://3.bp.blogspot.com/-I_NUidEWc2c/Wef809z7mqI/AAAAAAAAFh0/gNZXiyAUp8UjnEJp6juHen_LfP9D8PdpwCLcBGAs/s1600/Tr%2BHorisontal%2Btv%2BD2499.JPG" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6h9HlY9XdoLtB_fPEokbAKmskDbY7-fiV43GokOoOzVH2ZmNphjX49JgVmoRi6u-wrKk';" />
+        <small>Source: www.baharelectronic.com</small>
+                    <p>2SD868 2SD2599 25A 50W.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Berbagai Macam Persamaan Transistor Horisontal Tv Solderku Tempatnya Belajar Elektronika" src="https://solderku.xyz/wp-content/uploads/2019/01/transistor2Bhorisontal2Btv.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzi4KDl6pSy2Jq0UMFIA0lCTreauyXdm45V141EP3DHjMFKFdjO_PKA9Zo79FRvbOk2-s';" />
+        <small>Source: solderku.xyz</small>
+                    <p>2SD1426 2SD2599 35A 80W.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Persamaan Transistor Horisontal" src="https://3.bp.blogspot.com/-rdcw93OOsgk/Wq6vdIRF11I/AAAAAAAABnc/Np5qVOVmPw8Ycz3aEEuGMa9BfSDuMdDtgCLcBGAs/s1600/transistor%2Bhorisontal%2B-%2BCopy.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSLPgmlVB-GakiqnfhyH-UCoZQScT5ZmwGgsyzIs_-FICs0ApXuBFVqvqN6BR_N_mGKt0';" />
+        <small>Source: elektronikalearn.blogspot.com</small>
+                    <p>DATA TRANSISTOR DEFLEKSI HORISONTAL.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Persamaan Transistor Horisontal Beberapa Merk Tv Lengkap Aflah Sentosa" src="https://1.bp.blogspot.com/-ujDDKhkcSzU/XGIOFQlt6DI/AAAAAAAAC2o/xfhkPNzdx0w1dUQXsGHyojx7KwuTuPdAACLcBGAs/s1600/Transistor%2BHorizontal.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjv4hHrKwWyZPiSfxGS6ApRwFrFTG33ov9TbCZMgCiFC_9b7i7UajUo6lBUwWjryY0QXo';" />
+        <small>Source: www.aflahsentosa.com</small>
+                    <p>D1554 D1555 D1878 D1911.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Emonk Elektronik Service Video Audio Data Persamaan Dan Spesifikasi Transistor Horizontal" src="https://4.bp.blogspot.com/-gyX-Bf4PseY/Wf3ZfX0FluI/AAAAAAAAADA/jnYoqAEg1Dg7MzB6E1Xdi9l4bRZycqU5QCLcBGAs/s280/Screenshot_133.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzK7_BJTtre2bJyuk6pCKRAVB8cBBBgBfGBH3X-plxaHKwNo3xQshMOGbe0-5ni7mYP0U';" />
+        <small>Source: emonkelektronik.blogspot.com</small>
+                    <p>TV LG Ultra Slim C6090.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Persamaan Transistor Horizontal Tv Lg Dan Cara Mengukurnya Masputz Com" src="http://4.bp.blogspot.com/-yKFiZ8wjZzc/Vczsm_SMz6I/AAAAAAAADK0/6KeO9DQzHUg/s1600/persamaan%2Btransistor%2Bhorizontal.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4dYaD_9LzMeYeoJrWmyU2Dygm_zB3hn87uZmRtWoCHBYIaC6xqLyRb7Lldpyp5iVrMSQ';" />
+        <small>Source: www.masputz.com</small>
+                    <p>Apabila sobat tekhnisi tv menjumpai kerusakan TV pada bagian blog horisontal yaitu transistor horisontalnya dengan nomor seri D2499 dan kebetulan transistor horisontal D2499 stoknya lagi kosong sobat bisa mengganti transistor horisontal yang rusak tadi dengan persamaan transistor horisontal walaupun nomor serinya berbeda sepanjang pengalaman saya menggunakan persamaan transistor horisontal dengan nomor seri yang berbeda bisa digunakan untuk mengganti transistor.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Persamaan Transistor Horisontal D2499 Aflah Sentosa" src="https://1.bp.blogspot.com/-1mepzrwd7WY/XtjBtGpZTcI/AAAAAAAAGho/tyDJH1WlLHACLt7N-DgT9W0ML1YJ_cI6gCLcBGAsYHQ/s1600/Persamaan%2BTransistor%2BHorisontal%2BD2499.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP5OHn-NU9Uug06ZZLc8ykCuz41DAXlJQbtjEf9suEgBIsRwYglVct1Ti1PWXquLrhQCw';" />
+        <small>Source: www.aflahsentosa.com</small>
+                    <p>Karena kemungkinan atau biasanya transistor yang asli di pasaran sulit didapat maka solusinya harus mencari persamaan untuk menggantinya.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/silabus-bk.html"><i>&larr; silabus bk</i></a>
+                                                                    
+                                        <a href="/silabus-bahasa-jawa-smp-kurikulum-2013-jawa-timur.html"><i>silabus bahasa jawa smp kurikulum 2013 jawa timur &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

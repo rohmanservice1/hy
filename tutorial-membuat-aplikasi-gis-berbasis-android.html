@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Tutorial Membuat Aplikasi Gis Berbasis Android
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Tutorial Membuat Aplikasi Gis Berbasis Android",
+  "datePublished": "2021-05-11",
+  "image": "http://tutorial.atmaluhur.ac.id/wp-content/uploads/2015/10/data4.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=tutorial+membuat+aplikasi+gis+berbasis+android",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Tutorial Membuat Aplikasi Gis Berbasis Android
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Tutorial Membuat Aplikasi Gis Berbasis Android</strong>. Citra Satelit Landsat dan Bagaimana Mendapatkannya Secara Gratis. 331 Langkah Langkah Pembuatan Aplikasi Langkah -langkah pembuatan Aplikasi Mobile GIS Lokasi ATM Pangkalpinang Berbasis Android pertama-tama diawali dengan meng-instal jdk-7u10-windows-i586 karena di perlukan library pada update java terbaru Proses peng-instal-an ini dilakukan pada sistem operasi Microsoft windows.</p>
+            <figure>
+        <img class="v-cover ads-img" src="http://imamfarisi.com/wp-content/uploads/2016/08/Membuat-Aplikasi-Masjid-Detector-di-Android-1-800x535.jpg" alt="Membuat Aplikasi Masjid Detector Di Android Imam Farisi" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvzlnPlvZf-8CZ1d71AFnoENiRPO55rfrSH5KltuQDNR4MxguhjaeY2atq8XFueQJeQzQ';">
+        <figcaption>Membuat Aplikasi Masjid Detector Di Android Imam Farisi from imamfarisi.com</figcaption>
+    </figure>
+        <p>
+        Model Builder dalam ArcGIS. Tujuan dari penelitian ini untuk membangun sistem informasi geografis berbasis web untuk penyebaran fasilitas umum di kabupaten klaten. Pembuatan Aplikasi Pembuatan Aplikasi GIS Persebaran Gedung Serbaguna Berbasis Android ini dibagi menjadi tiga tahapan seperti.
+    </p>
+    <h3>Djokos supriyanto Oktober 30 2015.</h3>
+    <p>Untuk memperjelas gambaran tentang aplikasi Sistem Informasi Geografis berbasis Android saya menyarankan bagi Sohib untuk mendownload aplikasi SIG Kota Jambi di Google Playstore. Berbagai macam kelas membuat aplikasi web android dan. Membuat aplikasi music player. 331 Langkah Langkah Pembuatan Aplikasi Langkah -langkah pembuatan Aplikasi Mobile GIS Lokasi ATM Pangkalpinang Berbasis Android pertama-tama diawali dengan meng-instal jdk-7u10-windows-i586 karena di perlukan library pada update java terbaru Proses peng-instal-an ini dilakukan pada sistem operasi Microsoft windows.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Menampilkan Maps Di Android Menggunakan Android Studio Twoh Co" src="http://droidkampf.com/wp-content/uploads/2016/06/app1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHI-_AeH1p9RrCiNHeM7GfAtqS3Y_uYx_1dfAnlfELQnwN8sBJIsPSvCD3z4z5WUDcn_s';" />
+        <small>Source: www.twoh.co</small>
+                    <p>Membuat aplikasi webview dengan progress bar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Membuat Aplikasi Mobile Gis Menggunakan Android Studio Project Baru Bagian 1 Inwepo" src="https://inwepo.co/wp-content/uploads/2016/10/tampilan-awal.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlmDNtPGpVq0HHkcBCtPKKlV-4bjahC0CKexjY0kVxKLkECLDtZhDXrUpRGjiFS588EiM';" />
+        <small>Source: inwepo.co</small>
+                    <p>Tutorial membuat aplikasi android sederhana yang dibahas pada yaitu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Membuat Aplikasi Mobile Gis Menggunakan Android Studio Menampilkan Marker Studio Pada Maps Bagian 8 Inwepo" src="https://inwepo.co/wp-content/uploads/2016/10/Tutorial-Membuat-Aplikasi-Mobile-GIS.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROmzR1HOodvids3XH5Z_ZiZYFbggcQqQYtWe-_KmR5I5EQC2LrByXgHfE1H9Abdy99nCE';" />
+        <small>Source: inwepo.co</small>
+                    <p>Menampilkan Native Splash Screen Aplikasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Aplikasi Berbasis Lokasi Location Based Service Di Android Studio Yerika Ayu Lestari" src="https://yerikaayulestari.files.wordpress.com/2017/08/tutorial-menggunakan-android-studio-1-2-e1503157368911.jpg?w=640" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTIFvHmE1s15wiQGu0RkuiWGQMlXzg6IFFDQLNvF7Ya-X27RxMOcTcgxrODPQ05VaTfrM';" />
+        <small>Source: yerikaayulestari.wordpress.com</small>
+                    <p>Mendapatkan API Key Google Maps Bagian 3 Setelah pada 2 tutorial sebelumnya kita sudah membuat sebuah project baru dan juga membuat sebuah splashscreen pada tutorial ini penulis akan membuat tutorial untuk membuat tampilan menu utama serta cara mendapatkan API untuk mengakses.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Artikel Tik Cara Membuat Aplikasi Gis Sederhana Berbasis Web Php" src="http://tutorial.atmaluhur.ac.id/wp-content/uploads/2015/10/data4.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6bCQpPiXnfot5HjUREwJWnnDDX1lct5lSxJj4d4N6TPqRMStsmuFPf9o5Bv74ggS-jMw';" />
+        <small>Source: tutorial.atmaluhur.ac.id</small>
+                    <p>Aplikasi Efek Buku Berbasis Phonegap.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Membuat Aplikasi Mobile Gis Menggunakan Android Studio Api Bagian 7 Inwepo" src="https://inwepo.co/wp-content/uploads/2016/10/Tutorial-Membuat-Aplikasi-Mobile-GIS-Menggunakan-Android-Studio-API-Bagian-7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmuxzI0R9ajl4IktihhLK-aYLO5FeW5iaQM3NTj-FVE4_fHjQLnK-CLMdhDNGUPyKnAw4';" />
+        <small>Source: inwepo.co</small>
+                    <p>Start Today and Become an Expert in Days.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Membuat Aplikasi Mobile Gis Menggunakan Android Studio Menampilkan Marker Studio Pada Maps Bagian 8 Inwepo" src="https://876311.smushcdn.com/1950916/wp-content/uploads/2016/10/klik-marker.png?lossy=1&amp;strip=0&amp;webp=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeRWcG54kpH4KktY9fsPoeNo8eZufCzKEoGcTSMJ3jk3heXmIUwO07sMV_0X5vtwDEfqY';" />
+        <small>Source: inwepo.co</small>
+                    <p>Pertama-tama bukalah Android Studio dan dari menu bar di bagian atas pilih File New New Project lalu pilih template untuk Google Maps Activity seperti contoh di bawah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Membuat Aplikasi Android Gis Cafe And Resto Pada Suatu Wilayah Bagian 1 Pemula Mudah Youtube" src="https://i.ytimg.com/vi/qnbffK-5rmw/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ65RZAcbAkUGDX7lQescM0Bp9cp9qL1gHOgtxjLOLXWtcbMrpsuJk-9d1lIIB48-Pttg';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Membuat Database Bagian 6 Tutorial Membuat Aplikasi Mobile GIS Menggunakan Android Studio.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membuat Aplikasi Masjid Detector Di Android Imam Farisi" src="http://imamfarisi.com/wp-content/uploads/2016/08/Membuat-Aplikasi-Masjid-Detector-di-Android-1-800x535.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvzlnPlvZf-8CZ1d71AFnoENiRPO55rfrSH5KltuQDNR4MxguhjaeY2atq8XFueQJeQzQ';" />
+        <small>Source: imamfarisi.com</small>
+                    <p>Untuk memperjelas gambaran tentang aplikasi Sistem Informasi Geografis berbasis Android saya menyarankan bagi Sohib untuk mendownload aplikasi SIG Kota Jambi di Google Playstore.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/silabus-matematika-kelas-6-kurikulum-2013-revisi-2018-semester-2.html"><i>&larr; silabus matematika kelas 6 kurikulum 2013 revisi 2018 semester 2</i></a>
+                                                                    
+                                        <a href="/silabus-kursus-bahasa-inggris.html"><i>silabus kursus bahasa inggris &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

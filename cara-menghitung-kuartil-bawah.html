@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Cara Menghitung Kuartil Bawah
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Cara Menghitung Kuartil Bawah",
+  "datePublished": "2021-05-11",
+  "image": "https://i.ytimg.com/vi/Mp8B3ejJS7k/maxresdefault.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=cara+menghitung+kuartil+bawah",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Cara Menghitung Kuartil Bawah
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Cara Menghitung Kuartil Bawah</strong>. Cara menghitung kuartil di excel Dengan menggunakan microsoft excel kita dapat mengihitung kuartil quartile dan persentil percentile. 3 4 4 5 5 6 8 8 9 10.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://www.gurupendidikan.co.id/wp-content/uploads/2019/05/Contoh-Soal-Kuartil-Data-Berkelompok.jpg" alt="Rumus Kuartil Desil Persentil Simpangan Dan Contoh Soal" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTqrJnuCYS67ikjnlfTx5ROqbaSY7LCFcdtcPEOomKK5gp9YDDCVIsplug5WeEwn_owfA';">
+        <figcaption>Rumus Kuartil Desil Persentil Simpangan Dan Contoh Soal from www.gurupendidikan.co.id</figcaption>
+    </figure>
+        <p>
+        Kuartil bawah adalah data pada posisi 14 dari kumpulan data yang telah. Cara Menentukan Kuartil Bawah untuk Data Tunggal dan Berkelompok. Kuartil pada suatu data dapat diperoleh dengan cara membagi data tersebut secara terurut menjadi empat bagian yang memiliki nilai sama besar.
+    </p>
+    <h3>Biasanya kuartil bawah dihitung bersamaan dengan unsur kuartil lain yakni kuartil tengah Q2 dan kuartil atas Q3.</h3>
+    <p>Q 1 L 1 14n å f 1f Q1. Menentukan Kuartil Bawah. Demikianlah sekilas materi tentang cara menghitung dan menentukan Kuartil bawah dan kuartil atas suatu data yang disajikan dalam bentuk tabel distribusi frekuensi dan histogram. Cara Menentukan DesilKuartil dan Presentil.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Mudah Mencari Kuartil Bawah Q1 Try Out Matematika Sma Ipa 2019 Mgmp Dki Samasaya Belajar Youtube" src="https://i.ytimg.com/vi/Mp8B3ejJS7k/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkzvvVZTekMjrqMkKKRewgNoBLh2mBddf7phxtXUgauJJXPctAvl-tmBq6iNcztrmKo_U';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Kuartil pada suatu data dapat didapatkan dengan cara membagi data tersebut secara terurut kedalam empat bagian yang memiliki nilai sama besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumus Kuartil Desil Dan Persentil Idschool" src="https://idschool.net/wp-content/uploads/2018/02/Rumus-Persentil-Data-Kelompok.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzni0JjpHvt99XmlMPCAwz-AJh-v6P4_DCS0ZOW0XQlyyy9a2J1wQXgSW1nVh_6kDBGHM';" />
+        <small>Source: idschool.net</small>
+                    <p>Demikianlah sekilas materi tentang cara menghitung dan menentukan Kuartil bawah dan kuartil atas suatu data yang disajikan dalam bentuk tabel distribusi frekuensi dan histogram.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumus Kuartil Desil Persentil Simpangan Dan Contoh Soal" src="https://www.gurupendidikan.co.id/wp-content/uploads/2019/05/Contoh-Soal-Kuartil-Data-Berkelompok.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTqrJnuCYS67ikjnlfTx5ROqbaSY7LCFcdtcPEOomKK5gp9YDDCVIsplug5WeEwn_owfA';" />
+        <small>Source: www.gurupendidikan.co.id</small>
+                    <p>Dalam menentukan letak kuartil data tunggal anda harus melihat kondisi jumlah data n terlebih dahulu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Praktis Dan Taktis Cara Mudah Menentukan Kuartil Bawah Suatu Data Kelompok Berbentuk Histogram Youtube" src="https://i.ytimg.com/vi/3SyuIIhxPco/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQqFMlA3ET5ySSU38swukmO24wjmZ4lOSh0iiNlpn5ATvVBlrQRniPbjOjESesNbIa6gg';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Kuartil Q ada tiga yaitu Q 1 kuartil bawah Q 2 kuartil tengah atau median dan Q 3 kuartil atas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Carilah Kuartil Atas Bawah Dan Tengah Dari Tabel Tersebut Brainly Co Id" src="https://id-static.z-dn.net/files/ddc/298dcc6537b57c092ca2f828cae3bf6a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTyFL3fe-lbnqiiCODHScP2Om7OGMVrbcGslybv_GtyJoFNeBE1BjhaN5F6TC6dekxm6U';" />
+        <small>Source: brainly.co.id</small>
+                    <p>Cara Menentukan Kuartil Bawah untuk Data Tunggal dan Berkelompok.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumus Kuartil Pengertian Cara Menentukan Contoh Soal" src="https://moztrip.com/wp-content/uploads/2020/02/Rumus-kuartil-data-tunggal-.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsMEw_lDzZ5V1i4e1LQ1Kop6UomuXxgWcFtSMSo4FoPMad1dyl8e7kN56xAg4kTp9knWY';" />
+        <small>Source: moztrip.com</small>
+                    <p>Urutkan data dari yang terkecil hingga dengan data yang terbesar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumus Kuartil Pengertian Cara Menentukan Dan Contoh Soal" src="https://rumusbilangan.com/wp-content/uploads/2019/01/Rumus-Kuartil.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBAMg7JoQbdasKcji9x_uEXsRLnckzz2yk8ab58TD5LqhsjfC24NlnGY7WuYqGwlYkdVA';" />
+        <small>Source: rumusbilangan.com</small>
+                    <p>Cara menentukan kuartil adalah sebagai berikut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Http Imathsolution Blogspot Com 2018 09 Cara Mudah Menentukan Kuartil Atas Dan Html" src="3zcvzi4UB7zYUM" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe-klpby34A5PwO6CkuPKdRNLIAERROvKfLlU6HQ2Rlm66eyaItaG6gWUsRi02vMRpS5E';" />
+        <small>Source: </small>
+                    <p>Karena banyaknya data atau n 9 ganjil maka.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Cara Mudah Menentukan Kuartil Atas Dari Tabel Distribusi Frekuensi 1 Youtube" src="https://i.ytimg.com/vi/m-J_BkQn7gY/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRvgVpTrjhU7s4S1EZaeBQ2wLBtcd5UTr8sfXJ_7XYwYOFZhVT_FkaVMVqobiLRodKtE4';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Berikut ini adalah rumus untuk mencari posisi Kuartil tersebut.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/download-pemain-pes-2013-terbaru-2016.html"><i>&larr; download pemain pes 2013 terbaru 2016</i></a>
+                                                                    
+                                        <a href="/download-pclp-full-version.html"><i>download pclp full version &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

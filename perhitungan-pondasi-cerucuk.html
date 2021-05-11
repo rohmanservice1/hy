@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Perhitungan Pondasi Cerucuk
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Perhitungan Pondasi Cerucuk",
+  "datePublished": "2021-05-11",
+  "image": "https://khedanta.files.wordpress.com/2011/10/pondasi-cerucuk.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=perhitungan+pondasi+cerucuk",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Perhitungan Pondasi Cerucuk
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Perhitungan Pondasi Cerucuk</strong>. 222 Peralatan 1 Gergaji kayu 2 Kapak 3 Palu 5 kg 4 Linggis 5 Cangkul 6 Alat pengangkut tanah 7 Alat pancang cerucuk 8 Alas pemukul tiang 9 Perancah atau platform dari susunan drum-drum dan papan kayu 10 Back Hoer 11 Mesin Las 223 Bahan Bahan-bahan yang digunakan dalam pelaksanaanpembuatan pondasi cerucuk. Cerucuk pada matras bambu menambah daya dukung tanah dasar karena cerucuk matras bambu mentransfer beban timbunan ke lapisan tanah yang lebih dalam Gambar 6d.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://3.bp.blogspot.com/-6EvgjxUhA2k/WO33kF2gcjI/AAAAAAAAAjw/rHZDMwUmrtgFLN06c3PW2zYT8ISduC9UwCLcB/s640/gambar%2Bdetail%2Bpondasi.jpg" alt="Mengenal Cara Pemasangan Pondasi Cerucuk Kitasipil Com" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQE1O5uJGQ404djsWXWx80qQhiuEbqBuU_8JSj6xUJh5LGm6eeJFsUd60y7WibmLDYAfw';">
+        <figcaption>Mengenal Cara Pemasangan Pondasi Cerucuk Kitasipil Com from www.kitasipil.com</figcaption>
+    </figure>
+        <p>
+        Pondasi cerucuk yaitu salah satu jenis pondasi yang biasanya digunakan pada didaerah dengan kondisi tanah yang kurang stabil seperti jenis tanah lembek ataupun tanah gambut dengan elevasi muka air yang cukup tingggi Ketinggian pondasi cerucuk dapat dipengaruhi oleh muka air pasang surut pondasi foot plate RumahLia com Sumber. Rumus Menghitung Volume Pondasi Cakar Ayam. Cari metoda perkuatan lainnya.
+    </p>
+    <h3>Kayu harus mempunyai diameter yang seragam yaitu antara 8 15 cm dimana pada ujung terkecil tidak boleh kurang dari 8 cm dan pada ujung terbesar tidak melebihi 15 cm.</h3>
+    <p>Pondasi cerucuk yaitu salah satu jenis pondasi yang biasanya digunakan pada didaerah dengan kondisi tanah yang kurang stabil seperti jenis tanah lembek ataupun tanah gambut dengan elevasi muka air yang cukup tingggi. Kayu harus mempunyai diameter yang seragam yaitu antara 8 15 cm dimana pada ujung terkecil tidak boleh kurang dari 8 cm dan pada ujung terbesar tidak melebihi 15 cm. Jumlah volume pada pondasi sisi tepinya adalah 018m² x 34m 612m³. Keliling tiang pancang K 314 D 314 8 2512 cm.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Peningkatan Daya Dukung Tanah Dengan Pondasi Cerucuk Artikel Teknik Arsitektur Dan Sipil" src="https://2.bp.blogspot.com/-wiGCT9ZaN2Y/TvaRkB3UzXI/AAAAAAAABxw/NThwMh9thys/s640/Publication1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBKJWaMeIsOX2fSWD5_A-TMievG48_E9lZ5KgWZirFt3lMHCNTpDQxqptXam0zJISFkv0';" />
+        <small>Source: arsitekdansipil.blogspot.com</small>
+                    <p>Nilai Ftotal 518 kgcm.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Pasang Pondasi Cerucuk Doc" src="https://imgv2-2-f.scribdassets.com/img/document/418176659/298x396/62034b0f3f/1563384674?v=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa6dMbqpRSRGxs7k8nHPTWghIZtieG6TZlacTvxrgZJAPnSAaR2HlVYmrysGE7JdQQ4YQ';" />
+        <small>Source: id.scribd.com</small>
+                    <p>Hasil analisis struktur dari suatu kolom interior berukuran 500mm x 500mm diperoleh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Menghitung Volume Pondasi Telapak Dan Pondasi Batu Kali" src="https://udhargabangunan.com/wp-content/uploads/2020/03/Fungsi-Pondasi.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC9jbk1Ql9jR9P69uMCsMvj2DWHr4qLWS_NJ4afQJUPf-Zpg-1ajZakgzPrs-yMqRY5NE';" />
+        <small>Source: udhargabangunan.com</small>
+                    <p>P DL 750 kN PLL 500 kN Kuat tekan karakteristik beton 25 MPa Daya dukung tanah σt 250 kPa Kedalaman tanah keras 2 m Berat jenis tanah γt 15 kNm 3 Hitung dimensi dan penulangan pondasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pondasi Cerucuk" src="https://image.slidesharecdn.com/pondasicerucuk-141111145005-conversion-gate02/95/pondasi-cerucuk-2-638.jpg?cb=1415717453" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLKb8J4bVTz1hdjd-NnkSFWRjAWoa1Ah9kYzF1qEjQT-0jlAD0jlOUOTcujqA8_wiC0_w';" />
+        <small>Source: www.slideshare.net</small>
+                    <p>ANALISIS PONDASI 101 Desain Pondasi Cerucuk a Perhitungan kuat 1 tiang pondasi Misal pada titik 203 Kedalamaan tiang df 5.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Pasang Pondasi Cerucuk Doc" src="https://imgv2-2-f.scribdassets.com/img/document/418176659/original/3596919dfa/1614767084?v=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgoh6Frxei8U_ldEr1A-tTkAQsDxgZcjsb73eBeZWUn4lKF26tdsxsDM93Br6tMQVWyEw';" />
+        <small>Source: id.scribd.com</small>
+                    <p>Untuk pondasi dangkal tanah diperbaiki dengan memakai cerucuk bambu atau kayu dan kemudian ditambah lapisan pasir agar lebih stabil.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Khedanta Page 4" src="https://khedanta.files.wordpress.com/2011/10/pondasi-cerucuk.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTId5yXh0P5RASAEnZMTM-l02lSYkbQ0PRBYH0r0sDx41FPgh8Chy1WPGYvHS2PK2DRSLo';" />
+        <small>Source: khedanta.wordpress.com</small>
+                    <p>Perhitungan Pondasi Cerucuk Download.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Konfigurasi Pondasi Cerucuk" src="https://image.slidesharecdn.com/ipi33472-161005232946/95/konfigurasi-pondasi-cerucuk-5-638.jpg?cb=1475710228" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxdor_AWmEB2OjhzPbL94A80A1gyZ_30cxEm6Y7dR-m8JCxDQ3HBV91geFwqdDoy-HHPk';" />
+        <small>Source: www.slideshare.net</small>
+                    <p>Sistem pemasangan cerucuk bambu betul- betul terlepas dari struktur pondasi adapun yang diharapkan adalah peningktan daya dukung tanah lunak yang sangat kecil menjadi lebih besar yaitu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kedalaman Galian Pondasi Cakar Ayam Rumah 2 Lantai Lantai Rumah Desain" src="https://i.pinimg.com/originals/c1/a3/47/c1a3474b0a991378992a9470910e1541.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeTFacxSXnMSU53ughXPaPcilrqcm7dL_e8yXW-_Om5t1PF6ZpsyGFZBE1m6-tnw3fkII';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Eo Vv Vs atau eo V Vs Vs eo V Vs 1 Bila volume cerucuk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Mengenal Cara Pemasangan Pondasi Cerucuk Kitasipil Com" src="https://3.bp.blogspot.com/-6EvgjxUhA2k/WO33kF2gcjI/AAAAAAAAAjw/rHZDMwUmrtgFLN06c3PW2zYT8ISduC9UwCLcB/s640/gambar%2Bdetail%2Bpondasi.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQE1O5uJGQ404djsWXWx80qQhiuEbqBuU_8JSj6xUJh5LGm6eeJFsUd60y7WibmLDYAfw';" />
+        <small>Source: www.kitasipil.com</small>
+                    <p>Luas penampangya adalah 06m 03m2 x 04m 018m².</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/cerpen-tentang-pahlawan.html"><i>&larr; cerpen tentang pahlawan</i></a>
+                                                                    
+                                        <a href="/cerpen-liburan-bersama-keluarga.html"><i>cerpen liburan bersama keluarga &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

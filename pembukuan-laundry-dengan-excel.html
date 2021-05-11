@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Pembukuan Laundry Dengan Excel
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Pembukuan Laundry Dengan Excel",
+  "datePublished": "2021-05-11",
+  "image": "https://i1.wp.com/manajemenkeuangan.net/wp-content/uploads/2019/04/laporan-laba-rugi-perusahaan-jasa-laundry.jpg?resize=675%2C377&amp;ssl=1",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=pembukuan+laundry+dengan+excel",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Pembukuan Laundry Dengan Excel
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Pembukuan Laundry Dengan Excel</strong>. Jadi Anda disarankan melakukan pencatatan pembukuan dengan menggunakan Aplikasi Akuntansi Excel. Memahami setiap rumus yang tersedia di excel.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://cdn.statically.io/img/i1.wp.com/zahiraccounting.com/id/blog/wp-content/uploads/2015/07/neraca-laundry.png" alt="Contoh Laporan Keuangan Jasa Laundry" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkAOpuZmv9EtNalexNyJx9jnDz0y36Xlc5_IDWZR8UwUC8YRPis0pli76j4j-5aEx92s4';">
+        <figcaption>Contoh Laporan Keuangan Jasa Laundry from lowonganpekerjaanberkah.blogspot.com</figcaption>
+    </figure>
+        <p>
+        1 Tambah ke Wishlist. Berikut ini saya akan membantu memberikan contoh pembuatan pembukuan laundry secara sederhana dengan menggunakan Ms. Buka data excel yang memuat data yang sedang dikerjakan 2.
+    </p>
+    <h3>Arus kas dari aktivitas pendanaan jumlahnya.</h3>
+    <p>Alur dari pembukuan usaha laundry tersebut dapat di lihat dari gambar diatas berikut penjelasannya. Jual Pembukuan Murah - Harga Terbaru 2021. Memahami setiap rumus yang tersedia di excel. Klik kanan dan pilih Paste Special 5.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Langkah Mudah Membuat Laporan Keuangan Usaha Laundry" src="https://i0.wp.com/manajemenkeuangan.net/wp-content/uploads/2019/04/neraca-saldo-setelah-penyesuaian.jpg?resize=675%2C662&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzEllr0hY89dBynnablbrlNeJhFRfGx9bQhV4_xsp3owqmT58RrpAZjqamX8gd7kt7aVA';" />
+        <small>Source: manajemenkeuangan.net</small>
+                    <p>Cocok untuk laundry kecil maupun besar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Pembukuan Laundry Sederhana Di Ms Excel Portal Laundry" src="https://portallaundry.com/wp-content/uploads/2020/01/pembukuan-laundry1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSioEHa525Y1odIsURdgLktYjdcl04gSkJbu9byAZ2tL8Q50aKYoInE0VU3YCodNyrr6x4';" />
+        <small>Source: portallaundry.com</small>
+                    <p>Dan Saatnya beralih ke laundry berbasis digital karena ini cara terbaik dan termudah mengelola usaha laundry kapanpun dan dimanapun melalui ponse landa.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Langkah Mudah Membuat Laporan Keuangan Usaha Laundry" src="https://i1.wp.com/manajemenkeuangan.net/wp-content/uploads/2019/04/laporan-laba-rugi-perusahaan-jasa-laundry.jpg?resize=675%2C377&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT860RYmwi58pIk81wvR95JdRFt42CsSEH7C-i0ub3zC5Fj3VOHva1f01PI79qQ-51kKw';" />
+        <small>Source: manajemenkeuangan.net</small>
+                    <p>Arus kas dari aktivitas investasi jumlahnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ak024 Aw Xl Laporan Keuangan Usaha Laundry Akoontan" src="https://akoontan.com/wp-content/uploads/2019/10/Laporan-Keuangan-Laundry-Penjualan.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJtHnR2VDzlYVAN04O0j4Pk2_sBcvGk859xD-aWpimz9Ie8Why6YhN6s8v7SY6cPhPfGM';" />
+        <small>Source: akoontan.com</small>
+                    <p>Di mulai dari pelanggan yang datang untuk mencucuikan pakaian dan diterima oleh bagian penerimaan laundry.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Aplikasi Pembukuan Laundry Sederhana Dan Gratis" src="https://cdn.bukuwarung.com/wp-content/uploads/2020/03/aplikasi-pembukuan-laundry-768x432.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST6cQcZRPc9IB0kYfUifygSYkIUMJ_d5v9zAcKoPc9olpHSyO8lkPpFVTO11U7WQ8iK60';" />
+        <small>Source: bukuwarung.com</small>
+                    <p>Arus kas dari aktivitas operasi jumlahnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Laporan Keuangan Jasa Laundry" src="https://cdn.statically.io/img/i1.wp.com/zahiraccounting.com/id/blog/wp-content/uploads/2015/07/neraca-laundry.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkAOpuZmv9EtNalexNyJx9jnDz0y36Xlc5_IDWZR8UwUC8YRPis0pli76j4j-5aEx92s4';" />
+        <small>Source: lowonganpekerjaanberkah.blogspot.com</small>
+                    <p>Pada pembahasan kali ini kita akan mengupas seperti apa contoh pembukuan sederhana menggunakan excel.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Pembukuan Laundry Sederhana Di Ms Excel Portal Laundry" src="https://portallaundry.com/wp-content/uploads/2020/01/pembukuan-laundry.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsGaJ0VsSFAIyCwgV4_0rPZvdHtKwly_Mud6JXIpvU5kbMyrQhjfn4TFmDYb6u6F9d4ek';" />
+        <small>Source: portallaundry.com</small>
+                    <p>Di mulai dari pelanggan yang datang untuk mencucuikan pakaian dan diterima oleh bagian penerimaan laundry.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Laporan Keuangan Usaha Laundry" src="https://i.ytimg.com/vi/_TzNFJtLFq0/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpSQaaF2EjlTJLP8V9Iwqh99LBpgCV1cIDAr1oBz22bH6n0PJzyWZpUK8FOSPtrhY9IrQ';" />
+        <small>Source: lowonganpekerjaanberkah.blogspot.com</small>
+                    <p>Klik kanan dan pilih Paste Special 5.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Laporan Keuangan Jasa Laundry" src="https://cdn.statically.io/img/metawede.files.wordpress.com/2011/05/laporan-keuangan-bulanan-laundry-kiloan.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3zQ4vsbyzC21ZamYNkLp8t6AO5h8RaiG58K0XVcGDwyuYHuFDd7EuiNKQOoq41bI2BAo';" />
+        <small>Source: lowonganpekerjaanberkah.blogspot.com</small>
+                    <p>Arus kas dari aktivitas investasi jumlahnya.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/contoh-soal-perpajakan-beserta-jawabannya.html"><i>&larr; contoh soal perpajakan beserta jawabannya</i></a>
+                                                                    
+                                        <a href="/contoh-soal-peluang-matematika-dan-pembahasannya.html"><i>contoh soal peluang matematika dan pembahasannya &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

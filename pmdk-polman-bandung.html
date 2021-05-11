@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Pmdk Polman Bandung
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Pmdk Polman Bandung",
+  "datePublished": "2021-05-11",
+  "image": "https://1.bp.blogspot.com/-HrYaMQ0dOcA/XvBymKNF74I/AAAAAAAAPV0/QgRJ5gRpQaEGx4V51Cq4hfKTWRemG1AjwCK4BGAsYHg/s2580/aa.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=pmdk+polman+bandung",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Pmdk Polman Bandung
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Pmdk Polman Bandung</strong>. Namun akan dimulai dengan sedikit menceritakan tentang Kampus Politeknik Negeri Bandung. Lihat profil Politeknik Manufaktur Bandung POLMAN beserta daftar fakultas jurusan kuliah info beasiswa akreditasi dan jalur pendaftaran Universitas Negeri status PTN.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://2.bp.blogspot.com/-fBT5lu8c0SM/Vt_drCuZMMI/AAAAAAAAAWk/d5BxzS3p8yA/s400/Pendaftaran%2BPOLMAN%2BBandung.png" alt="Cara Pendaftaran Beberapa Jalur Masuk Polman Bandung 2018 Almetpedia" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIiSqsVuq433YyBfXC5AuyR76Vdb4E4NRczCb-RFpMa1Lm4kW8Ni_X_g5AX9CTDIO8uvQ';">
+        <figcaption>Cara Pendaftaran Beberapa Jalur Masuk Polman Bandung 2018 Almetpedia from www.almetpedia.web.id</figcaption>
+    </figure>
+        <p>
+        Informasi ini disampaikan terutama untuk anda yang ingin kuliah di Politeknik Negeri Bandung. Penerimaan mahasiswa baru Polban dilakukan melalui 3 jalur seleksi yaitu. Informasi yang akan diberikan pada kesempatan ini adalah tentang Pendaftaran Online POLBAN 20212022 Politeknik Negeri BandungDisini admin akan menjelaskan informasi tersebut kepada anda.
+    </p>
+    <h3>Selain itu mulai tahun 2021 SNMPN hanya mengadakan.</h3>
+    <p>Politeknik Negeri Bandung merupakan politeknik terbesar di Indonesia dengan jumlah mahasiswa mencapai kurang lebih 5900 orang. Lihat profil Politeknik Manufaktur Bandung POLMAN beserta daftar fakultas jurusan kuliah info beasiswa akreditasi dan jalur pendaftaran Universitas Negeri status PTN. BANDUNG polbanacid Politeknik Negeri Bandung kembali membuka seleksi masuk melalui jalur Penelusuran Minat dan Kemampuan Politeknik Negeri PMDKPN TA 20192020. Informasi yang akan diberikan pada kesempatan ini adalah tentang Pendaftaran Online POLBAN 20212022 Politeknik Negeri BandungDisini admin akan menjelaskan informasi tersebut kepada anda.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Informasi Penerimaan Mahasiswa Politeknik Manufaktur Bandung Tahun 2019 Teknik Otomasi Manufaktur Dan Mekatronika" src="http://ae.polman-bandung.ac.id/wp-content/uploads/2019/06/update_jadwal_pmdkpn_20190318-300x224.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBDpPbqS8SU9IE6S-T3oRvv_rd3YZ2iK2SP24fd0rcFjcECWtBjR7t3sE0bQ75LEp-zQ0';" />
+        <small>Source: ae.polman-bandung.ac.id</small>
+                    <p>Penerimaan mahasiswa baru Polban dilakukan melalui 3 jalur seleksi yaitu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pendaftaran Politeknik Manufaktur Polman Bandung 2019 2020 Mamikos Info" src="https://blog-static.mamikos.com/wp-content/uploads/2018/11/1-2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR99V7eluGdCnfcI_gL4b6kQapwGKDTmhW7tigUfTNbwsEUYLanHrXmzlyuw8B46lNPk9s';" />
+        <small>Source: mamikos.com</small>
+                    <p>Informasi yang akan diberikan pada kesempatan ini adalah tentang Pendaftaran Online POLBAN 20212022 Politeknik Negeri BandungDisini admin akan menjelaskan informasi tersebut kepada anda.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pendaftaran Mahasiswa Polman Bandung Ta 2021 2022 Pendaftaran Mahasiswa" src="https://4.bp.blogspot.com/-MSdtpO32w28/XBh2asf6SjI/AAAAAAAAIqo/EVtMjXL8wuYSwxrHe0SlebsbJzXoN5UHQCLcBGAs/s1600/z1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5jo-9BcnEa-9xcxsLpWOY5nQZGRR43NMdlQurxQV2RxU_1KP0vPlgrQs-UWy8fBZfdc8';" />
+        <small>Source: www.pendaftaranmahasiswa.web.id</small>
+                    <p>Untuk panduan dan brosur sebagai berikut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pendaftaran Mahasiswa Polman Bandung Ta 2021 2022 Pendaftaran Mahasiswa" src="https://1.bp.blogspot.com/-HrYaMQ0dOcA/XvBymKNF74I/AAAAAAAAPV0/QgRJ5gRpQaEGx4V51Cq4hfKTWRemG1AjwCK4BGAsYHg/s2580/aa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHCi_6m6OJrIqEU7Qtw3gNP7pMT1TW5ix7eKORf9bfciCw_jTj_3BdS0T01lozi5VdLOs';" />
+        <small>Source: www.pendaftaranmahasiswa.web.id</small>
+                    <p>Sejak 2020 istilah PMDK-PN berganti nama menjadi Seleksi Nasional Masuk Politeknik Negeri SNMPN.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Polman Bandung Infopolman Twitter" src="https://pbs.twimg.com/profile_images/1783980451/22136_101531283214657_100000733587355_38013_4815000_n.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJFSEiDeBa4LDITHM-6ayCewfxOrVRPvUVZEvnnlvEZbHZjpgvmoZ7ZAzLvSDS5SC7P5o';" />
+        <small>Source: twitter.com</small>
+                    <p>Namun akan dimulai dengan sedikit menceritakan tentang Kampus Politeknik Negeri Bandung.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Pendaftaran Beberapa Jalur Masuk Polman Bandung 2018 Almetpedia" src="https://2.bp.blogspot.com/-fBT5lu8c0SM/Vt_drCuZMMI/AAAAAAAAAWk/d5BxzS3p8yA/s400/Pendaftaran%2BPOLMAN%2BBandung.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIiSqsVuq433YyBfXC5AuyR76Vdb4E4NRczCb-RFpMa1Lm4kW8Ni_X_g5AX9CTDIO8uvQ';" />
+        <small>Source: www.almetpedia.web.id</small>
+                    <p>Dies Natalis ke-41 Polman Bandung 08 April 2018.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Svj Polman Bandung Posts Facebook" src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1398261163533394" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRniEz8IrFA1WIWlSo71hLI5XVii_UtxRs0tx8SG_37cT69MPhSJ_0Nj8xKELBxFvp7Too';" />
+        <small>Source: www.facebook.com</small>
+                    <p>Jalur UndanganPrestasi kuota 25.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Penerimaan Calon Mahasiswa Baru Polman 2021 2022 Penerimaan Mahasiswa Baru 2021" src="https://2.bp.blogspot.com/-mvUEWfpiMjU/WCq8lITtNkI/AAAAAAAALOY/zzr5ypBPPbcYQnQ9-EvaXxh7gz1zNzlRgCLcB/s1600/polman%2Bbdgg.JPG" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCB2RZVN0S96eJjGfZy1oTxQ7ezoQ1Zi82obl7uHvRQlK7Pi4vugDfszvgCREfbFuMqQI';" />
+        <small>Source: www.infopendaftaranpenerimaanonline.web.id</small>
+                    <p>Untuk panduan dan brosur sebagai berikut.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Informasi Penerimaan Mahasiswa Politeknik Manufaktur Bandung Tahun 2019 Teknik Otomasi Manufaktur Dan Mekatronika" src="http://ae.polman-bandung.ac.id/wp-content/uploads/2019/06/poster_pmdkpn_2019_polman-189x300.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTY-L5mQx01cFhq83mTlm3Yiq0gbq9p7rkMfVzOasEHXCozTVmsIT3uEIRXm3ppkij9j0';" />
+        <small>Source: ae.polman-bandung.ac.id</small>
+                    <p>Sejak 2020 istilah PMDK-PN berganti nama menjadi Seleksi Nasional Masuk Politeknik Negeri SNMPN.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/syukuran-kelahiran-anak-doc.html"><i>&larr; syukuran kelahiran anak doc</i></a>
+                                                                    
+                                        <a href="/sutra-ungu-abu-umar-basyir-pdf.html"><i>sutra ungu abu umar basyir pdf &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

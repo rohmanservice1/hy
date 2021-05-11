@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Cara Isi Game Ps2 Dengan Usbutil
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Cara Isi Game Ps2 Dengan Usbutil",
+  "datePublished": "2021-05-11",
+  "image": "https://i.ytimg.com/vi/XI4tYAzXxa8/hqdefault.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=cara+isi+game+ps2+dengan+usbutil",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Cara Isi Game Ps2 Dengan Usbutil
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Cara Isi Game Ps2 Dengan Usbutil</strong>. Baca Download Game PS2 ISO. Untuk membantu proses konvert game PS2 ISO atau CDDVD kita membutuhkan aplikasi yang disebut USBUTIL.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://3.bp.blogspot.com/-XaYm_WwrejQ/VKTh3GtJIdI/AAAAAAAABhc/H2NZQ5PrtZ4/s1600/3.jpg" alt="Cara Mengisi Game Ps2 Mudah Terbaru Dengan Flashdisk Tanduran Ilmu" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSNwjLkTFGlddHvINIy7W4BRxiWze4w_COmcfuZGe2qtakwzS7Zivp09utu-brpBU-DtQ';">
+        <figcaption>Cara Mengisi Game Ps2 Mudah Terbaru Dengan Flashdisk Tanduran Ilmu from tanduranilmu.blogspot.com</figcaption>
+    </figure>
+        <p>
+        Untuk game yang baru saja diinstallkan ke USBHDD External kita harus cek apakah file-filenya ter-fragment atau tidak karena USBUtil akan membagi file game per filenya 1GB. Nah sampai di sini anda sudah berhasil isi game playstation ke HDD melalui komputer atau laptop. Pastikan sebelumnya hardisk atau flashdisk telah diformat ke Fat32.
+    </p>
+    <h3>Gunakan Hardisk atau Flashdisk yang berukuran besar agar bisa mengisi banyak game.</h3>
+    <p>Cara membuat CD BOOTING dari file ELF. Copy semua isi file OPL Matrix USB Loader ke Flashdisk. Untuk proses pengisian game ke HDD itu sama dengan petunjuk di atas. Cara isi game PS2 ke HDD.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Mudah Untuk Menyalin Atau Mengambil Game Ps2 Dari Hardisk Eksternal Atau Flashdisk Ke Komputer Atau Laptop Dengan Usbutil 2 0 Tanduran Ilmu" src="https://3.bp.blogspot.com/-dhSmwsJOTmw/VKWCx-K17NI/AAAAAAAABks/EuzMdMUFN_4/s1600/10_How%2Bdo%2BWe%2BCopy%2BPS2%2BGames%2Bfrom%2Ban%2BExternal%2BHard%2BDrive%2Bor%2BFlash%2BDrive%2Bto%2BThe%2BComputer%2Bor%2BLaptop%2B%5Bby%2BPOJOK%2BCYBER%5D.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfv-l9vKxTm7Hny2_wOvqPMPVajZRQIVOfn6ewY19tIAOVmz5bkkFzPjVB8hYZ8lreqBA';" />
+        <small>Source: tanduranilmu.blogspot.com</small>
+                    <p>Yang pertama pastikan keadaan ps2 yang diisi normal dan dapat menyala.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Mengisi Game Ps2 Ke Hardisk Internal Dan Eksternal Beserta Dengan Gambar Cara Isi Game Ps2 Ke Hardisk Eksternal" src="http://2.bp.blogspot.com/-MNdJGIhoDO4/VdMKwqhAuUI/AAAAAAAAAF0/x23JegWTe2w/s1600/1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH4GXqa4yWHQg2EbNa9Rfl4RNK6tjlpvlnX49tRIbmbWvumjK6SkpYo4tnAIrl6YSG1KE';" />
+        <small>Source: shalehbestgameps2.blogspot.com</small>
+                    <p>Tutorial Cara Isi Game PS2 Di HDD Flashdisk Dengan USBUtil Pertama tancapkan HD external atau Flashdisk anda ke PC.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Isi Games Ps2 Ke Hardisk Flashdisk Dengan Usbutil Tekno Service Center" src="https://1.bp.blogspot.com/-mfeIxlMWFkc/Vx4hIIboHWI/AAAAAAAAARo/TUCEwYDJji4XEtKhfdMjlnGf6bwZwymngCLcB/s1600/Screenshot_6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtYm9_-rfrpi8Ktzl_zxgdAgLnhmihxXvk1M3hRKoUIF0CjaBVtQx18iKN1gcV5dPSLok';" />
+        <small>Source: teknosv.blogspot.com</small>
+                    <p>Dengan begitu kemungkinan file ter-fragment pasti ada.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Isi Game Ps2 Di Hdd Flashdisk Dengan Usbutil Dukuntekno" src="https://3.bp.blogspot.com/-ed8X9TbtmQQ/W33dH8J4BJI/AAAAAAAAL10/Y6QvGRQ5A_88N1r_RxgY0F0ytV2NGIPVACLcBGAs/s1600/Cara%2BIsi%2BGame%2BPS2%2BDi%2BHDD%2BFlashdisk%2BDengan%2BUSBUtil%2B1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQholaPUC8QIAVR3HkKPjm_fswiV7ZGMWV3vMdL0qVc6uTucEBD38DxMKql45VykkjpOdU';" />
+        <small>Source: www.dukuntekno.com</small>
+                    <p>Nah kali ini kita akan mengisi games ps2 untuk hardisk internal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Mengisi Game Ps2 Mudah Terbaru Dengan Flashdisk Tanduran Ilmu" src="https://3.bp.blogspot.com/-14dxPdlx_xk/VKTiMvP7qnI/AAAAAAAABiA/O09bQNbvuuQ/s1600/8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOQjfuO9oYFrkCgihkDxE-9R2EUo9hxjSbIe7dXmBi1VldwnC9rV4MpK3HFTStjMbJoaM';" />
+        <small>Source: tanduranilmu.blogspot.com</small>
+                    <p>Tunggu sampai proses instalasi game selesai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Isi Game Ps2 Ke Flashdisk Menggunakan Usbutil Cara Membuat Flashdisk Untuk Game Ps2 Youtube" src="https://i.ytimg.com/vi/sHxhLwXI8Gw/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQko5daFkoxyil3h5F_0qey3dJ_YYIoCsVq0VSCPDvS7Ej5qRvwpFNtBps0sr_Fxy6R5N0';" />
+        <small>Source: www.youtube.com</small>
+                    <p>CARA MENGGUNAKAN PROGRAM USBUTIL UNTUK PS2 OPL.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Mudah Untuk Menyalin Atau Mengambil Game Ps2 Dari Hardisk Eksternal Atau Flashdisk Ke Komputer Atau Laptop Dengan Usbutil 2 0 Tanduran Ilmu" src="https://4.bp.blogspot.com/-zRGvylV3SbA/VKWC1kwy_wI/AAAAAAAABlI/8ic-M9n_xo8/s1600/2_How%2Bdo%2BWe%2BCopy%2BPS2%2BGames%2Bfrom%2Ban%2BExternal%2BHard%2BDrive%2Bor%2BFlash%2BDrive%2Bto%2BThe%2BComputer%2Bor%2BLaptop%2B%5Bby%2BPOJOK%2BCYBER%5D.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkEUHviCCJXKGQL03it1SgCPU_TfkR-FovusSDN_aOKSTnLcJGf8uOCdc_qf2174BPTGU';" />
+        <small>Source: tanduranilmu.blogspot.com</small>
+                    <p>Postingan tersebut menguraikan tahap demi tahap pengisian atau installasi games Playstation 2 PS2 untuk hardisk eksternal ataupun flashdisk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Mengisi Game Ps2 Mudah Terbaru Dengan Flashdisk Tanduran Ilmu" src="https://3.bp.blogspot.com/-XaYm_WwrejQ/VKTh3GtJIdI/AAAAAAAABhc/H2NZQ5PrtZ4/s1600/3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSNwjLkTFGlddHvINIy7W4BRxiWze4w_COmcfuZGe2qtakwzS7Zivp09utu-brpBU-DtQ';" />
+        <small>Source: tanduranilmu.blogspot.com</small>
+                    <p>Sebelum mengisi game ps2 ke hardisk atau flashdisk anda harus memenuhi syarat dibawah ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Mudah Isi Game Ps2 Youtube" src="https://i.ytimg.com/vi/XI4tYAzXxa8/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf_RSpIfPjvtxEKRF-Zg5L2yYx5RE0K1ibvYOpRoQkXuRuDSl00u4guj3pIMhCgICdLbI';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Jika ingin isi game dari file ISO DVD klik Create GAMEISO from CDDVD prosedurnya hampir sama dengan contoh di bawah ini.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/chord-gitar-doa-kami.html"><i>&larr; chord gitar doa kami</i></a>
+                                                                    
+                                        <a href="/chord-kotak-hilang.html"><i>chord kotak hilang &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

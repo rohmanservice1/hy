@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Dialog Asking And Giving Attention
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Dialog Asking And Giving Attention",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/originals/f1/dd/73/f1dd73bdb908f86073f0c5d818c7f9bc.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dialog+asking+and+giving+attention",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Dialog Asking And Giving Attention
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Dialog Asking And Giving Attention</strong>. May I have your attention please. Adapun beberapa ungkapan yang tergolong sebagai asking for attention antara lain.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/a8/22/4d/a8224d8aebbd6a70208c201bbad1c8f2.jpg" alt="Protective Lines Writing Promps Writing Dialogue Prompts Writing Dialogue" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3vit1t8gxWRO2voYzFK8mKRx6tMbWQaA2nycvWGJ60HTLHBiIH5dXvaJvmYP3Qm64Dkc';">
+        <figcaption>Protective Lines Writing Promps Writing Dialogue Prompts Writing Dialogue from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        My name is Brown. Choose any topic such as. Contoh ungkapan asking and showing attention.
+    </p>
+    <h3>Contoh dialog asking and giving attention.</h3>
+    <p>Bolehkah saya meminta perhatianmu. I would like to visit my friend. Asking for Giving and Refusing Permission Contoh Ungkapan dan Dialog Meminta Memberi dan Menolak Izin November 26 2020 0 Comments. Contoh dialog mengenai bagaimana untuk memberikan sinyal agar orang lain memerhatikan kita dan bagaimana untuk menjawabnya.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Complaining And Apologizing Language Learning Activities High School Art Lesson Plans Kids Critical Thinking" src="https://i.pinimg.com/originals/06/d7/7a/06d77a1c1f1a7073295ff6339d9d6d8d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW559rPj9umfI1GQyX3jVf0EcUqWiNUjzdxAuur8jn0MXCruvKNgREExoKjQGPfAzrLiM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Kumpulan 22 Contoh Soal Asking Attention Understand Opinions and Appreciation Lengkap dengan Jawabannya Berikut ini akan diberikan bahan untuk berlatih soal asking for attention berupa dialog yang biasanya disajikan di kelas 8 dan juga tema soal asking and giving opinion juga soal tentang understanding dan dilengkapi tema soal pilihan ganda showing appreciation.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin By Heather Sabaitis On Writing In 2020 Writing Anchor Charts Third Grade Writing Writing Introductions" src="https://i.pinimg.com/originals/1f/63/54/1f6354a29cb6d2cf5003f79b735d167e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNgUpc7VC7VP8ElxQeYAPUazKKR1qhA8pGtflmK0WOl5iImyRhZEVfEf4CFU-Npk8xub0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Mohon Perhatiannya Give me attention please.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Conversation" src="https://i.pinimg.com/564x/89/db/5a/89db5a16890916c0ba8614231baf4978--public-speaking-conversation.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY1Y8nTc0RolqvDPt-LPPO6FWs5YsB_7GldTJA6vgmJ1Jf5Hl6tdpKQoUwosEOUvDZoro';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Try to use some of the language to ask for and give opinions.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="These Are Examples Of The Travel Conversation Prompts In Past Tense Work In Pairs Of Two Write A Fictional Conversation Prompts Easy Grammar Writing Prompts" src="https://i.pinimg.com/474x/f9/3f/e4/f93fe4e5bcd78eeecf8f7398f368a2c8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFBCiIT8EwYKLYzqlX8H0nDZsbraeFUxENoRko6f2ug6RWGfhe9Fs7xOVlvL7MntKMZ_4';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Whereas when you listen to a story you can use several expressions to show that you are paying attention to what is being talked about.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dialog About Asking And Giving Attention" src="https://i.pinimg.com/600x315/98/fc/c4/98fcc40eb04337de5fbb73bfb9c9464e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF9mKyuTq0CKpA7rGUZxJcLF8c6ByF0_R3Yukl9dNFz8z3EbLMzkKXbGepNDkUcsQLF4k';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Yes Pop we are listening.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Protective Lines Writing Promps Writing Dialogue Prompts Writing Dialogue" src="https://i.pinimg.com/originals/a8/22/4d/a8224d8aebbd6a70208c201bbad1c8f2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3vit1t8gxWRO2voYzFK8mKRx6tMbWQaA2nycvWGJ60HTLHBiIH5dXvaJvmYP3Qm64Dkc';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Bolehkah saya meminta perhatianmu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Asking And Giving Directionsintroduce Some Road Signs And Expressions Related To Places And Location Ask And Giv Spelling Words Learn English Teaching Lessons" src="https://i.pinimg.com/originals/f1/dd/73/f1dd73bdb908f86073f0c5d818c7f9bc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6pbazxEaWGE68olnHSQvf3G5cO5bAd2ZKDOTv7DCA1a1HWtiHY8wkc0ZI6Bf_1Bur7oU';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Yes Pop we are listening.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Useful Phrases You Can Use When Making A Presentation Make A Presentation Presentation English Vocabulary" src="https://i.pinimg.com/originals/c3/0c/62/c30c6245720539ea2ef58f2cde3cd88f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNTPzFvcaGfz96Pg9-SMFi3H0Po0e-vY_TaDtCRUK4i3SrgnSxG6lfBsGtdgEPWL9CrzY';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Asking for Giving and Refusing Permission Contoh Ungkapan dan Dialog Meminta Memberi dan Menolak Izin November 26 2020 0 Comments.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Asking For And Giving Directions English Conversations 7esl Learn English English Conversation Learning Learn English Vocabulary" src="https://i.pinimg.com/originals/f1/b8/dd/f1b8dde0a6aa4e909cb84c973863f0d7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn2WRs6RXr1XgFP6NTnXwPIF_BLbqPVO7RfmrVhtrrkv-f-Bea7J6kJHqYE5AqUiJrSgM';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Ways to say it.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/download-rpp-kelas-5-revisi-2017.html"><i>&larr; download rpp kelas 5 revisi 2017</i></a>
+                                                                    
+                                        <a href="/download-running-man-397-sub-indo.html"><i>download running man 397 sub indo &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

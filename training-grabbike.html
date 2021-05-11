@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Training Grabbike
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Training Grabbike",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/originals/6d/5c/64/6d5c6438648ff6a434e13b37a58d2959.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=training+grabbike",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Training Grabbike
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Training Grabbike</strong>. Untuk menjadi driver Grabbike atau GrabCar salah satu tahapan yang harus dijalani oleh calon driver Grabbike-GrabCar adalah mengikuti training online Grab codemi. Training Online Grabbike - modul 6 Aplikasi Grab Driver About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features 2021.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/81/75/20/8175207e7cd21b9bd6d052a6e110e044.jpg" alt="Jakarta Football Festival Grabbike Rusun Cup 2015 Coaching Clinic Tahap Ke 2 Regular Football Di Lapangan Cakung Unipapuafootball Unipapuafc Pap" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROgw4BGNbkEjAp-oVAfDCbyv9_bAJpSGdSjqEndo6J6RNqQ7t2uU7Q4Ges939axvRXee8';">
+        <figcaption>Jakarta Football Festival Grabbike Rusun Cup 2015 Coaching Clinic Tahap Ke 2 Regular Football Di Lapangan Cakung Unipapuafootball Unipapuafc Pap from ar.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Besides being a GrabBike rider also can also accept food orders and serve as GrabFood rider for all type of foods except cakes and pizzas. Mitra diwajibkan menggunakan partisi pelindung GrabBike Protect pada bagian belakang dikarenakan situasi pademi saat ini dan untuk meningkatkan perlindungan mitra dan penumpang. Ogyakarta Astra Motor Yogyakarta selaku Main Dealer Honda wilayah DIY Kedu dan banyumas memberikan edukasi keselamatan berkendara kepada mitra pengemudi ojek online Grab Bike.
+    </p>
+    <h3>GrabBike training For new GrabBike partners.</h3>
+    <p>Namun bagi Anda yang terbiasa bermain smartphone tidak perlu khawatir mengenai hal ini. The session which was conducted by Pol. Contoh soal ujian paket c dan kunci jawaban download soal ujian nasional sd disertai kunci jawabanmengasah kemampuan peserta didik menghadapi ujian nasional maupun ujian sekolah sd untuk mata pelajaran bahasa indonesia matematika ipa dan pendidikan agama memerlukan soal soal ujian nasional yang beragam. Bangkok 25 July 2019 Grab the leading everyday super app in Southeast Asia has collaborated with the Royal Thai Police in organizing a training session titled Outsmart Tricksters Avoid Contrabands 40 for more than 200 GrabBike driver-partners.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Grabbike Grabexpress Biker Signup Registration Grab Th Office Training Flexible Working Biker" src="https://i.pinimg.com/originals/6d/e2/57/6de257e2bf9b1d6886bb2d97a3ef6f76.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_I9N8nUHEChc75Y3PP60C98OIzkxU19hK0MBCqqcX-ZdJWAk2_TkTKBhKBOClOJ7quXU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Proses Training GrabBike dan GrabCar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jakarta Football Festival Grabbike Rusun Cup 2015 Coaching Clinic At Rusun Griya Tipar Cakung Unipapuafootball Unipapuafc Papua Indonesia" src="https://i.pinimg.com/originals/6d/5c/64/6d5c6438648ff6a434e13b37a58d2959.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg_AtpgAHgjKWS81uNK8Gfmi_-jsKw5jBuBv9_KlPZm7_PCPkVJ4dwAjkWl2Xi-2kIY4o';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Every approved GrabBike rider must undergo training before becoming a real GrabBike rider.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jakarta Football Festival Grabbike Rusun Cup 2015 Coaching Cinic Tahap Ke 2 Hari Ke 3 Unipapuafootball Unipapuafc Papua Indonesia" src="https://i.pinimg.com/originals/6c/c7/f4/6cc7f4393a008dd92f3585c495419ebf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7B6-deBCF-i_FFXM33nEVyO5dJvKPEahERBpoMElf1GmYTMpCutg0AnCZ3vZEA5H5g1E';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Tutorial video training grab bike step 5httpsyoutube8ht24iJHb28alat2 YThttpsyoutube6zuy6Cyg_ioaplikasi YThttpsyoutubeYzwpTPW0A9ovideo compila.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Coaching Clinic Rusun Pinus Elok A B 11 Oct 2015 Jakarta Football Festival Grabbike Rusun Cup 2015 Unipapuafootball Unipapuafc Papua" src="https://i.pinimg.com/originals/41/81/33/4181331d44a646a8f20f4f31c891398b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Qh9uYpssr3Th_1d008hQQkLmEhwDjQb3vP7G2q6Mgpuino50cXOnpcHZ6F8r1OLqNiU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>GrabBike is in Indonesia Philippines Thailand and Vietnam with our full fleet of GrabBike riders being trained in defensive riding as part of Grabs commitment to set safety standards higher than industry requirements.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jakarta Football Festival Grabbike Rusun Cup 2015 Coaching Cinic Tahap Ke 2 Hari Ke 3 Unipapuafootball Unipapuafc Papua Indonesia" src="https://i.pinimg.com/originals/ef/d8/77/efd877bd1e2d3324dfc5ee7df6518334.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG_FLio6oj4vmnJqqGP-IjSQKrTG9BEzoqKgCvrjubQ7cmrKLrH7Xae3RTgUQ_AIrAfCk';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>GrabBike training For new GrabBike partners.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jakarta Football Festival Grabbike Rusun Cup 2015 Coaching Clinic Tahap Ke 2 Hari Ke 5 Unipapuafootball Unipapuafc Papua Indonesia" src="https://i.pinimg.com/originals/db/c5/10/dbc510452f62a5b9519e5741bdb8611b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBk4kI_RFtqHwiOGVwGaPiRXnpq0XLsdmEgvugXzJIpAQwwnZPxPP7CgQ5rIXOHmkz52Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kegiatan ini dilaksanakan bersamaan dengan pelaksanaan Grand Training Grab Bike Yogyakarta yang diselenggarakan di Jogja Expo Center Yogyakarta Rabu 245.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jakarta Football Festival Grabbike Rusun Cup 2015 Coaching Clinic Tahap Ke 2 Regular Football Di Lapangan Cakung Unipapuafootball Unipapuafc Pap" src="https://i.pinimg.com/originals/81/75/20/8175207e7cd21b9bd6d052a6e110e044.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROgw4BGNbkEjAp-oVAfDCbyv9_bAJpSGdSjqEndo6J6RNqQ7t2uU7Q4Ges939axvRXee8';" />
+        <small>Source: ar.pinterest.com</small>
+                    <p>Proses training online grabbike dan grabcar indonesia.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Inilah Kunci Jawaban Training Online Grabbike Grabcar Dijamin Lulus Belajar Surat Guru" src="https://i.pinimg.com/originals/3f/75/4a/3f754a8ef1643b1a34f2a2c0a421da09.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBeCGtTokjZRHG2J_VOIUTgWlDH2cxlaJp5lYq-tTBJ_VFU9mddAVzB3qZBteIv4uVu-Y';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cara yang terakhir adalah lolos training berkendara.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Melihat Dan Menggunakan Kode Referal Grab" src="https://i.pinimg.com/736x/3c/10/8b/3c108b09fdd3592a837151da4ef12675.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaK3mLiWtfedCvAKG8LQ9khGmzfkNRK0zzTtmwbQ2spxoeZZgCMbxDW-9s51d57q9KRVs';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Mengikuti dan memahami SOP Grab.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/cara-menghitung-frekuensi-kumulatif-di-excel.html"><i>&larr; cara menghitung frekuensi kumulatif di excel</i></a>
+                                                                    
+                                        <a href="/cara-menghitung-alokasi-waktu.html"><i>cara menghitung alokasi waktu &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Memperbaiki Hardisk Bad Sector Tidak Bisa Di Install
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Memperbaiki Hardisk Bad Sector Tidak Bisa Di Install",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/474x/3d/49/5f/3d495fbdf75eebde7c2af94b6f1683b6.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=memperbaiki+hardisk+bad+sector+tidak+bisa+di+install",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Memperbaiki Hardisk Bad Sector Tidak Bisa Di Install
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Memperbaiki Hardisk Bad Sector Tidak Bisa Di Install</strong>. Sy punya hardisk WDC 320 GB. Cara Memperbaiki Bad Sector Pada Hardisk dengan Program Windows.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://4.bp.blogspot.com/-jI4LERa4DU8/XGRp3QVPebI/AAAAAAAAAw0/qZseLkOTNyYZj-Q9YchW0mfNBVUWL1ZhQCLcBGAs/s1600/fix-bad-sectors-in-Windows-10.jpg" alt="Cara Memperbaiki Hardisk Bad Sector Windows 10 8 8 1 7 Vista Xp Rajaromans" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSgRjD8uE5ulgC4XGo0pdXEqT1ULdGBkqlNrjgQdmTYKBFRkT6dMqTmUa8UiZ50tIKyzg';">
+        <figcaption>Cara Memperbaiki Hardisk Bad Sector Windows 10 8 8 1 7 Vista Xp Rajaromans from www.rajaromans.com</figcaption>
+    </figure>
+        <p>
+        Dimana saat itu hardisk bisa terbaca dengan baik di bios namun sistem operasi tidak mampu membaca data yang berada di dalam hardisk dan saat saya perhatikan kembali ternyata hardisk. Jika kerusakan ini disebabkan oleh hardware misalnya gesekan yang terjadi pada piringan hard disk maka ini tidak dapat diperbaiki. Ketika sudah masuk ke boot seperti gambar di bawah tekan SHIFTF10 untuk masuk ke system CMD command prompt.
+    </p>
+    <h3>Itulah sebagian dari cara mengatasi hardisk bad sector untuk akhirnya bisa kembali normal.</h3>
+    <p>Tanda tanda hardisk bad sector. Jika harddisk mengalami hard bad sector maka kamu nggak bisa mengikuti cara memperbaiki harddisk bad sector seperti pada hard disk yang mengalami soft bad sector. Tidak bisa diinstal sistem operasi berhenti di 40 pas format pake windows xp. Itulah sebagian dari cara mengatasi hardisk bad sector untuk akhirnya bisa kembali normal.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Memperbaiki Hardisk Bad Sector Dan Penyebabnya Hardisk Bad Sector Winpoin" src="https://winpoin.com/wp-content/uploads/2013/10/cara-memperbaiki-hardisk-bad-sector_01.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx1w-QYxyZ1QMqpJxRp0IYY1BYbqk5JjK-oA75kzwdKiQMxYGcN7htnI96kN34ZgncWzs';" />
+        <small>Source: winpoin.com</small>
+                    <p>Dimana saat itu hardisk bisa terbaca dengan baik di bios namun sistem operasi tidak mampu membaca data yang berada di dalam hardisk dan saat saya perhatikan kembali ternyata hardisk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Memperbaiki Hardisk Bad Sector Tidak Bisa Di Install" src="https://www.tedieka.com/wp-content/uploads/2016/10/Masuk-booting-hardisk-bad-sector.jpg.webp" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxq8HX52M1xVmYVwgZTokqwZAw3uSJqAeFNWKraxqQlhVDlb3Y090p9VtLLW4bMjmUrQg';" />
+        <small>Source: www.tedieka.com</small>
+                    <p>Jika muncul pesan Chkdsk cannot run because the volume is in use by another process.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Memperbaiki Hardisk Bad Sector Tidak Bisa Di Install" src="https://www.tedieka.com/wp-content/uploads/2016/10/Memperbaiki-hardisk-bad.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqnOEnchjd8mCyAJBLwbICQ7RRFP2IojFRsJLLXpL_HZGr2V42PnA7uN2r5pBnTXudOhY';" />
+        <small>Source: www.tedieka.com</small>
+                    <p>Memperbaiki Hardisk Bad Sector Tidak Bisa di Install Beberapa hal bisa saja menyebabkan terjadinya hardisk bad sector dan tidak bisa diinstall.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Memperbaiki Hardisk Bad Sector Dengan Mudah Dan Tidak Ribet Futureloka" src="https://storage.googleapis.com/app-nesia-wordpress-production/2016/12/hasil_scan_bad_sector_hddtune.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwD9wUkBl9FC6lD_pV9Shv_gcmH_yYyglxPEp4bYlQvxkAzXFqlmLfkBym1dPDiOfbigo';" />
+        <small>Source: futureloka.com</small>
+                    <p>Software ini dapat bekerja lebih baik dibanding menggunakan cara disk check tool bawaan windows.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Memperbaiki Flashdisk Rusak Tidak Bisa Di Format Tidak Bisa Rusak" src="https://i.pinimg.com/originals/5f/b5/ff/5fb5ff6b3859d0ae566a69dee306162a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCzti-ruzdMVd37wVpOlI0C45W-8MnxWZ6gJSDnGLPeGdWZ9DDz0CZxvW5WZd5iqEhTo';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Cara Memperbaiki Bad Sector Pada Hardisk dengan Program Windows.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Memperbaiki Hardisk Bad Sector Dengan Mudah Dan Tidak Ribet Futureloka" src="https://storage.googleapis.com/app-nesia-wordpress-production/2017/01/hdd9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW94noBdtr6GjZM-jOXVWzOwuHKb-ktVO3F_WM7vgvo55FKHK8JwFHn9Qg12zA9cnC9J4';" />
+        <small>Source: futureloka.com</small>
+                    <p>Tidak bisa diinstal sistem operasi berhenti di 40 pas format pake windows xp.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Memperbaiki Hardisk Bad Sector Windows 10 8 8 1 7 Vista Xp Rajaromans" src="https://4.bp.blogspot.com/-jI4LERa4DU8/XGRp3QVPebI/AAAAAAAAAw0/qZseLkOTNyYZj-Q9YchW0mfNBVUWL1ZhQCLcBGAs/s1600/fix-bad-sectors-in-Windows-10.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSgRjD8uE5ulgC4XGo0pdXEqT1ULdGBkqlNrjgQdmTYKBFRkT6dMqTmUa8UiZ50tIKyzg';" />
+        <small>Source: www.rajaromans.com</small>
+                    <p>Pastikan sistem pendingin dan kipas komputer bekerja dengan baik dan suhu di ruangannya tidak terlalu panas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="2 Cara Memperbaiki Hardisk Bad Sector 100 Data Tidak Hilang" src="https://i1.wp.com/www.nesabamedia.com/wp-content/uploads/2018/07/scan.png?resize=680%2C479&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoeL7Zq9DrI2dlXpWFVDg4WH8UhZKOleapOx2_De0_GpebBESS-Xv3DfOWgCjAV-m7uCM';" />
+        <small>Source: www.nesabamedia.com</small>
+                    <p>Bad sector logic adalah hal yang mungkin bisa di perbaikin dengan software karena kerusakan di akibatkan errornya sistem partisi karena pemakaian atau karena virus.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Memperbaiki Hardisk Bad Sector Yang Mudah Dan Cepat" src="https://caraharian.com/wp-content/uploads/2020/08/harddisk-bad-sector-1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3OcO0qGpwFkAKDxmVUY-br6JzRaj637yHyYuEsNHMbmUUfA4W7ZSswA_AeuV_fQP_os8';" />
+        <small>Source: caraharian.com</small>
+                    <p>Itulah sebagian dari cara mengatasi hardisk bad sector untuk akhirnya bisa kembali normal.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/cara-buat-pompa-air-mini.html"><i>&larr; cara buat pompa air mini</i></a>
+                                                                    
+                                        <a href="/cara-buat-akun-hantu.html"><i>cara buat akun hantu &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

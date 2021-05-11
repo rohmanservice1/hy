@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Turunan Tingkat Tinggi
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Turunan Tingkat Tinggi",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/originals/f0/e1/fb/f0e1fb14e1052b69070b8d414f97a756.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=turunan+tingkat+tinggi",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Turunan Tingkat Tinggi
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Turunan Tingkat Tinggi</strong>. Karenanya kita masukkan notasi operator turunan sehingga Dapat ditulis dalam bentuk Karena bentuk diatas seperti persamaan polynomial maka kita dapat menulis sebagai. Dari bentuk parameter ini dapat dicari dengan cara sebagai berikut.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/e5/e7/c9/e5e7c9fffff8e30db16bc45c3be69e20.png" alt="Batu Mustika Berkhodam Ganas Batu Akik Ilmu Sihir" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS_0Iy0mIyI1OmLCCOZB5g1dh8KHJzWmth5DVNxzY6g-3qnOLqOG5EcOBWJOGZZLtQVqE';">
+        <figcaption>Batu Mustika Berkhodam Ganas Batu Akik Ilmu Sihir from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Turunan parsial tingkat tinggi. Pengertian turunan tingkat tinggi. F jika fungsi f ini dihitung lagi turunannya dengan aturan atau definisi turunan maka diperoleh fungsi baru yang dinamakan turunan kedua dari fungsi f dan ditulis dengan lambang f.
+    </p>
+    <h3>Jadi f x adalah juga merupakan fungsi dari x.</h3>
+    <p>Dari f di d 2 f x d2y tulis f x. Dari f di d 2 f x d2y tulis f x. F jika fungsi f ini dihitung lagi turunannya dengan aturan atau definisi turunan maka diperoleh fungsi baru yang dinamakan turunan kedua dari fungsi f dan ditulis dengan lambang f. Dinamis tajam dan bersih dengan ruang yang lapang untuk gambar berukuran besar tema ini adalah kanvas yang sempurna untuk menyampaikan cerita tentang perusahaan Anda.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ilusi Imperia Sebuah Persekongkolan Tingkat Tinggi Ilusi Buku" src="https://i.pinimg.com/originals/bd/a5/4d/bda54d3c5cda4d6cc6f0c22f2ee072fb.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1BxZ65Tp7unmI2hAxFRKLlFxZLWGATFEFZVu1kvTrCabLE3YqmnUKBJEMJpxbk9hmJXg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Turunan pertama f x df x dx Turunan kedua f x d f x dx 2 2 Turunan ketiga f x d f x dx 3 3 Turunan ke-n f x d f x dx n n n Contoh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jobseeker Kerja Pengikut 15 Tahun" src="https://i.pinimg.com/originals/83/93/75/839375c196dc593b30ca474fed3e036f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuZB2AUOkxwdhkhIKiarnTHGYJxD-zRt_n53-eslNxRInyAsTwHRcsoOSKT5VHFcF0Lv0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Demikian seterusnya untuk turunan ke-n didapatkan dari penurunan bentuk turunan ke- n-1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Amalan Untuk Mendatangkan Uang Seketika 10 Milyar Dalam Sekejap Kekuatan Doa Uang Amal" src="https://i.pinimg.com/originals/30/90/c2/3090c2599e8ecc87d136494f50d3f4c5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOUaY0bO-6OJA5J3kQR_-DcgMaJBi00blTvUG8nqS91AtDIhiPFKXd3cDVbo31JzghElU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Dari f di d 2 f x d2y tulis f x.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Dzikir Dahsyat Dibaca Sebanyak Mungkin Harta Melimpah Ruah Sampai 7 Tur Teks Lucu Kekuatan Doa Membaca" src="https://i.pinimg.com/originals/f0/e1/fb/f0e1fb14e1052b69070b8d414f97a756.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMR91wHQvu0BuUIAQ1HDUn3kpK_3BMi-erD3LMfeklCAS6Ls_yczy8HxabxtYt_qx7nw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika f x terdeferensial pada x maka turunannya disebut turunan tingkat dua atau turunan ke-2.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sekali Ucap Langsung Tunduk Doa Pengasiah Ilmu Pengasihan Amalan Pengasihan Tingkat Tingkat Tinggi Youtube Kekuatan Doa Doa Kata Kata Indah" src="https://i.pinimg.com/564x/24/e0/11/24e01170af3c267f0c99a1fe1f58af2b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE6k7KKn_J9x5xnupWAENxroQb845wnRPiZ6pdIGULjQR8KlNcIepDRkpQ-1oOdIYwBI4';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Turunan Tingkat Tinggi Beda hingga untuk turunan tingkat tinggi Hampiran turunan tingkat tinggi dari f x yaitu f ff4 dst dapat dicari dengan menambahkan deret Taylor untuk titik-titik sebelum atau sesudahnya dua tingkat atau lebih dan mengikutsertakan suku-suku turunan yang lebih tinggi serta mengeliminasi suku-suku yang sesuai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jasa Desain Company Profile Zannoism Latar Belakang Kartu Nama Desain Grafis" src="https://i.pinimg.com/originals/09/12/e9/0912e9996ea8e754c23f910b52065127.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTObXPWkQSFdN55_gp6YLJhUwLIRbszQ3IIY0CzQQqIDvKRxbEbfGuDSGfTF3RtQwUFevI';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Jika fx terdeferensial pada x maka turunannya disebut turunan tingkat dua atau turunan ke-2 dari fungsi x ditulis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Batu Mustika Berkhodam Ganas Batu Akik Ilmu Sihir" src="https://i.pinimg.com/originals/e5/e7/c9/e5e7c9fffff8e30db16bc45c3be69e20.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS_0Iy0mIyI1OmLCCOZB5g1dh8KHJzWmth5DVNxzY6g-3qnOLqOG5EcOBWJOGZZLtQVqE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>TURUNAN TINGKAT TINGGI 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Indahnya Perjalanan Pangalengan Talegong Cisewu Rancabuaya Perjalanan Pantai Pemandangan" src="https://i.pinimg.com/736x/7d/73/55/7d73551eefce7acef5853755024fb5b8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKdUaX6DsWJDrhq7bFVIPbKQP1kgMB-1ZRVsh67kkrdwNs4fg93I1HUQ-slFqybwcd5_8';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Smk N 1 Rao Selatan Soal Turunan Fungsi Dengan Pembahasan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Susunan Acara Gebyar Masyarakat Garut Selatan Pengacara Minggu Tanggal" src="https://i.pinimg.com/736x/76/cd/a0/76cda05c1fb2c34137b67b4c300d3759.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSpGWpPweJBMHMjS-SHTSUqqczlL_ykcWdfVL2c2td9Y2BDK8X7u2uOgY1RdJANJTWvns';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>TURUNAN TINGKAT TINGGI Turunan kedua dari fungsi f x didapatkan dengan menurunkan sekali lagi bentuk turunan pertama.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/contoh-cover-rpp-kurikulum-2013.html"><i>&larr; contoh cover rpp kurikulum 2013</i></a>
+                                                                    
+                                        <a href="/contoh-copy-resep-rumah-sakit.html"><i>contoh copy resep rumah sakit &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

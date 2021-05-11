@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Promise Koperasi
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Promise Koperasi",
+  "datePublished": "2021-05-11",
+  "image": "https://i.pinimg.com/474x/0b/39/37/0b39373e080692306bb8a5f9beaac5cd.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=promise+koperasi",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Promise Koperasi
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Promise Koperasi</strong>. Pelatihan Tata Boga dan Pembuatan Kue Tahun 2020 VIEW FOTO. Nirasatria needs to grow but more than that we need the farmers community to grow together with us.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/474x/3c/d1/76/3cd176c0b8bad47aeec2ba350b879cad.jpg" alt="Contoh Neraca Saldo Perusahaan Dagang Dan Cara Buatnya Jurnal Buku Neraca" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzTHRUc7S_erxRUr_CRLeDYdRE2iQ7OYOtj-OlQCmIyUv_s9B-GF1prZ972mZE2-aprE0';">
+        <figcaption>Contoh Neraca Saldo Perusahaan Dagang Dan Cara Buatnya Jurnal Buku Neraca from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Koperasi merupakan salah satu kegiatan organisasi ekonomi yang bekerja dalam bidang gerakan potensi sumber daya yang memiliki tujuan untuk mensejahterakan anggotanya. Setiap pemberian pinjaman Rp. Video ini saya buat untuk kalian yang kebingungan atau ingin tau bagamana cara membuat sebuah Format Koperasi di Ms.
+    </p>
+    <h3>Kedepannya koperasi yang bekerja sama dengan Gojek bisa bertambah secara bertahap mengikuti kebijakan perusahaan.</h3>
+    <p>Google has many special features to help you find exactly what youre looking for. Search the worlds information including webpages images videos and more. Dengan demikian secara bahasa koperasi dapat diartikan sebagai kerja sama. Our Promise to Our Members.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Laporan Keuangan Perusahaan Konstruksi Dan Kontraktor Excel Keuangan Laporan Keuangan Buku" src="https://i.pinimg.com/736x/d0/99/db/d099dbeac98195dfe1e22a4fd3398894.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC_kQN-rT7liB0sd5qbhHHs2_M66tZ81s-zvFplZeXcxOUrvKodHIw1y6C6nFmHik_9po';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Koperasi memiliki sedikit perbedaan dibanding badan usaha lain seperti PT CV Firma atau Yayasan di mana koperasi lebih terlihat dari sisi kekeluargaan dan gotong royong untuk saling membantu anggotanya demi kesejahteraan bersama sesuai prinsip dasar koperasi yang diatur.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Neraca Saldo Perusahaan Dagang Dan Cara Buatnya Jurnal Buku Neraca" src="https://i.pinimg.com/474x/3c/d1/76/3cd176c0b8bad47aeec2ba350b879cad.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzTHRUc7S_erxRUr_CRLeDYdRE2iQ7OYOtj-OlQCmIyUv_s9B-GF1prZ972mZE2-aprE0';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Koperasi adalah badan usaha yang beranggotakan orang seorang atau badan hukum koperasi dengan melandaskan kegiatannya berdasarkan prinsip koperasi sekaligus sebagai gerakan rakyat yang berdasar atas asas kekeluargaan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Mendapatkan Pinjaman Uang Klaten Melalui Koperasi Pinjaman Uang" src="https://i.pinimg.com/originals/0b/91/63/0b9163c286a9146046bbea4ea85524e1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsCu1kF662BtH1rQdK2or9LVduIcq54ibz9SPGBChpI-oBBP8k3HLy1vYpb6Kx6luQQq8';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>The founder and also main team of Koperasi Nirasatria are second generation of the coconut farmers who live from and for sugar and the farmers.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kaligrafi Lettering Indonesia Hurufraktur Instagram Photos And Videos" src="https://i.pinimg.com/originals/72/c1/3b/72c13be6400201cd4464c8b5d5e55dbc.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHRtmvwQA8X4OkeRGROj8jk_wm0DsebAeuJkvMnWOae4WWuRPmndCtpdF_XKDkWiCCOxc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>So we know exactly what our farmers need.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Surat Permohonan Adalah 17 Contoh Keseharian Di 2021 Tanggal Apoteker Surat" src="https://i.pinimg.com/736x/dc/b4/6e/dcb46e39e9755059a08a6ee2ebe3fe98.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Jc3rzJzkGZeb8uX6jwqvdfZYrbqg4TCKzFAzSMd9ITDnmxx0XbisOui332kavtd3wqU';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Wedding Party Planner.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Indonesia" src="https://i.pinimg.com/600x315/69/8d/f3/698df32c6c6fbba25cfa09c06843fe67.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVMGhBF7UGkZgaSQ3LjXMWcTaC4Xl_VKeLvwa04kfpm6Gnwf6Yzf4yvMt8-8U-hZ6S_uQ';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>Bogor 13112018 Kemenkeu Kementerian Keuangan Kemenkeu melalui Badan Layanan Umum Pusat Investasi Pemerintah BLU PIP menjalin kerjasama dengan International Labour Organization ILO untuk membina Koperasi Penyalur Pembiayaan UMi melalui Pelatihan Making Micro Finance Work MMW dan Start and Improve Your Business SIYB di Hotel Salak Heritage Bogor 12-2211.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kunci Republik Resensi Buku Kunci Buku" src="https://i.pinimg.com/originals/ec/36/ef/ec36efa74b4571aeda66f8800b6086cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXHA07f6rNaKp3-y9KnrCWGYxb9X-39bdyRESlNi7eu0-EFOFc37QRaAxKSBZKVqTb9wg';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Kementerian Koperasi Deputi Bidang Pengawasan Kementerian Koperasi dan Usaha Kecil dan Menengah Republik Indonesia Nomor.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Laporan Keuangan Lengkap 15 Jenis Perusahaan Laporan Keuangan Keuangan Pengusaha" src="https://i.pinimg.com/474x/0b/39/37/0b39373e080692306bb8a5f9beaac5cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj2SxE7pO1B8M4D475e2GtDwctIlMqGYiThTcfXs8qHFHfCBBguiQ3ARY6XeCztng33n0';" />
+        <small>Source: in.pinterest.com</small>
+                    <p>07PerDep6IV2016 tentang pedoman penilaian kesehatan Koperasi Simpan Pinjam dan Pembiayaan Syariah dan Unit Simpan Pinnjam dan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Di Publikreport Com" src="https://i.pinimg.com/474x/ae/5e/fc/ae5efc5c7ca3adcbe96763b479d459cc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-WfYofREGvr1fBjzsWBz01k0SgguiW6go_5S5v1iowYLBwgz3hnQjYdPrQMSSl9VPJ6Q';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>The Love Boat promises something for everyone.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/ekspedisi-jakarta-semarang.html"><i>&larr; ekspedisi jakarta semarang</i></a>
+                                                                    
+                                        <a href="/ekonomi-kreatif-pasar-barang-seni.html"><i>ekonomi kreatif pasar barang seni &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

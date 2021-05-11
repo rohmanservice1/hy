@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Cara Membuat Green Screen Sederhana
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Guru"
+  },
+  "headline": "Cara Membuat Green Screen Sederhana",
+  "datePublished": "2021-05-11",
+  "image": "https://darmawan.my.id/wp-content/uploads/2019/03/kain-untuk-green-screen-sederhana-1.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pendidikan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=cara+membuat+green+screen+sederhana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Cara Membuat Green Screen Sederhana
+            </a>
+        </h1>
+        <p>
+                            Kumpulan Materi Pendidikan.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Cara Membuat Green Screen Sederhana</strong>. Pertama bukan layer dipojok kanan bawah dan pilih kayer 1 Kedua buka paint dan rubah warna ke hijau biru. Tap More di sudut kanan bawah.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.ytimg.com/vi/UIjCdNIt_ck/maxresdefault.jpg" alt="Cara Mudah Mengubah Background Video Menjadi Green Screen Menggunakan Aplikasi Kinemaster Youtube" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4aikYd0Lcf0mNaK-bq8CaJGR4jFglsKn9OEwve_Zg4Ups5hEI5E7CxYATlzg159-nso';">
+        <figcaption>Cara Mudah Mengubah Background Video Menjadi Green Screen Menggunakan Aplikasi Kinemaster Youtube from www.youtube.com</figcaption>
+    </figure>
+        <p>
+        Sebagai contoh adegan aktor terbang. Warna hijau bisa diganti dengan background lain sesuai keinginan saat proses editing. Untuk menambahkan tampilan green screen di video atau gambar GIF pilih menu Color pilih Green Screen.
+    </p>
+    <h3>Tahapan-Tahapan Membuat Green House Sederhana 1.</h3>
+    <p>Agar bisa mengganti background video ataupun foto dengan mudah maka Anda bisa menggunakan green screen alias layar hijau saat mengambil gambar. Kain Untuk Green Screen Sederhana. Untuk membuat green screen caranya tidak begitu susah hanya membutuhkan selembar. Green Screen adalah efek manipulasi video yang banyak digunakan oleh orang untuk memberikan nuansa tertentu di dalam video boleh dikatakan efek manipulasi green screen ini adalah cara yang paling mudah dan mudah dalam memanipulasi video.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Full Green Screen Sendiri Tutorial Kinemaster 1 Youtube" src="https://i.ytimg.com/vi/7jkCPhTk37I/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN3Xw39gIE5XjcMYlCv9tqAadR6XXHtSygck0SiKxopymw1kA70Saje-GRhXcmK93NCeQ';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Terdapat banyak warna hijau yang sangat bervariasi hingga beragam membuat kamu harus memikirkan hingga mengecek secara lebih detail mengenai warna yang dipakai dalam membuat video green screen milikmu karena dari warna-warna yang beragam banyak juga terkandung warna lain yang menyebabkan objek yang ada di dekat green screen dapat terpengaruh.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Mudah Mengubah Background Video Menjadi Green Screen Menggunakan Aplikasi Kinemaster Youtube" src="https://i.ytimg.com/vi/UIjCdNIt_ck/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4aikYd0Lcf0mNaK-bq8CaJGR4jFglsKn9OEwve_Zg4Ups5hEI5E7CxYATlzg159-nso';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Sebagai contoh adegan aktor terbang.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Green Screen Faisal Ariyanto" src="https://vaisal.files.wordpress.com/2010/12/green-screen-1-small.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcLusBTu114ymsXmuIlw9pHy3-v3wZN9XkeoXm1whaX30fY9EwS_eUoa9Zz-I_QR0dijY';" />
+        <small>Source: vaisal.wordpress.com</small>
+                    <p>Berikut adalah tutorial cara membuat tombol subscribe green screen menggunakan aplikasi kinemaster lainnya.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="20 Koleski Terbaru Cara Edit Foto Background Green Screen Cosy Gallery" src="https://i.ytimg.com/vi/DrwBBYTr7Cw/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTokMYDwrWIpMLUvsrlwwnaLsnqs4R_9fBmdA5j8rWGDz_Jc7DkcnpUQX94V1X989ieSXg';" />
+        <small>Source: cosygallery.blogspot.com</small>
+                    <p>Tahapan-Tahapan Membuat Green House Sederhana 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Teknik Mengunakan Green Screen Dan Cara Editnya Youtube" src="https://i.ytimg.com/vi/reIH6X9ZWvM/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsosTPUg4teUiVYCsupQOIID3n5vYQ6Te3YraV81UJPAuvPh2WKxP6uNiD9fx_TbvPC8s';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Meski tentu dibutuhkan keahlian tersendiri saat syuting video untuk kebutuhan green screen ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kain Untuk Green Screen Sederhana Darmawan Blog" src="https://darmawan.my.id/wp-content/uploads/2019/03/kain-untuk-green-screen-sederhana-2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToxOtSSU7rzAiToqHYJaPSjxA9_9GahJwXNIxFt4qI_BNM5r8OGkWeZDFBz6-JAuUCEjg';" />
+        <small>Source: darmawan.my.id</small>
+                    <p>Tombol subscribe nya kali ini lebih simpel seder.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Mudah Membuat Green Screen Tutorial Tiny Green Youtube" src="https://i.ytimg.com/vi/ihmy2G_vptY/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCnsSJoOdbM9ryGKDT3PUiqhgnGcEQH-55X8soR2BHdDevkPoHbkvmJKYc6iFFeTzIPfg';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Dalam proses syuting memakai green screen tentu kita harus memikirkan bagaimana wardrobe yang dipakai.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Rotoscoping Membuat Video Green Screen Tanpa Kain Youtube" src="https://i.ytimg.com/vi/LwsDGWasFzM/mqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHAOy0thQG-cv4tbKha7WFG3vBvthiJXOvv-DxOxKAaBLHl-JbnmFCxdc1TNcd5vQ87mw';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Tap ikon 5.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kain Untuk Green Screen Sederhana Darmawan Blog" src="https://darmawan.my.id/wp-content/uploads/2019/03/kain-untuk-green-screen-sederhana-1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVLKEhrtGBxHNQZsbUtwRh3EFc6s_UsE8qrk6MQdeScDx5WtT7SiwBz1ukigTSwkvLUWg';" />
+        <small>Source: darmawan.my.id</small>
+                    <p>Tap More di sudut kanan bawah.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/soal-ujian-sekolah-bahasa-inggris-smp.html"><i>&larr; soal ujian sekolah bahasa inggris smp</i></a>
+                                                                    
+                                        <a href="/soal-ujian-sekolah-pkn-smp-2014.html"><i>soal ujian sekolah pkn smp 2014 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>
